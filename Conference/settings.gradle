@@ -1,0 +1,8 @@
+rootProject.name = 'Conference'
+include 'Conference_Entities'
+include 'Conference_GUI'
+include 'Conference_Persistance'
+include 'Conference_Client'
+include 'Conference_Server'
+include 'Conference_Services'
+
