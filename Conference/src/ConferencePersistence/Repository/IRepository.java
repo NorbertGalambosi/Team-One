@@ -1,4 +1,4 @@
-package ConferencePersistence;
+package ConferencePersistence.Repository;
 
 /**
  * Created by Waiting on 23-May-17.
