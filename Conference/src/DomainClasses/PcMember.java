@@ -17,6 +17,10 @@ public class PcMember implements Serializable,Identifiable<Integer> {
     protected boolean pay;
     protected String type;
 
+    public PcMember() {
+
+    }
+
     public PcMember(Integer id, String name, String affiliation, String email, String webpage, String username, String password, boolean pay, String type) {
         this.id = id;
         this.name = name;
