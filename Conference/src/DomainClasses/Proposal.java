@@ -13,7 +13,22 @@ public class Proposal implements Serializable,Identifiable<Integer> {
     protected String keywords;
     protected String topics;
     protected boolean accepted;
+    protected PcMember autor;
+    protected Iterable<PcMember> reviewers;
     protected Iterable<PcMember> bidders;
+
+    public Proposal(Integer id, String name, Paper fullPaper, Paper abstractPaper, String keywords, String topics, boolean accepted, PcMember autor, Iterable<PcMember> reviewers, Iterable<PcMember> bidders) {
+        this.id = id;
+        this.name = name;
+        this.fullPaper = fullPaper;
+        this.abstractPaper = abstractPaper;
+        this.keywords = keywords;
+        this.topics = topics;
+        this.accepted = accepted;
+        this.autor = autor;
+        this.reviewers = reviewers;
+        this.bidders = bidders;
+    }
 
     public String getName() {
         return name;
@@ -71,6 +86,14 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         this.bidders = bidders;
     }
 
+    public PcMember getAutor() {
+        return autor;
+    }
+
+    public void setAutor(PcMember autor) {
+        this.autor = autor;
+    }
+
     @Override
     public void setid(Integer integer) {
         this.id=integer;
@@ -81,4 +104,18 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         return this.id;
     }
 
+    @Override
+    public String toString() {
+        return "Proposal{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", fullPaper=" + fullPaper +
+                ", abstractPaper=" + abstractPaper +
+                ", keywords='" + keywords + '\'' +
+                ", topics='" + topics + '\'' +
+                ", accepted=" + accepted +
+                ", autor=" + autor +
+                ", bidders=" + bidders +
+                '}';
+    }
 }

@@ -8,10 +8,16 @@ import java.io.Serializable;
 public class Paper implements Serializable,Identifiable<Integer> {
     protected Integer id;
     protected String name;
+    protected String fileName;
 
-    public Paper(Integer id, String name) {
+    public Paper(Integer id, String name, String fileName) {
         this.id = id;
         this.name = name;
+        this.fileName = fileName;
+    }
+
+    public Paper() {
+
     }
 
     public String getName() {
@@ -22,6 +28,13 @@ public class Paper implements Serializable,Identifiable<Integer> {
         this.name = name;
     }
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
     @Override
     public void setid(Integer integer) {
@@ -38,6 +51,7 @@ public class Paper implements Serializable,Identifiable<Integer> {
         return "Paper{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", fileName='" + fileName + '\'' +
                 '}';
     }
 }
