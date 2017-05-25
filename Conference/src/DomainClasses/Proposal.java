@@ -1,6 +1,7 @@
 package DomainClasses;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by Waiting on 20-May-17.
@@ -28,6 +29,10 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         this.autor = autor;
         this.reviewers = reviewers;
         this.bidders = bidders;
+    }
+
+    public Proposal() {
+
     }
 
     public String getName() {
@@ -94,6 +99,26 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         this.autor = autor;
     }
 
+    public Iterable<PcMember> getReviewers() {
+        return reviewers;
+    }
+
+    public void setReviewers(Iterable<PcMember> reviewers) {
+        this.reviewers = reviewers;
+    }
+
+    public void addBidder(PcMember bidder){
+        List<PcMember> temp = (List<PcMember>) this.bidders;
+        temp.add(bidder);
+        this.bidders = temp;
+    }
+
+    public void addReviewer(PcMember reviewer){
+        List<PcMember> temp = (List<PcMember>) this.bidders;
+        temp.add(reviewer);
+        this.bidders = temp;
+    }
+
     @Override
     public void setid(Integer integer) {
         this.id=integer;
@@ -115,6 +140,7 @@ public class Proposal implements Serializable,Identifiable<Integer> {
                 ", topics='" + topics + '\'' +
                 ", accepted=" + accepted +
                 ", autor=" + autor +
+                ", reviewers=" + reviewers +
                 ", bidders=" + bidders +
                 '}';
     }

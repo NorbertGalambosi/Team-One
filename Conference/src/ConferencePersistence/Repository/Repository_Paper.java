@@ -70,6 +70,7 @@ public class Repository_Paper implements IRepository<Integer, Paper> {
                 if (result.next()) {
                     paper.setid(result.getInt(1));
                     paper.setName(result.getString(2));
+                    paper.setFileName(result.getString(3));
                 }
             }
         } catch (SQLException e) {
