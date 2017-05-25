@@ -1,6 +1,8 @@
 package DomainClasses;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Waiting on 20-May-17.
@@ -15,13 +17,9 @@ public class PcMember implements Serializable,Identifiable<Integer> {
     protected String username;
     protected String password;
     protected boolean pay;
-    protected String type;
+    protected List<String> type = new ArrayList<>();
 
-    public PcMember() {
-
-    }
-
-    public PcMember(Integer id, String name, String affiliation, String email, String webpage, String username, String password, boolean pay, String type) {
+    public PcMember(Integer id, String name, String affiliation, String email, String webpage, String username, String password, boolean pay, List<String> type) {
         this.id = id;
         this.name = name;
         this.affiliation = affiliation;
@@ -32,6 +30,17 @@ public class PcMember implements Serializable,Identifiable<Integer> {
         this.pay = pay;
         this.type = type;
     }
+    public PcMember(Integer id, String name, String affiliation, String email, String webpage, String username, String password, boolean pay) {
+        this.id = id;
+        this.name = name;
+        this.affiliation = affiliation;
+        this.email = email;
+        this.webpage = webpage;
+        this.username = username;
+        this.password = password;
+        this.pay = pay;
+    }
+    public PcMember(){};
 
     public String getName() {
         return name;
@@ -89,12 +98,14 @@ public class PcMember implements Serializable,Identifiable<Integer> {
         this.pay = pay;
     }
 
-    public String getType() {
+    public List<String> getType() {
         return type;
     }
-
+    public String getOneType(int idType){
+        return this.type.get(idType);
+    }
     public void setType(String type) {
-        this.type = type;
+        this.type.add(type);
     }
 
     @Override
