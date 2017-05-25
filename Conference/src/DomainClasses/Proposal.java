@@ -13,6 +13,7 @@ public class Proposal implements Serializable,Identifiable<Integer> {
     protected String keywords;
     protected String topics;
     protected boolean accepted;
+    protected Iterable<PcMember> bidders;
 
     public String getName() {
         return name;
@@ -60,6 +61,14 @@ public class Proposal implements Serializable,Identifiable<Integer> {
 
     public void setAccepted(boolean accepted) {
         this.accepted = accepted;
+    }
+
+    public Iterable<PcMember> getBidders() {
+        return bidders;
+    }
+
+    public void setBidders(Iterable<PcMember> bidders) {
+        this.bidders = bidders;
     }
 
     @Override
