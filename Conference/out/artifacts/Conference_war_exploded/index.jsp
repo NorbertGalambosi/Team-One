@@ -16,26 +16,18 @@
   <body>
     <div id="show">
         <form action="register.jsp" method="post">
-            <p>
-                <label>Username:</label>
-                <input type="text" name="username" id="username">
-            </p>
-            <p>
-                <label>Password:</label>
-                <input type="password" name="password" id="password">
-            </p>
-            <p>
-                <select>
+            <p><label>Username:</label>
+                <input type="text" name="username" id="username"></p>
+            <p><label>Password:</label>
+                <input type="password" name="password" id="password"></p>
+            <p><select>
                     <option value="author">Author</option>
                     <option value="reviewer">Reviewer</option>
                     <option value="chair">Chair</option>
                     <option value="listener">Listener</option>
-                </select>
-            </p>
-            <p>
-                <input type="submit" value="Login" id="btnsubmit">
-                <input type="submit" value="Register" id="btnregister">
-            </p>
+                </select></p>
+            <p><input type="submit" value="Login" id="btnsubmit">
+                <input type="submit" value="Register" id="btnregister"></p>
         </form>
     </div>
   </body>

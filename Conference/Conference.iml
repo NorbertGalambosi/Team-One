@@ -36,7 +36,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="node-jsfl-runner-DefinitelyTyped" level="application" />
-    <orderEntry type="library" name="node-json-db-DefinitelyTyped" level="application" />
   </component>
 </module>

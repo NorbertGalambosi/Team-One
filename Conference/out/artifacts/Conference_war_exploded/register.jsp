@@ -7,35 +7,26 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Register</title>
-    <link type="text/css" rel="stylesheet" href="mystyle.css">
-</head>
-<body>
-    <div id="show">
-        <form action="" method="post">
-            <p>
-                <label>Name:</label>
-                <input type="text" id="#name" name="name">
-            </p>
-            <p>
-                <label>Affiliation:</label>
-                <input type="text" name="affiliation">
-            </p>
-            <p>
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="example@domain.com">
-            </p>
-            <p>
-                <select>
-                    <option value="author">Author</option>
-                    <option value="listener">Listener</option>
-                </select>
-            </p>
-            <p>
-                <input type="button" name="save" value="Save"></p>
-            </p>
-        </form>
-    </div>
-</body>
+    <head>
+        <title>Register</title>
+        <link type="text/css" rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <div id="show">
+            <form action="" method="post">
+                <p><label>Name:</label>
+                    <input type="text" id="#name" name="name"></p>
+                <p><label>Affiliation:</label>
+                    <input type="text" name="affiliation"></p>
+                <p><label>Email:</label>
+                    <input type="email" name="email" placeholder="example@domain.com"></p>
+                <p><select>
+                        <option value="author">Author</option>
+                        <option value="listener">Listener</option>
+                    </select></p>
+                <p><input type="checkbox" name="pay" value="pay">Pay for register</p>
+                <p><input type="button" name="save" value="Save"></p>
+            </form>
+        </div>
+    </body>
 </html>

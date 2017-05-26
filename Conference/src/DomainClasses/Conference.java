@@ -20,6 +20,10 @@ public class Conference implements Identifiable<Integer>,Serializable {
     protected Integer nrParticipants;
     protected boolean activ;
 
+    public Conference(){
+
+    }
+
     public Conference(Integer id, String name, Integer edition, String interval, String callForPapers, Date proposalsDeadline, Date abstractDeadline, Date biddingDeadline, Date reviewsDedline, Integer nrParticipants, boolean activ) {
         this.id = id;
         this.name = name;
