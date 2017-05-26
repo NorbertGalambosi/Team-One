@@ -1,0 +1,82 @@
+avem login cu trimitere la register ca sa te autentifici (autentificare pt oamenii care incearca sa prezinte lucrari)
+
+cand te loghezi selectezi ca ce vrei sa te loghezi (dropdown list)
+
+register pt autor si listener
+
+verifici deadline-uri ca sa stii ce sa arate(apare la sesiune si la camera si nr si alea - sau null si  cand e gata si te loghezi poti sa vezi sus detaliile dupa deadlineuri de obicei)
+
+
+dupa login apare combo box care zice cum vrei sa te loghezi
+
+log ca autor - submit proposal (create ) buton dupa submit ori ma duc inapoi si vad butonul ori la lista de proposaluri
+			 - keywords, detaliile alea, status, recommendation si alea
+			 - upload abstract si eventual la full
+			 - dupa submit iti apare sus ca ai adaugat(sau alert box gen)
+			 - dupa poti sa mai adaugi
+			 - poti sa dai click pe un propoosal iti apar detalii si poti sa mai faci upload(gen edit)	
+			 - si vezi chestii
+			 - daca ti-o fost acceptat iti spune ca esti speaker (iti dai seama ca esti speaker )
+			 - buton de bid for proposals
+
+log ca chair / co-chair - lista revieweri 
+						- lista paper
+						- selectez paper si mai multi revieweri pt ei si apasam buton si ii asignam 2 liste multiple select
+						- daca da click pe paper arata detalii despre paper ca mai sus, keywords detalii status, reviewResult
+						- daca are reviewer asignat il stergi gen si pui iar daca nu s-au inteles
+						- chair creeaza si session dupa ce are toate paper acceptate deci dupa deadline si alea  alea 
+						- asigneaza session chair din program comittee  lista sessions lista cu pc si cu select ca la paper si revieweri
+
+log ca reviewer - vezi paperurile/proposal
+			  - ai buton de edit(review) care deschide fereastra si tu dai review si ala se salveaza
+			  - download la paper ca sa faca recommandation
+
+
+log (register) ca listener - vedem detaliile conferinta 
+				 - dupa ce sesiunea e creata poti doar sa te inregistrezi de fapt pt ca tu trebe sa vezi ce sesiuni is si date
+
+
+
+CONVENTIE DE SCRIS: 
+	- in engleza
+
+
+repositoryuri
+register - daca face cont listener trebe doar un save ca nu se mai foloseste de el si un find all
+		 - daca face cont author il punem im bd in pc memeber si in ala cu pcmember type ii punem tipul
+		 - 
+
+confernce -save, update, find by id
+
+paper - save, update, delete , find one, find all, find by autor, find by reviewer
+
+proposal - save, update, delete, find all, find one, find by autor, find by reviewer
+
+pcmember - oricine 
+		 - save, update, delete
+		 - verificam ce tip e pc member si apoi facem metoda respectiva
+		 - find by user si parola
+		 - find doar dupa user
+		 - find doar dupa type
+reviewer - save, update, find dupa paper, find dupa reviewer
+
+session - save, find by name , update? 
+
+chair- are button de create session
+	-ii pui id sau autoincrement
+	-id conferinta
+	-nume, id room si durata
+	-dupa ce punem astea trebe lista cu toti pcmemeri: de acolo dau select chair for this session
+
+
+
+login 	- author
+
+
+
+
+
+questions
+cum facem aia cu submit the abstract?
+cum facem butoanele de upload?
+cum putem verifica partea cu deadline? pe interfata..
