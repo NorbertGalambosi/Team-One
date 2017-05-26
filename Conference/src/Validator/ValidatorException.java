@@ -1,4 +1,4 @@
-package ConferencePersistence.Validator;
+package Validator;
 
 public class ValidatorException extends  Exception {
     public ValidatorException (String message){

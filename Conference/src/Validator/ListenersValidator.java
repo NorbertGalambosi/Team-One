@@ -1,4 +1,4 @@
-package ConferencePersistence.Validator;
+package Validator;
 import DomainClasses.Listeners;
 
 public class ListenersValidator implements  IValidator<Listeners> {

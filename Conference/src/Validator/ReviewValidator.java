@@ -1,4 +1,4 @@
-package ConferencePersistence.Validator;
+package Validator;
 
 import DomainClasses.Review;
 
