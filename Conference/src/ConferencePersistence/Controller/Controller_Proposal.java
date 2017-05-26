@@ -2,16 +2,29 @@ package ConferencePersistence.Controller;
 
 import ConferencePersistence.Repository.Repository_Proposal;
 import DomainClasses.Proposal;
+import Validator.Validator_Exception;
+import Validator.Validator_Proposal;
 
 /**
  * Created by Viman Adrian on 25.05.2017.
  */
 public class Controller_Proposal {
 
-    protected Repository_Proposal repositoryProposal = new Repository_Proposal();
+    protected Repository_Proposal repositoryProposal;
+    protected Validator_Proposal validatorProposal;
 
-    public void save(Proposal entity){
-        this.repositoryProposal.save(entity);
+    public Controller_Proposal(Repository_Proposal repositoryProposal,Validator_Proposal vali) {
+        this.repositoryProposal = repositoryProposal;
+        this.validatorProposal = vali;
+    }
+
+    public void save(Proposal entity) {
+        try{
+            validatorProposal.validate(entity);
+            this.repositoryProposal.save(entity);
+        }catch(Validator_Exception e){
+            e.printStackTrace();
+        }
     }
 
     public Proposal findById(Integer integer){
@@ -19,7 +32,12 @@ public class Controller_Proposal {
     }
 
     public void update(Proposal proposal, Integer integer){
-        this.repositoryProposal.update(proposal, integer);
+        try{
+            validatorProposal.validate(proposal);
+            this.repositoryProposal.update(proposal, integer);
+        }catch(Validator_Exception e){
+            e.printStackTrace();
+        }
     }
 
     public Iterable<Proposal> findAll(){
@@ -27,7 +45,7 @@ public class Controller_Proposal {
     }
 
     public void delete(Integer integer){
-        this.delete(integer);
+        this.repositoryProposal.delete(integer);
     }
 
     public Iterable<Proposal> findByAutor(Integer integer){

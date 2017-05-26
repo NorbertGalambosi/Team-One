@@ -19,7 +19,7 @@ public class Validator_Conference implements IValidator<Conference> {
             throw(new Validator_Exception("Conference abstract deadline cannot be after bidding deadline."));
         if (conference.getBiddingDeadline().compareTo(conference.getReviewsDedline())>0)
             throw(new Validator_Exception("Conference bidding deadline cannot be after review deadline."));
-        if (conference.getNrParticipants()<=0)
-            throw(new Validator_Exception("Conference cannot have no participants."));
+        //if (conference.getNrParticipants()<=0)    initial poate avea 0
+        //    throw(new Validator_Exception("Conference cannot have no participants."));
     }
 }
