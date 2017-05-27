@@ -1,6 +1,7 @@
 import ConferencePersistence.Controller.Controller_PcMember;
 import ConferencePersistence.Repository.Repository_PcMember;
 import DomainClasses.PcMember;
+import Validator.Validator_PcMember;
 
 /**
  * Created by Waiting on 24-May-17.
@@ -8,7 +9,8 @@ import DomainClasses.PcMember;
 public class nTests {
     public static void main(String[] args){
         Repository_PcMember repository_pcMember = new Repository_PcMember();
-        Controller_PcMember ctrl = new Controller_PcMember(repository_pcMember);
+        Validator_PcMember validator = new Validator_PcMember();
+        Controller_PcMember ctrl = new Controller_PcMember(repository_pcMember,validator);
         //PcMember pc1 = new PcMember(1,"Viorelius","Camin","viorelius@maxim.adi","daGreat.com","Viorelius","Sirenul",true);
         //pc1.setType("Chair");
         //repository_pcMember.save(pc1);

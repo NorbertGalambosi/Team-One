@@ -25,3 +25,7 @@ $(document).ready(function () {
         });
     });
 });
+
+
+
+//BOTH WAYS ARE WORKING...USE THE ONE YOU LIKE THE MOST

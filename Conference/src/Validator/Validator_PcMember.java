@@ -24,10 +24,5 @@ public class Validator_PcMember implements IValidator<PcMember>{
         if (pcmember.getPassword().equals("")){
             throw(new Validator_Exception("PC Member password cannot be empty"));
         }
-        // TREBUIE SI ASTA?
-        /*
-        if (pcmember.getType().size()==0){
-            throw(new Validator_Exception("PC Member type cannot be empty"));
-        }*/
     }
 }

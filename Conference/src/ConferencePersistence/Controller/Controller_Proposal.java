@@ -27,10 +27,6 @@ public class Controller_Proposal {
         }
     }
 
-    public Proposal findById(Integer integer){
-        return this.repositoryProposal.findOne(integer);
-    }
-
     public void update(Proposal proposal, Integer integer){
         try{
             validatorProposal.validate(proposal);
@@ -38,6 +34,9 @@ public class Controller_Proposal {
         }catch(Validator_Exception e){
             e.printStackTrace();
         }
+    }
+    public Proposal findById(Integer integer){
+        return this.repositoryProposal.findOne(integer);
     }
 
     public Iterable<Proposal> findAll(){

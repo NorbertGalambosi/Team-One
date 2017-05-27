@@ -14,11 +14,18 @@ import java.io.PrintWriter;
 @WebServlet(name = "RegisterLogin_Servlet")
 public class RegisterLogin_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter respons = response.getWriter();
+        PrintWriter responseWriter = response.getWriter();
+        response.setContentType("text/plain");
         String action = request.getParameter("action");
         System.out.println("Action :"+action);
         //cum se face cu action,se face si cu restul
         //parametrul din fuctia .getParameter (aici "action") reprezinta numele pe care il are ce trimiteti voi din jsp
+        String user = request.getParameter("user");
+        String passwd = request.getParameter("pass");
+        String type = request.getParameter("type");
+        System.out.println("Login button pressed for :"+action+" "+user+" "+passwd+" "+type);
+        //work
+        responseWriter.print("Succes login...");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -2,19 +2,29 @@ package ConferencePersistence.Controller;
 
 import ConferencePersistence.Repository.Repository_Session;
 import DomainClasses.Session;
+import Validator.Validator_Exception;
+import Validator.Validator_Session;
 
 /**
  * Created by Waiting on 25-May-17.
  */
 public class Controller_Session {
-    public Repository_Session repositorySession;
+    protected Repository_Session repositorySession;
+    protected Validator_Session validatorSession;
 
-    public Controller_Session(Repository_Session repo){
+
+    public Controller_Session(Repository_Session repo,Validator_Session valid){
         this.repositorySession=repo;
+        this.validatorSession=valid;
     }
 
     public void addSession(Session entity){
-        this.repositorySession.save(entity);
+        try {
+            validatorSession.validate(entity);
+            this.repositorySession.save(entity);
+        } catch (Validator_Exception e) {
+            e.printStackTrace();
+        }
     }
     public void addChairToSession(Integer id,Integer idS,Integer idC){
         this.repositorySession.addChair(id, idS, idC);

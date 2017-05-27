@@ -2,6 +2,8 @@ package ConferencePersistence.Controller;
 
 import ConferencePersistence.Repository.Repository_PcMember;
 import DomainClasses.PcMember;
+import Validator.Validator_Exception;
+import Validator.Validator_PcMember;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,14 +13,23 @@ import java.util.List;
  */
 public class Controller_PcMember {
     private Repository_PcMember repositoryPcMember;
+    private Validator_PcMember validatorPcMember;
 
-    public Controller_PcMember(Repository_PcMember repo){
+    public Controller_PcMember(Repository_PcMember repo,Validator_PcMember valid){
         this.repositoryPcMember=repo;
+        this.validatorPcMember=valid;
     }
 
     public void addPcMember(PcMember member){
-        repositoryPcMember.save(member);
+        try{
+            validatorPcMember.validate(member);
+            repositoryPcMember.save(member);
+        } catch (Validator_Exception e) {
+            e.printStackTrace();
+        }
+
     }
+
     public void addTypeToPcMember(Integer idPcMember,String type){
         repositoryPcMember.addType(idPcMember,type);
     }
