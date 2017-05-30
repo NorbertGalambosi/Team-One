@@ -1,7 +1,6 @@
 /**
  * Created by Florina on 23.05.2017.
  */
-
 $(document).ready(function () {
     $('#btnregister').click(function(){
 

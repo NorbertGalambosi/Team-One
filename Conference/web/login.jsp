@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="login">
-        <form action="" method="post">
+        <form action="register.jsp" method="post">
             <p>
                 <label>Username:</label>
                 <input type="text" name="username" id="username">
@@ -26,10 +26,10 @@
             </p>
             <p>
                 <select id="memberType">
-                    <option value="author">Author</option>
-                    <option value="reviewer">Reviewer</option>
-                    <option value="chair">Chair</option>
-                    <option value="listener">Listener</option>
+                    <option value="Author">Author</option>
+                    <option value="Reviewer">Reviewer</option>
+                    <option value="Chair">Chair</option>
+                    <option value="Listener">Listener</option>
                 </select>
             </p>
             <p>

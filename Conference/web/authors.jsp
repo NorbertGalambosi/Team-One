@@ -81,7 +81,9 @@
         </div>
 
         <p><input type="button" name="bid" value="Bid"></p>
+        <form method="GET" action="login.jsp">
         <p><input type="button" name="logout" id="logout" value="Logout"></p>
+        </form>
 
     </body>
 </html>
