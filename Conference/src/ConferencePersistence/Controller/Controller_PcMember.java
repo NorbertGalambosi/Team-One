@@ -20,14 +20,15 @@ public class Controller_PcMember {
         this.validatorPcMember=valid;
     }
 
-    public void addPcMember(PcMember member){
+    public boolean addPcMember(PcMember member){
         try{
             validatorPcMember.validate(member);
             repositoryPcMember.save(member);
-        } catch (Validator_Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
-
+        return true;
     }
 
     public void addTypeToPcMember(Integer idPcMember,String type){
