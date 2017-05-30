@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="added Register servlet">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Conference.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Conference.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Authors_Servlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Authors_Servlet.class" />
@@ -786,7 +785,7 @@
       <workItem from="1496168308154" duration="111000" />
       <workItem from="1496168538130" duration="239000" />
       <workItem from="1496174586111" duration="46000" />
-      <workItem from="1496174721036" duration="386000" />
+      <workItem from="1496174721036" duration="396000" />
     </task>
     <task id="LOCAL-00001" summary="updated Controllers">
       <created>1495838030563</created>
@@ -830,11 +829,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496174898338</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added Register servlet">
+      <created>1496175114070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496175114070</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17882000" />
+    <option name="totallyTimeSpent" value="17892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,9 +900,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated Controllers" />
     <MESSAGE value="started authorsScript" />
-    <MESSAGE value="added Register servlet" />
     <MESSAGE value="authorServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="authorServlet" />
+    <MESSAGE value="added Register servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Register servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
