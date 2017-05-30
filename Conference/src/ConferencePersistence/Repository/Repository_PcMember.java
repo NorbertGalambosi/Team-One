@@ -22,7 +22,7 @@ public class Repository_PcMember implements IRepository<Integer, PcMember> {
     }
 
     @Override
-    public void save(PcMember entity) {
+    public void save(PcMember entity) throws SQLException {
         Connection conn = connection.getConnection();
         try(PreparedStatement preStmt = conn.prepareStatement("insert into PcMember values (?,?,?,?,?,?,?,?)")){
             preStmt.setInt(1,entity.getid());
@@ -35,7 +35,8 @@ public class Repository_PcMember implements IRepository<Integer, PcMember> {
             preStmt.setBoolean(8,entity.isPay());
             preStmt.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+          //  e.printStackTrace();
+            throw(e);
         }
         int sizePcMember_type=0;
         try(PreparedStatement preStmt=conn.prepareStatement("select count(*) as [Size] from PcMember_Type")) {
