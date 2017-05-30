@@ -115,4 +115,30 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
         }
         return conference;
     }
+
+    public Conference findLatest() {
+        Connection conn = connection.getConnection();
+        Conference conference = new Conference();
+
+        try (PreparedStatement prstmt = conn.prepareStatement("select * from Conference where idConference=(Select MAX(idConference) FROM Conference)")) {
+            try (ResultSet result = prstmt.executeQuery()) {
+                if (result.next()) {
+                    conference.setid(result.getInt(1));
+                    conference.setName(result.getString(2));
+                    conference.setEdition(result.getInt(3));
+                    conference.setInterval(result.getString(4));
+                    conference.setCallForPapers(result.getString(5));
+                    conference.setProposalsDeadline(result.getDate(6));
+                    conference.setAbstractDeadline(result.getDate(7));
+                    conference.setBiddingDeadline(result.getDate(8));
+                    conference.setReviewsDedline(result.getDate(9));
+                    conference.setNrParticipants(result.getInt(10));
+                    conference.setActiv(result.getBoolean(11));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return conference;
+    }
 }
