@@ -11,4 +11,12 @@
         <servlet-name>RegisterLogin_Servlet</servlet-name>
         <url-pattern>/RegisterLogin_Servlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Register_Servlet</servlet-name>
+        <servlet-class>Servlets.Register_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register_Servlet</servlet-name>
+        <url-pattern>/Register_Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>

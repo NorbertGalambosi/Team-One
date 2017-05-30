@@ -29,8 +29,6 @@ $(document).ready(function () {
     });
 });
 
-
-
 // $(document).ready(function () {
 //     $('#btnsubmit').click(function () {
 //         $.post('RegisterLogin_Servlet', { action: "login", user : $('#username').val(),pass : $('#password').val(),type : $('#memberType option:selected').val()},
