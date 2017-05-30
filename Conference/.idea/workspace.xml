@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="added Register servlet">
+    <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -878,7 +878,7 @@
       <workItem from="1496134899282" duration="2448000" />
       <workItem from="1496138895419" duration="327000" />
       <workItem from="1496143998687" duration="1253000" />
-      <workItem from="1496153420405" duration="4576000" />
+      <workItem from="1496153420405" duration="4606000" />
     </task>
     <task id="LOCAL-00001" summary="updated Controllers">
       <created>1495838030563</created>
@@ -901,11 +901,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496157627667</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Register servlet">
+      <created>1496165679735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496165679735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16486000" />
+    <option name="totallyTimeSpent" value="16516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,9 +970,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated Controllers" />
-    <MESSAGE value="added Register servlet" />
     <MESSAGE value="started authorsScript" />
-    <option name="LAST_COMMIT_MESSAGE" value="started authorsScript" />
+    <MESSAGE value="added Register servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Register servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
