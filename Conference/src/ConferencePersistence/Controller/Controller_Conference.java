@@ -44,4 +44,6 @@ public class Controller_Conference {
         return this.repositoryConference.findOne(id);
     }
 
+    public Conference findLatest(){return this.repositoryConference.findLatest();}
+
 }

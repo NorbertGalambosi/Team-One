@@ -19,4 +19,12 @@
         <servlet-name>Register_Servlet</servlet-name>
         <url-pattern>/Register_Servlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Authors_Servlet</servlet-name>
+        <servlet-class>Servlets.Authors_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authors_Servlet</servlet-name>
+        <url-pattern>/Authors_Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>
