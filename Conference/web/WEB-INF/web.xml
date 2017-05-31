@@ -11,6 +11,7 @@
         <servlet-name>Login_Servlet</servlet-name>
         <url-pattern>/Login_Servlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>Register_Servlet</servlet-name>
         <servlet-class>Servlets.Register_Servlet</servlet-class>
@@ -19,6 +20,7 @@
         <servlet-name>Register_Servlet</servlet-name>
         <url-pattern>/Register_Servlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>ConferencePopulation_Servlet</servlet-name>
         <servlet-class>Servlets.ConferencePopulation_Servlet</servlet-class>
@@ -27,8 +29,8 @@
         <servlet-name>ConferencePopulation_Servlet</servlet-name>
         <url-pattern>/ConferencePopulation_Servlet</url-pattern>
     </servlet-mapping>
+
     <servlet>
-<<<<<<< HEAD
         <servlet-name>Chair_Servlet</servlet-name>
         <servlet-class>Servlets.Chair_Servlet</servlet-class>
     </servlet>
@@ -36,14 +38,12 @@
         <servlet-name>Chair_Servlet</servlet-name>
         <url-pattern>/Chair_Servlet</url-pattern>
     </servlet-mapping>
-=======
-        <servlet-name>AuthorUpload_Servlet</servlet-name>
-        <servlet-class>Servlets.AuthorUpload_Servlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>AuthorUpload_Servlet</servlet-name>
-        <url-pattern>/AuthorUpload_Servlet</url-pattern>
-    </servlet-mapping>
-
->>>>>>> 2f8f5a899243433c774d556cfed83cab700d3830
+<servlet>
+    <servlet-name>AuthorUpload_Servlet</servlet-name>
+    <servlet-class>Servlets.AuthorUpload_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AuthorUpload_Servlet</servlet-name>
+<url-pattern>/AuthorUpload_Servlet</url-pattern>
+</servlet-mapping>
 </web-app>
