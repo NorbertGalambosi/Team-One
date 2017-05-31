@@ -27,4 +27,13 @@
         <servlet-name>ConferencePopulation_Servlet</servlet-name>
         <url-pattern>/ConferencePopulation_Servlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AuthorUpload_Servlet</servlet-name>
+        <servlet-class>Servlets.AuthorUpload_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthorUpload_Servlet</servlet-name>
+        <url-pattern>/AuthorUpload_Servlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
