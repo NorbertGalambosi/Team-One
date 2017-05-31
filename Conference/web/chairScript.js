@@ -1,20 +1,6 @@
 /**
  * Created by gnorb on 30-May-17.
  */
-
-// $(document).ready(function(){
-//     $.ajax({
-//         type : "GET",
-//         url : "Chair_Servlet",
-//         data : {
-//             action : "populate"
-//         },
-//         success : function(result){
-//             console.log(result);
-//         }
-//     });
-// });
-
 $(document).ready(function(){
    $('#createConference').click(function(){
        if($("#active").is(':checked'))
@@ -26,17 +12,17 @@ $(document).ready(function(){
            url : "Chair_Servlet",
            data : {
                action : "create",
-               confname : $('#confname').val(),
+               confname : $('#conferencename').val(),
                edt : $('#edition').val(),
-               ses : $('#sesions').val(),
+               ses : $('#sessions').val(),
                interv : $('#interval').val(),
                call : $('#call').val(),
-               bid : $('#bidline').val(),
-               prop : $('#propline').val(),
-               abstr : $('#absline').val(),
-               full : $('#fullline').val(),
-               revs : $('#revline').val(),
-               partnr : $('#parno').val(),
+               bid : $('#bdeadline').val(),
+               prop : $('#pdeadline').val(),
+               abstr : $('#adeadline').val(),
+               full : $('#fdeadline').val(),
+               revs : $('#rdeadline').val(),
+               partnr : $('#nrp').val(),
                active : active
    }
        });
