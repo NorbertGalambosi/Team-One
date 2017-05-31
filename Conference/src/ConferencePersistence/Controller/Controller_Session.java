@@ -5,6 +5,8 @@ import DomainClasses.Session;
 import Validator.Validator_Exception;
 import Validator.Validator_Session;
 
+import java.util.List;
+
 /**
  * Created by Waiting on 25-May-17.
  */
@@ -40,5 +42,9 @@ public class Controller_Session {
     }
     public Iterable<Session> getAllSessions(){
         return repositorySession.findAll();
+    }
+
+    public Iterable<Session> findByConference(Integer integer) {
+        return this.repositorySession.findByConference(integer);
     }
 }

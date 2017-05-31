@@ -42,7 +42,7 @@ public class Repository_Session implements IRepository<Integer, Session> {
         List<Session> sessionList = new ArrayList<>();
         try(PreparedStatement prstmt = conn.prepareStatement("select * from Session")){
             try(ResultSet res = prstmt.executeQuery()){
-                if (res.next()){
+                while (res.next()){
                     Integer id = res.getInt(1);
                     Integer idS = res.getInt(2);
                     String name = res.getString(3);
@@ -112,6 +112,26 @@ public class Repository_Session implements IRepository<Integer, Session> {
             e.printStackTrace();
         }
     }
-
+    public Iterable<Session> findByConference(Integer integer){
+        List<Session> sessionList = new ArrayList<>();
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("select * from Session where idConference=?")){
+            prstmt.setInt(1,integer);
+            try(ResultSet res = prstmt.executeQuery()){
+                while (res.next()){
+                    Integer id = res.getInt(1);
+                    Integer idS = res.getInt(2);
+                    String name = res.getString(3);
+                    String idR = res.getString(4);
+                    String dur = res.getString(5);
+                    Session session = new Session(id,idS,name,idR,dur);
+                    sessionList.add(session);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return sessionList;
+    }
 
 }
