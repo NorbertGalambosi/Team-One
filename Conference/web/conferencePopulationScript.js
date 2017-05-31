@@ -5,7 +5,7 @@
 $(document).ready(function () {
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "name"
@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "edition"
@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "session"
@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "interval"
@@ -53,7 +53,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "call"
@@ -65,7 +65,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "bdeadline"
@@ -77,7 +77,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "pdeadline"
@@ -89,7 +89,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "adeadline"
@@ -101,7 +101,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "fdeadline"
@@ -113,7 +113,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "rdeadline"
@@ -125,7 +125,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "nrp"
@@ -137,7 +137,7 @@ $(document).ready(function () {
     });
     $.ajax({
         type : "GET",
-        url : 'Authors_Servlet',
+        url : 'ConferencePopulation_Servlet',
         data : {
             action : "populate",
             req : "active"

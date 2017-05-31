@@ -1,9 +1,13 @@
 package Servlets;
 
 import ConferencePersistence.Controller.Controller_Conference;
+import ConferencePersistence.Controller.Controller_Session;
 import ConferencePersistence.Repository.Repository_Conference;
+import ConferencePersistence.Repository.Repository_Session;
 import DomainClasses.Conference;
+import DomainClasses.Session;
 import Validator.Validator_Conference;
+import Validator.Validator_Session;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,12 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Viman Adrian on 30.05.2017.
  */
-@WebServlet(name = "Authors_Servlet")
-public class Authors_Servlet extends HttpServlet {
+@WebServlet(name = "ConferencePopulation_Servlet")
+public class ConferencePopulation_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -30,14 +36,14 @@ public class Authors_Servlet extends HttpServlet {
             String type = request.getParameter("req");
             Controller_Conference controllerConference = new Controller_Conference(new Repository_Conference(),new Validator_Conference());
             Conference conf = controllerConference.findLatest();
+            Controller_Session controllerSession = new Controller_Session(new Repository_Session(), new Validator_Session());
+            List<Session> sessions = (List<Session>) controllerSession.findByConference(conf.getid());
             if (conf == null)
                 responseWriter.print("Invalid");
             if(type.equals("name"))
                 responseWriter.print(conf.getName());
             if(type.equals("edition"))
                 responseWriter.print(conf.getEdition());
-            if(type.equals("session"))
-                responseWriter.print(conf.getSession());
             if(type.equals("interval"))
                 responseWriter.print(conf.getInterval());
             if(type.equals("call"))
@@ -59,6 +65,12 @@ public class Authors_Servlet extends HttpServlet {
                     responseWriter.print("activ");
                 else
                     responseWriter.print("inactiv");
+            }
+            if(type.equals("session")){
+                String session = "";
+                for (Session s:sessions)
+                    session = session + " " + s.getName() + " ";
+                responseWriter.print(session);
             }
         }
     }

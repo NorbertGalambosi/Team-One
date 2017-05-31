@@ -145,10 +145,6 @@ public class Conference implements Identifiable<Integer>,Serializable {
                 '}';
     }
 
-    public String getSession() {
-        return "NU AVEM SESIUNE IN CONFERENCE";
-    }
-
     public String getFullDeadline() {
         return "NU AVEM FULL DEADLINE IN CONFERENCE";
     }
