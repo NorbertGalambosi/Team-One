@@ -41,8 +41,10 @@ public class Register_Servlet extends HttpServlet {
                 PcMember member = new PcMember(id, nume, affiliation, email, webpage, username, password, true);
                 member.setType(type);
                 System.out.println(member);
-                if(controllerPcMember.addPcMember(member))
+                if(controllerPcMember.addPcMember(member)) {
+                    controllerPcMember.addTypeToPcMember(member.getid(),type);
                     responseWriter.print("SuccessAuthor");
+                }
                 else
                     responseWriter.print("Invalid");
             }
@@ -51,8 +53,10 @@ public class Register_Servlet extends HttpServlet {
                 PcMember member = new PcMember(id, nume, affiliation, email, webpage, username, password, true);
                 member.setType(type);
                 System.out.println(member);
-                if(controllerPcMember.addPcMember(member))
+                if(controllerPcMember.addPcMember(member)) {
+                    controllerPcMember.addTypeToPcMember(member.getid(), type);
                     responseWriter.print("SuccessListener");
+                }
                 else
                     responseWriter.print("Invalid");
             }

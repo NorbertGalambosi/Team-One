@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>RegisterLogin_Servlet</servlet-name>
-        <servlet-class>Servlets.RegisterLogin_Servlet</servlet-class>
+        <servlet-name>Login_Servlet</servlet-name>
+        <servlet-class>Servlets.Login_Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>RegisterLogin_Servlet</servlet-name>
-        <url-pattern>/RegisterLogin_Servlet</url-pattern>
+        <servlet-name>Login_Servlet</servlet-name>
+        <url-pattern>/Login_Servlet</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>Register_Servlet</servlet-name>
@@ -26,5 +26,13 @@
     <servlet-mapping>
         <servlet-name>Authors_Servlet</servlet-name>
         <url-pattern>/Authors_Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Chair_Servlet</servlet-name>
+        <servlet-class>Servlets.Chair_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chair_Servlet</servlet-name>
+        <url-pattern>/Chair_Servlet</url-pattern>
     </servlet-mapping>
 </web-app>

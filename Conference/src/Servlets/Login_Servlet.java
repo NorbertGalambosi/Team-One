@@ -16,8 +16,8 @@ import java.io.PrintWriter;
 /**
  * Created by Waiting on 25-May-17.
  */
-@WebServlet(name = "RegisterLogin_Servlet")
-public class RegisterLogin_Servlet extends HttpServlet {
+@WebServlet(name = "Login_Servlet")
+public class Login_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter responseWriter = response.getWriter();
         response.setContentType("text/plain");
