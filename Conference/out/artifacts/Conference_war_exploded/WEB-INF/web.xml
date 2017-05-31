@@ -20,14 +20,15 @@
         <url-pattern>/Register_Servlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>Authors_Servlet</servlet-name>
-        <servlet-class>Servlets.Authors_Servlet</servlet-class>
+        <servlet-name>ConferencePopulation_Servlet</servlet-name>
+        <servlet-class>Servlets.ConferencePopulation_Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Authors_Servlet</servlet-name>
-        <url-pattern>/Authors_Servlet</url-pattern>
+        <servlet-name>ConferencePopulation_Servlet</servlet-name>
+        <url-pattern>/ConferencePopulation_Servlet</url-pattern>
     </servlet-mapping>
     <servlet>
+<<<<<<< HEAD
         <servlet-name>Chair_Servlet</servlet-name>
         <servlet-class>Servlets.Chair_Servlet</servlet-class>
     </servlet>
@@ -35,4 +36,14 @@
         <servlet-name>Chair_Servlet</servlet-name>
         <url-pattern>/Chair_Servlet</url-pattern>
     </servlet-mapping>
+=======
+        <servlet-name>AuthorUpload_Servlet</servlet-name>
+        <servlet-class>Servlets.AuthorUpload_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthorUpload_Servlet</servlet-name>
+        <url-pattern>/AuthorUpload_Servlet</url-pattern>
+    </servlet-mapping>
+
+>>>>>>> 2f8f5a899243433c774d556cfed83cab700d3830
 </web-app>

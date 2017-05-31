@@ -11,6 +11,7 @@
         <title>Chair</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="chairScript.js" type="text/javascript"></script>
+        <script src="conferencePopulationScript.js" type="text/javascript"></script>
     </head>
     <body>
 
