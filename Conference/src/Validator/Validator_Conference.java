@@ -15,8 +15,8 @@ public class Validator_Conference implements IValidator<Conference> {
             throw(new Validator_Exception("Conference Call For Papers cannot be empty"));
         if (conference.getProposalsDeadline().compareTo(conference.getAbstractDeadline())>0)
             throw(new Validator_Exception("Conference proposals deadline cannot be after abstract deadline."));
-        if (conference.getAbstractDeadline().compareTo(conference.getBiddingDeadline())>0)
-            throw(new Validator_Exception("Conference abstract deadline cannot be after bidding deadline."));
+        if (conference.getAbstractDeadline().compareTo(conference.getBiddingDeadline())<0)
+            throw(new Validator_Exception("Conference abstract deadline cannot be before bidding deadline."));
         if (conference.getBiddingDeadline().compareTo(conference.getReviewsDedline())>0)
             throw(new Validator_Exception("Conference bidding deadline cannot be after review deadline."));
         //if (conference.getNrParticipants()<=0)    initial poate avea 0

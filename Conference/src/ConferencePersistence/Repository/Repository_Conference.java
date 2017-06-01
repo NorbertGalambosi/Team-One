@@ -22,7 +22,7 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
     @Override
     public void save(Conference entity) {
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("insert into Conference values (?,?,?,?,?,?,?,?,?,?,?)")) {
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Conference values (?,?,?,?,?,?,?,?,?,?,?,?)")) {
             preStmt.setInt(1, entity.getid());
             preStmt.setString(2, entity.getName());
             preStmt.setInt(3, entity.getEdition());
@@ -30,10 +30,11 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
             preStmt.setString(5, entity.getCallForPapers());
             preStmt.setString(6, entity.getProposalsDeadline());
             preStmt.setString(7, entity.getAbstractDeadline());
-            preStmt.setString(8, entity.getBiddingDeadline());
-            preStmt.setString(9, entity.getReviewsDedline());
-            preStmt.setInt(10, entity.getNrParticipants());
-            preStmt.setBoolean(11, entity.isActiv());
+            preStmt.setString(8, entity.getFullpaperDeadline());
+            preStmt.setString(9, entity.getBiddingDeadline());
+            preStmt.setString(10, entity.getReviewsDedline());
+            preStmt.setInt(11, entity.getNrParticipants());
+            preStmt.setBoolean(12, entity.isActiv());
             preStmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -42,18 +43,19 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
 
     public void update(Conference entity, int id){
         Connection conn =  connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("update Conference set nameConference=?,edition=?,interval=?,callForPapers=?,proposalsDeadline=?,abstractDeadline=?,biddingDeadline=?,reviewsDeadline=?,nrParticipants=?,activ=? WHERE idConference=?")){
+        try(PreparedStatement preStmt = conn.prepareStatement("update Conference set nameConference=?,edition=?,interval=?,callForPapers=?,proposalsDeadline=?,abstractDeadline=?,fullpaperDeadline=?,biddingDeadline=?,reviewsDeadline=?,nrParticipants=?,activ=? WHERE idConference=?")){
             preStmt.setString(1, entity.getName());
             preStmt.setInt(2, entity.getEdition());
             preStmt.setString(3, entity.getInterval());
             preStmt.setString(4, entity.getCallForPapers());
             preStmt.setString(5, entity.getProposalsDeadline());
             preStmt.setString(6, entity.getAbstractDeadline());
-            preStmt.setString(7, entity.getBiddingDeadline());
-            preStmt.setString(8, entity.getReviewsDedline());
-            preStmt.setInt(9, entity.getNrParticipants());
-            preStmt.setBoolean(10, entity.isActiv());
-            preStmt.setInt(11, id);
+            preStmt.setString(7, entity.getAbstractDeadline());
+            preStmt.setString(8, entity.getBiddingDeadline());
+            preStmt.setString(9, entity.getReviewsDedline());
+            preStmt.setInt(10, entity.getNrParticipants());
+            preStmt.setBoolean(11, entity.isActiv());
+            preStmt.setInt(12, id);
             preStmt.executeUpdate();
         } catch(SQLException e) {
             e.printStackTrace();
@@ -75,10 +77,11 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setCallForPapers(result.getString(5));
                     conference.setProposalsDeadline(result.getString(6));
                     conference.setAbstractDeadline(result.getString(7));
-                    conference.setBiddingDeadline(result.getString(8));
-                    conference.setReviewsDedline(result.getString(9));
-                    conference.setNrParticipants(result.getInt(10));
-                    conference.setActiv(result.getBoolean(11));
+                    conference.setFullpaperDeadline(result.getString(8));
+                    conference.setBiddingDeadline(result.getString(9));
+                    conference.setReviewsDedline(result.getString(10));
+                    conference.setNrParticipants(result.getInt(11));
+                    conference.setActiv(result.getBoolean(12));
                     conferenceList.add(conference);
                 }
             }
@@ -104,10 +107,11 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setCallForPapers(result.getString(5));
                     conference.setProposalsDeadline(result.getString(6));
                     conference.setAbstractDeadline(result.getString(7));
-                    conference.setBiddingDeadline(result.getString(8));
-                    conference.setReviewsDedline(result.getString(9));
-                    conference.setNrParticipants(result.getInt(10));
-                    conference.setActiv(result.getBoolean(11));
+                    conference.setFullpaperDeadline(result.getString(8));
+                    conference.setBiddingDeadline(result.getString(9));
+                    conference.setReviewsDedline(result.getString(10));
+                    conference.setNrParticipants(result.getInt(11));
+                    conference.setActiv(result.getBoolean(12));
                 }
             }
         } catch (SQLException e) {
@@ -130,10 +134,11 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setCallForPapers(result.getString(5));
                     conference.setProposalsDeadline(result.getString(6));
                     conference.setAbstractDeadline(result.getString(7));
-                    conference.setBiddingDeadline(result.getString(8));
-                    conference.setReviewsDedline(result.getString(9));
-                    conference.setNrParticipants(result.getInt(10));
-                    conference.setActiv(result.getBoolean(11));
+                    conference.setFullpaperDeadline(result.getString(8));
+                    conference.setBiddingDeadline(result.getString(9));
+                    conference.setReviewsDedline(result.getString(10));
+                    conference.setNrParticipants(result.getInt(11));
+                    conference.setActiv(result.getBoolean(12));
                 }
             }
         } catch (SQLException e) {

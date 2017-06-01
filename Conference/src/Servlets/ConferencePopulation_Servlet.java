@@ -55,7 +55,7 @@ public class ConferencePopulation_Servlet extends HttpServlet {
             if(type.equals("adeadline"))
                 responseWriter.print(conf.getAbstractDeadline().toString());
             if(type.equals("fdeadline"))
-                responseWriter.print(conf.getFullDeadline().toString());
+                responseWriter.print(conf.getFullpaperDeadline().toString());
             if(type.equals("rdeadline"))
                 responseWriter.print(conf.getReviewsDedline().toString());
             if(type.equals("nrp"))
