@@ -10,6 +10,8 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+    </SOURCES>
   </library>
 </component>

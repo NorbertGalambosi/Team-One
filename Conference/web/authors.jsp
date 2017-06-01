@@ -76,14 +76,14 @@
             <input type="text" name="topics"></p>
         <p><label>*List of authors:</label>
             <input type="text" name="listA"> *The list of authors is not mandatory.</p>
-        Select file to upload:
-        <form id="upload-form" class="upload-box" action="/AuthorUpload_Servlet" method="post" enctype="multipart/form-data" >
-            <input type="file" id="file" name="file"/>
-            <span id="upload-error" class="error">${uploadError}</span>
-            <input type="submit" id="upload-button" value="upload"/>
-        </form>
-
     </fieldset>
+</form>
+
+Select file to upload:
+<form method="post" action="UploadServlet"
+      enctype="multipart/form-data">
+    Select file to upload: <input type="file" name="file" size="60" /><br />
+    <br /> <input type="submit" value="Upload" />
 </form>
 
 <div>

@@ -11,11 +11,16 @@
     <title>Login Conference</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <link type="text/css" rel="stylesheet" href="mystyle.css">
-     <script src="loginScript.js" type="text/javascript"></script>
+      <script src="loginScript.js" type="text/javascript"></script>
+      <style>
+          #align{
+              text-align: center;
+          }
+      </style>
   </head>
   <body>
     <div id="login">
-        <form action="register.jsp" method="post">
+        <form action="register.jsp" method="post" id="align">
             <p>
                 <label>Username:</label>
                 <input type="text" name="username" id="username">
@@ -36,7 +41,7 @@
                 <input type="button" value="Login" id="btnsubmit" name="btnsubmit">
             </p>
         </form>
-        <form action="register.jsp" >
+        <form action="register.jsp" id="align">
             <input type="submit" value="Register" id="btnregister">
         </form>
     </div>
