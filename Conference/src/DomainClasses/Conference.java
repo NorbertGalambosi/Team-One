@@ -13,10 +13,10 @@ public class Conference implements Identifiable<Integer>,Serializable {
     protected Integer edition;
     protected String interval;
     protected String callForPapers;
-    protected Date proposalsDeadline;
-    protected Date abstractDeadline;
-    protected Date biddingDeadline;
-    protected Date reviewsDedline;
+    protected String proposalsDeadline;
+    protected String abstractDeadline;
+    protected String biddingDeadline;
+    protected String reviewsDedline;
     protected Integer nrParticipants;
     protected boolean activ;
 
@@ -24,7 +24,7 @@ public class Conference implements Identifiable<Integer>,Serializable {
 
     }
 
-    public Conference(Integer id, String name, Integer edition, String interval, String callForPapers, Date proposalsDeadline, Date abstractDeadline, Date biddingDeadline, Date reviewsDedline, Integer nrParticipants, boolean activ) {
+    public Conference(Integer id, String name, Integer edition, String interval, String callForPapers, String proposalsDeadline, String abstractDeadline, String biddingDeadline, String reviewsDedline, Integer nrParticipants, boolean activ) {
         this.id = id;
         this.name = name;
         this.edition = edition;
@@ -80,35 +80,35 @@ public class Conference implements Identifiable<Integer>,Serializable {
         this.callForPapers = callForPapers;
     }
 
-    public Date getProposalsDeadline() {
+    public String getProposalsDeadline() {
         return proposalsDeadline;
     }
 
-    public void setProposalsDeadline(Date proposalsDeadline) {
+    public void setProposalsDeadline(String proposalsDeadline) {
         this.proposalsDeadline = proposalsDeadline;
     }
 
-    public Date getAbstractDeadline() {
+    public String getAbstractDeadline() {
         return abstractDeadline;
     }
 
-    public void setAbstractDeadline(Date abstractDeadline) {
+    public void setAbstractDeadline(String abstractDeadline) {
         this.abstractDeadline = abstractDeadline;
     }
 
-    public Date getBiddingDeadline() {
+    public String getBiddingDeadline() {
         return biddingDeadline;
     }
 
-    public void setBiddingDeadline(Date biddingDeadline) {
+    public void setBiddingDeadline(String biddingDeadline) {
         this.biddingDeadline = biddingDeadline;
     }
 
-    public Date getReviewsDedline() {
+    public String getReviewsDedline() {
         return reviewsDedline;
     }
 
-    public void setReviewsDedline(Date reviewsDedline) {
+    public void setReviewsDedline(String reviewsDedline) {
         this.reviewsDedline = reviewsDedline;
     }
 

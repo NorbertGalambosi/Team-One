@@ -15,9 +15,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Date;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -51,10 +52,27 @@ public class Chair_Servlet extends HttpServlet {
             List<Conference> confList = new ArrayList<>();
             for(Conference o:ctrlC.getAllConference())
                     confList.add(o);
-            java.util.Date newDate = new java.util.Date("MM/dd/yyyy");
-            Date startDate;
-            Conference conference = new Conference(confList.size()+1,confname,Integer.parseInt(edt),interv,call, prop,abstr,bid,revs,partnr,active)
+            Date props= null;
+            Date abs= null;
+            Date bidd= null;
+            Date rev= null;
+            try {
+                props = new SimpleDateFormat("dd/MM/yyyy").parse(prop);
+                abs = new SimpleDateFormat("dd/MM/yyyy").parse(abstr);
+                bidd = new SimpleDateFormat("dd/MM/yyyy").parse(bid);
+                rev = new SimpleDateFormat("dd/MM/yyyy").parse(revs);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            boolean activ = false;
+            if (action.equals("checked"))
+                 activ = true;
+            else
+                activ = false;
 
+            //Conference conference = new Conference(confList.size()+1,confname,Integer.parseInt(edt),interv,call, props,abs,bidd,rev,Integer.parseInt(partnr),activ);
+//            System.out.println(conference);
+//            ctrlC.addConference(conference);
         }
 
     }

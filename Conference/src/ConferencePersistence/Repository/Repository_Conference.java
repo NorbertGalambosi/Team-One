@@ -28,10 +28,10 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
             preStmt.setInt(3, entity.getEdition());
             preStmt.setString(4, entity.getInterval());
             preStmt.setString(5, entity.getCallForPapers());
-            preStmt.setDate(6, (Date) entity.getProposalsDeadline());
-            preStmt.setDate(7, (Date) entity.getAbstractDeadline());
-            preStmt.setDate(8, (Date) entity.getBiddingDeadline());
-            preStmt.setDate(9, (Date) entity.getReviewsDedline());
+            preStmt.setString(6, entity.getProposalsDeadline());
+            preStmt.setString(7, entity.getAbstractDeadline());
+            preStmt.setString(8, entity.getBiddingDeadline());
+            preStmt.setString(9, entity.getReviewsDedline());
             preStmt.setInt(10, entity.getNrParticipants());
             preStmt.setBoolean(11, entity.isActiv());
             preStmt.executeUpdate();
@@ -47,10 +47,10 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
             preStmt.setInt(2, entity.getEdition());
             preStmt.setString(3, entity.getInterval());
             preStmt.setString(4, entity.getCallForPapers());
-            preStmt.setDate(5, (Date) entity.getProposalsDeadline());
-            preStmt.setDate(6, (Date) entity.getAbstractDeadline());
-            preStmt.setDate(7, (Date) entity.getBiddingDeadline());
-            preStmt.setDate(8, (Date) entity.getReviewsDedline());
+            preStmt.setString(5, entity.getProposalsDeadline());
+            preStmt.setString(6, entity.getAbstractDeadline());
+            preStmt.setString(7, entity.getBiddingDeadline());
+            preStmt.setString(8, entity.getReviewsDedline());
             preStmt.setInt(9, entity.getNrParticipants());
             preStmt.setBoolean(10, entity.isActiv());
             preStmt.setInt(11, id);
@@ -73,10 +73,10 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setEdition(result.getInt(3));
                     conference.setInterval(result.getString(4));
                     conference.setCallForPapers(result.getString(5));
-                    conference.setProposalsDeadline(result.getDate(6));
-                    conference.setAbstractDeadline(result.getDate(7));
-                    conference.setBiddingDeadline(result.getDate(8));
-                    conference.setReviewsDedline(result.getDate(9));
+                    conference.setProposalsDeadline(result.getString(6));
+                    conference.setAbstractDeadline(result.getString(7));
+                    conference.setBiddingDeadline(result.getString(8));
+                    conference.setReviewsDedline(result.getString(9));
                     conference.setNrParticipants(result.getInt(10));
                     conference.setActiv(result.getBoolean(11));
                     conferenceList.add(conference);
@@ -102,10 +102,10 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setEdition(result.getInt(3));
                     conference.setInterval(result.getString(4));
                     conference.setCallForPapers(result.getString(5));
-                    conference.setProposalsDeadline(result.getDate(6));
-                    conference.setAbstractDeadline(result.getDate(7));
-                    conference.setBiddingDeadline(result.getDate(8));
-                    conference.setReviewsDedline(result.getDate(9));
+                    conference.setProposalsDeadline(result.getString(6));
+                    conference.setAbstractDeadline(result.getString(7));
+                    conference.setBiddingDeadline(result.getString(8));
+                    conference.setReviewsDedline(result.getString(9));
                     conference.setNrParticipants(result.getInt(10));
                     conference.setActiv(result.getBoolean(11));
                 }
@@ -128,10 +128,10 @@ public class Repository_Conference implements IRepository<Integer, Conference> {
                     conference.setEdition(result.getInt(3));
                     conference.setInterval(result.getString(4));
                     conference.setCallForPapers(result.getString(5));
-                    conference.setProposalsDeadline(result.getDate(6));
-                    conference.setAbstractDeadline(result.getDate(7));
-                    conference.setBiddingDeadline(result.getDate(8));
-                    conference.setReviewsDedline(result.getDate(9));
+                    conference.setProposalsDeadline(result.getString(6));
+                    conference.setAbstractDeadline(result.getString(7));
+                    conference.setBiddingDeadline(result.getString(8));
+                    conference.setReviewsDedline(result.getString(9));
                     conference.setNrParticipants(result.getInt(10));
                     conference.setActiv(result.getBoolean(11));
                 }
