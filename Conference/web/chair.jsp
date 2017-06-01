@@ -68,7 +68,7 @@
             <label>Bidding deadline </label><input type="text" id="bdeadline">
             <label>Proposals deadline</label><input type="text" id="pdeadline">
             <label>Abstract deadline</label><input type="text" id="adeadline">
-            <label>Full deadline</label><input type="text" id="fdeadline"><br>
+            <label>Full paper deadline</label><input type="text" id="fdeadline"><br>
             <label>Reviews deadline</label><input type="text" id="rdeadline">
             <label>Participants number </label><input type="text" id="nrp">
             <label>Active </label><input type="checkbox" id="active" value="active">
@@ -76,6 +76,9 @@
         <br>
         <p>To create a conference, click here:
             <input type="button" id="createConference" name="Create" value="Create"></p>
+        <p>To update any details of the conference press the button :
+            <input type="button" id="updateConference" name="Update" value="Update">
+        </p>
     </form>
 </div>
 

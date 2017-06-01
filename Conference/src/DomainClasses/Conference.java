@@ -15,6 +15,7 @@ public class Conference implements Identifiable<Integer>,Serializable {
     protected String callForPapers;
     protected String proposalsDeadline;
     protected String abstractDeadline;
+    protected String fullpaperDeadline;
     protected String biddingDeadline;
     protected String reviewsDedline;
     protected Integer nrParticipants;
@@ -24,7 +25,7 @@ public class Conference implements Identifiable<Integer>,Serializable {
 
     }
 
-    public Conference(Integer id, String name, Integer edition, String interval, String callForPapers, String proposalsDeadline, String abstractDeadline, String biddingDeadline, String reviewsDedline, Integer nrParticipants, boolean activ) {
+    public Conference(Integer id, String name, Integer edition, String interval, String callForPapers, String proposalsDeadline, String abstractDeadline,String fullpaperDeadline, String biddingDeadline, String reviewsDedline, Integer nrParticipants, boolean activ) {
         this.id = id;
         this.name = name;
         this.edition = edition;
@@ -32,6 +33,7 @@ public class Conference implements Identifiable<Integer>,Serializable {
         this.callForPapers = callForPapers;
         this.proposalsDeadline = proposalsDeadline;
         this.abstractDeadline = abstractDeadline;
+        this.fullpaperDeadline=fullpaperDeadline;
         this.biddingDeadline = biddingDeadline;
         this.reviewsDedline = reviewsDedline;
         this.nrParticipants = nrParticipants;
@@ -108,6 +110,14 @@ public class Conference implements Identifiable<Integer>,Serializable {
         return reviewsDedline;
     }
 
+    public String getFullpaperDeadline() {
+        return fullpaperDeadline;
+    }
+
+    public void setFullpaperDeadline(String fullpaperDeadline) {
+        this.fullpaperDeadline = fullpaperDeadline;
+    }
+
     public void setReviewsDedline(String reviewsDedline) {
         this.reviewsDedline = reviewsDedline;
     }
@@ -136,16 +146,13 @@ public class Conference implements Identifiable<Integer>,Serializable {
                 ", edition=" + edition +
                 ", interval='" + interval + '\'' +
                 ", callForPapers='" + callForPapers + '\'' +
-                ", proposalsDeadline=" + proposalsDeadline +
-                ", abstractDeadline=" + abstractDeadline +
-                ", biddingDeadline=" + biddingDeadline +
-                ", reviewsDedline=" + reviewsDedline +
+                ", proposalsDeadline='" + proposalsDeadline + '\'' +
+                ", abstractDeadline='" + abstractDeadline + '\'' +
+                ", fullpaperDeadline='" + fullpaperDeadline + '\'' +
+                ", biddingDeadline='" + biddingDeadline + '\'' +
+                ", reviewsDedline='" + reviewsDedline + '\'' +
                 ", nrParticipants=" + nrParticipants +
                 ", activ=" + activ +
                 '}';
-    }
-
-    public String getFullDeadline() {
-        return "NU AVEM FULL DEADLINE IN CONFERENCE";
     }
 }

@@ -21,6 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by gnorb on 30-May-17.
@@ -35,7 +36,6 @@ public class Chair_Servlet extends HttpServlet {
         PrintWriter responseWriter = response.getWriter();
         response.setContentType("text/plain");
         String action = request.getParameter("action");
-        if (action.equals("create")) {
             String confname = request.getParameter("confname");
             String edt = request.getParameter("edt");
             String ses = request.getParameter("ses");
@@ -61,16 +61,41 @@ public class Chair_Servlet extends HttpServlet {
                 activ = true;
             else
                 activ = false;
-            Conference conference = new Conference(confList.size() + 1, confname, Integer.parseInt(edt), interv, call, prop, abstr, bid, revs, Integer.parseInt(partnr), activ);
-            System.out.println(conference);
-            ctrlC.addConference(conference);
-            String[] sesArg = ses.split(" ");
-            int size = sesList.size();
-            for (String s : sesArg) {
-                ctrlS.addSession(new Session(size, conference.getid(), s, null, null));
-                size++;
+            if (action.equals("create")) {
+                Conference conference = new Conference(confList.size() + 1, confname, Integer.parseInt(edt), interv, call, prop, abstr, full, bid, revs, Integer.parseInt(partnr), activ);
+                System.out.println(conference);
+                ctrlC.addConference(conference);
+                String[] sesArg = ses.split(" ");
+                int size = sesList.size();
+                for (String s : sesArg) {
+                    Random nr = new Random();
+                    System.out.println(s);
+                    String idr = String.valueOf(nr.nextInt(500));
+                    String duration = String.valueOf(nr.nextInt(200));
+                    ctrlS.addSession(new Session(size+1, conference.getid(), s, idr, duration));
+                    size++;
+                }
             }
-
-        }
+            if (action.equals("update")){
+                Conference conference = new Conference(confList.size(), confname, Integer.parseInt(edt), interv, call, prop, abstr, full, bid, revs, Integer.parseInt(partnr), activ);
+                System.out.println(conference);
+                ctrlC.updateConference(conference,conference.getid());
+                String[] sesArg = ses.split(" ");
+                int size = sesList.size();
+                for (String sname : sesArg) {
+                    int count=0;
+                    for(Session s:sesList)
+                        if (s.getName().equals(sname))
+                            count++;
+                    if (count == 0) {
+                        Random nr = new Random();
+                        System.out.println(sname);
+                        String idr = String.valueOf(nr.nextInt(500));
+                        String duration = String.valueOf(nr.nextInt(200));
+                        ctrlS.addSession(new Session(size+1, conference.getid(), sname, idr, duration));
+                        size++;
+                    }
+                }
+            }
     }
 }
