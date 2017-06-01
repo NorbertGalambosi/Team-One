@@ -35,41 +35,42 @@ public class Chair_Servlet extends HttpServlet {
         PrintWriter responseWriter = response.getWriter();
         response.setContentType("text/plain");
         String action = request.getParameter("action");
-        if (action.equals("create")){
-                String confname = request.getParameter("confname");
-                String edt = request.getParameter("edt");
-                String ses = request.getParameter("ses");
-                String interv = request.getParameter("interv");
-                String call = request.getParameter("call");
-                String bid = request.getParameter("bid");
-                String prop = request.getParameter("prop");
-                String abstr = request.getParameter("abstr");
-                String full = request.getParameter("full");
-                String revs = request.getParameter("revs");
-                String partnr = request.getParameter("partnr");
-                String active = request.getParameter("active");
-            Controller_Conference ctrlC = new Controller_Conference(new Repository_Conference(),new Validator_Conference());
-            Controller_Session ctrlS = new Controller_Session (new Repository_Session(),new Validator_Session());
+        if (action.equals("create")) {
+            String confname = request.getParameter("confname");
+            String edt = request.getParameter("edt");
+            String ses = request.getParameter("ses");
+            String interv = request.getParameter("interv");
+            String call = request.getParameter("call");
+            String bid = request.getParameter("bid");
+            String prop = request.getParameter("prop");
+            String abstr = request.getParameter("abstr");
+            String full = request.getParameter("full");
+            String revs = request.getParameter("revs");
+            String partnr = request.getParameter("partnr");
+            String active = request.getParameter("active");
+            Controller_Conference ctrlC = new Controller_Conference(new Repository_Conference(), new Validator_Conference());
+            Controller_Session ctrlS = new Controller_Session(new Repository_Session(), new Validator_Session());
             List<Conference> confList = new ArrayList<>();
             List<Session> sesList = new ArrayList<>();
-            for(Conference o:ctrlC.getAllConference())
-                    confList.add(o);
-            for(Session s:ctrlS.getAllSessions())
-                sesList.add(s)
+            for (Conference o : ctrlC.getAllConference())
+                confList.add(o);
+            for (Session s : ctrlS.getAllSessions())
+                sesList.add(s);
             boolean activ = false;
             if (active.equals("checked"))
-                 activ = true;
+                activ = true;
             else
                 activ = false;
-            Conference conference = new Conference(confList.size()+1,confname,Integer.parseInt(edt),interv,call, prop,abstr,bid,revs,Integer.parseInt(partnr),activ);
+            Conference conference = new Conference(confList.size() + 1, confname, Integer.parseInt(edt), interv, call, prop, abstr, bid, revs, Integer.parseInt(partnr), activ);
             System.out.println(conference);
             ctrlC.addConference(conference);
             String[] sesArg = ses.split(" ");
             int size = sesList.size();
-            for(String s:sesArg){
-                ctrlS.addSession(new Session(size,conference.getid(),s,null,null);
+            for (String s : sesArg) {
+                ctrlS.addSession(new Session(size, conference.getid(), s, null, null));
                 size++;
-        }
+            }
 
+        }
     }
 }
