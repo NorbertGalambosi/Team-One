@@ -5,6 +5,7 @@ import ConferencePersistence.Controller.Controller_Session;
 import ConferencePersistence.Repository.Repository_Conference;
 import ConferencePersistence.Repository.Repository_Session;
 import DomainClasses.Conference;
+import DomainClasses.Session;
 import Validator.Validator_Conference;
 import Validator.Validator_Session;
 
@@ -50,29 +51,24 @@ public class Chair_Servlet extends HttpServlet {
             Controller_Conference ctrlC = new Controller_Conference(new Repository_Conference(),new Validator_Conference());
             Controller_Session ctrlS = new Controller_Session (new Repository_Session(),new Validator_Session());
             List<Conference> confList = new ArrayList<>();
+            List<Session> sesList = new ArrayList<>();
             for(Conference o:ctrlC.getAllConference())
                     confList.add(o);
-            Date props= null;
-            Date abs= null;
-            Date bidd= null;
-            Date rev= null;
-            try {
-                props = new SimpleDateFormat("dd/MM/yyyy").parse(prop);
-                abs = new SimpleDateFormat("dd/MM/yyyy").parse(abstr);
-                bidd = new SimpleDateFormat("dd/MM/yyyy").parse(bid);
-                rev = new SimpleDateFormat("dd/MM/yyyy").parse(revs);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            for(Session s:ctrlS.getAllSessions())
+                sesList.add(s)
             boolean activ = false;
-            if (action.equals("checked"))
+            if (active.equals("checked"))
                  activ = true;
             else
                 activ = false;
-
-            //Conference conference = new Conference(confList.size()+1,confname,Integer.parseInt(edt),interv,call, props,abs,bidd,rev,Integer.parseInt(partnr),activ);
-//            System.out.println(conference);
-//            ctrlC.addConference(conference);
+            Conference conference = new Conference(confList.size()+1,confname,Integer.parseInt(edt),interv,call, prop,abstr,bid,revs,Integer.parseInt(partnr),activ);
+            System.out.println(conference);
+            ctrlC.addConference(conference);
+            String[] sesArg = ses.split(" ");
+            int size = sesList.size();
+            for(String s:sesArg){
+                ctrlS.addSession(new Session(size,conference.getid(),s,null,null);
+                size++;
         }
 
     }
