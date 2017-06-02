@@ -57,4 +57,16 @@
         <servlet-name>PopulateSessionLists_Servlet</servlet-name>
         <url-pattern>/PopulateSessionLists_Servlet</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Author_Servlet</servlet-name>
+        <servlet-class>Servlets.Author_Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Author_Servlet</servlet-name>
+        <url-pattern>/Author_Servlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

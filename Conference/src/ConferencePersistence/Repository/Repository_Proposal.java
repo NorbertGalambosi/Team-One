@@ -29,15 +29,15 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     @Override
     public void save(Proposal entity) {
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("insert into Proposal values (?,?,?,?,?,?,?,?)")) {
-            preStmt.setInt(1, entity.getid());
-            preStmt.setString(2, entity.getName());
-            preStmt.setInt(3, entity.getFullPaper().getid());
-            preStmt.setInt(4, entity.getAbstractPaper().getid());
-            preStmt.setString(5, entity.getKeywords());
-            preStmt.setString(6, entity.getTopics());
-            preStmt.setBoolean(7, entity.isAccepted());
-            preStmt.setInt(8,entity.getAutor().getid());
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Proposal values (null,?,?,?,?,?,?,?)")) {
+            preStmt.setString(1, entity.getName());
+            //preStmt.setInt(3, entity.getFullPaper().getid());
+            preStmt.setInt(2,0);
+            //preStmt.setInt(4, entity.getAbstractPaper().getid());
+            preStmt.setInt(3,0);
+            preStmt.setString(4, entity.getKeywords());
+            preStmt.setString(5, entity.getTopics());
+            preStmt.setBoolean(6, false);
             preStmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

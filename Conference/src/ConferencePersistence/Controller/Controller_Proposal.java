@@ -18,12 +18,15 @@ public class Controller_Proposal {
         this.validatorProposal = vali;
     }
 
-    public void save(Proposal entity) {
+    public boolean save(Proposal entity) {
         try{
             validatorProposal.validate(entity);
             this.repositoryProposal.save(entity);
+            //System.out.println(entity);
+            return true;
         }catch(Validator_Exception e){
             e.printStackTrace();
+            return false;
         }
     }
 

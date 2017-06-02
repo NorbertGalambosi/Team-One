@@ -11,6 +11,7 @@
     <title>Author</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="conferencePopulationScript.js" type="text/javascript"></script>
+    <script src="authorsScipt.js" type="text/javascript"></script>
 </head>
 
 <style>
@@ -69,21 +70,19 @@
     <fieldset>
         <legend id="meta">Meta-information</legend>
         <p><label>Name of the proposal: </label>
-            <input type="text" name="nameP"></p>
+            <input type="text" id="nameP"></p>
         <p><label>Keywords: </label>
-            <input type="text" name="keywords"></p>
+            <input type="text" id="keywords"></p>
         <p><label>Topics: </label>
-            <input type="text" name="topics"></p>
-        <p><label>*List of authors:</label>
-            <input type="text" name="listA"> *The list of authors is not mandatory.</p>
+            <input type="text" id="topics"></p>
+        <p><input type="button" id="submitPaper" value="submitPaper"></p>
+        Select file to upload:
+        <form method="post" action="UploadServlet"
+              enctype="multipart/form-data">
+            Select file to upload: <input type="file" name="file" size="60" /><br />
+            <br /> <input type="submit" value="Upload" />
+        </form>
     </fieldset>
-</form>
-
-Select file to upload:
-<form method="post" action="UploadServlet"
-      enctype="multipart/form-data">
-    Select file to upload: <input type="file" name="file" size="60" /><br />
-    <br /> <input type="submit" value="Upload" />
 </form>
 
 <div>
