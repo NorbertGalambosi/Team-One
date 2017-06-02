@@ -128,7 +128,7 @@
     <form>
         <p>>>Select session listeners for session.</p>
         <p><label>Session</label>
-            <select multiple id="sessionOptionsL"></select>
+            <select id="sessionOptionsL"></select>
             <label>Program Committee</label>
             <select multiple id="pcOptionsL"></select>
         </p>
@@ -139,7 +139,7 @@
     <form>
         <p>>>Select session speakers for session.</p>
         <p><label>Session</label>
-            <select multiple id="sessionOptionsSp">
+            <select id="sessionOptionsSp">
 
             </select>
 

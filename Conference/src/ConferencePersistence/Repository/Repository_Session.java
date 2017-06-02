@@ -78,6 +78,25 @@ public class Repository_Session implements IRepository<Integer, Session> {
         }
         return null;
     }
+    public Session findOne(String name) {
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("select * from Session where nameSession=?")){
+            prstmt.setString(1,name);
+            try(ResultSet res = prstmt.executeQuery()){
+                if (res.next()){
+                    Integer integer = res.getInt(1);
+                    Integer idS = res.getInt(2);
+                    String idR = res.getString(4);
+                    String dur = res.getString(5);
+                    Session session = new Session(integer,idS,name,idR,dur);
+                    return session;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public void addChair(Integer id,Integer idS,Integer idC){
         Connection conn = connection.getConnection();
