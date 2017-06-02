@@ -71,7 +71,7 @@
 
 <div>
     <form>
-        <img src="abc.png" alt="norbica">
+        <img src="logo.png" alt="">
         <p>>>Select reviewers for proposals. Please select 2, 3 or 4 reviewers for each proposal.</p>
         <p><label>Proposals</label>
             <select multiple id="paperList">
