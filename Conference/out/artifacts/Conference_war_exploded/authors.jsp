@@ -75,11 +75,16 @@
             <input type="text" id="keywords"></p>
         <p><label>Topics: </label>
             <input type="text" id="topics"></p>
+        <p><label>FullPaperName: </label>
+            <input type="text" id="fullPaperName"></p>
+        <p><label>AbstractPaperName: </label>
+            <input type="text" id="abstractPaperName"></p>
+        *paper names should be different
         <p><input type="button" id="submitPaper" value="submitPaper"></p>
         Select file to upload:
         <form method="post" action="UploadServlet"
               enctype="multipart/form-data">
-            Select file to upload: <input type="file" name="file" size="60" /><br />
+            Select file to upload: <input type="file" name="file" size="60" /><br/>
             <br /> <input type="submit" value="Upload" />
         </form>
     </fieldset>

@@ -27,20 +27,54 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     }
 
     @Override
-    public void save(Proposal entity) {
+    public void save(Proposal entity) throws SQLException {
+        int idProposal = 0;
+        int idPcMember = 0;
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("insert into Proposal values (null,?,?,?,?,?,?,?)")) {
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (null,?)")) {
+            preStmt.setString(1, entity.getFullPaper().getName());
+            preStmt.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        }
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (null,?)")) {
+            preStmt.setString(1, entity.getAbstractPaper().getName());
+            preStmt.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        }
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Proposal values (null,?,?,?,?,?,?)")) {
             preStmt.setString(1, entity.getName());
-            //preStmt.setInt(3, entity.getFullPaper().getid());
-            preStmt.setInt(2,0);
-            //preStmt.setInt(4, entity.getAbstractPaper().getid());
-            preStmt.setInt(3,0);
+            preStmt.setString(2, entity.getFullPaper().getName());
+            preStmt.setString(3, entity.getAbstractPaper().getName());
             preStmt.setString(4, entity.getKeywords());
             preStmt.setString(5, entity.getTopics());
             preStmt.setBoolean(6, false);
             preStmt.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw e;
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("SELECT MAX(IdProposal) FROM Proposal")){
+            ResultSet result = preStmt.executeQuery();
+                if(result.next())
+                    idProposal = result.getInt(1);
+        } catch (SQLException e) {
+            throw e;
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("SELECT idPcMember FROM PcMember WHERE namePcMember = ?")){
+            preStmt.setString(1,entity.getAutor().getName());
+            ResultSet result = preStmt.executeQuery();
+            if(result.next())
+                idPcMember = result.getInt(1);
+        } catch (SQLException e) {
+            throw e;
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("INSERT INTO PcMember_Proposal VALUES (?,?)")){
+            preStmt.setInt(1,idPcMember);
+            preStmt.setInt(2,idProposal);
+            preStmt.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
         }
     }
 
