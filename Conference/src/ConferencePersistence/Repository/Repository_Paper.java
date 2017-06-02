@@ -83,7 +83,7 @@ public class Repository_Paper implements IRepository<Integer, Paper> {
     public Iterable<Paper> findAll() {
         List<Paper> paperList= new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement prstmt = conn.prepareStatement("select * from Proposal")) {
+        try(PreparedStatement prstmt = conn.prepareStatement("select * from Paper")) {
             try(ResultSet result = prstmt.executeQuery()){
                 while(result.next()){
                     Paper paper= new Paper();
