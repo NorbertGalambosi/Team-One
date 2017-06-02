@@ -23,8 +23,13 @@
 
         #legend{
             font-size: 24px;
-            font-style: Courier;
+            font-family: Courier;
             text-align: center;
+        }
+
+        .disable
+        {
+            pointer-events: none;
         }
 
 
@@ -35,7 +40,7 @@
 <body>
 <div>
     <form>
-        <fieldset id="conf">
+        <fieldset id="conf" class="disable">
             <legend id="legend">Conference</legend>
             <label>Conference name </label><input type="text" id="conferencename">
             <label>Edition </label><input type="text" id="edition">

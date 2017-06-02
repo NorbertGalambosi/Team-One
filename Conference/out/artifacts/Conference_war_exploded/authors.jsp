@@ -43,12 +43,17 @@
     p{
         font-size: 15px;
     }
+
+    .disable
+    {
+        pointer-events: none;
+    }
 </style>
 <body>
 
 <div>
     <form>
-        <fieldset id="conf">
+        <fieldset id="conf" class="disable">
             <legend id="legend">Conference</legend>
             <label>Conference name </label><input type="text" id="conferencename">
             <label>Edition </label><input type="text" id="edition">
