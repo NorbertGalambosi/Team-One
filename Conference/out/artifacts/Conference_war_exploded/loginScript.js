@@ -24,6 +24,7 @@ $(document).ready(function () {
                     window.location.href="listeners.jsp";
                 if (res === 'Invalid')
                     alert("Invalid login, try again!");
+                sessionStorage.setItem("user",$('#username').val());
             }
         });
     });
