@@ -1,7 +1,10 @@
 package ConferencePersistence.Repository;
 
+import ConferencePersistence.Controller.Controller_Conference;
 import DBUtils.DBConnection;
+import DomainClasses.Conference;
 import DomainClasses.PcMember;
+import Validator.Validator_Conference;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,16 +12,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Waiting on 24-May-17.
  */
 public class Repository_PcMember implements IRepository<Integer, PcMember> {
     private DBConnection connection;
-
+    private Controller_Conference ctrlC;
     public Repository_PcMember(){
         super();
         connection = new DBConnection();
+        ctrlC = new Controller_Conference(new Repository_Conference(), new Validator_Conference());
     }
 
     @Override
@@ -60,6 +65,19 @@ public class Repository_PcMember implements IRepository<Integer, PcMember> {
                 e.printStackTrace();
             }
             sizePcMember_type++;
+        }
+        List<Conference> confList = new ArrayList<>();
+        for (Conference o : ctrlC.getAllConference())
+            confList.add(o);
+        int idConf = confList.size();
+        try(PreparedStatement preparedStatement = conn.prepareStatement("insert into PC_Conference values(?,?,?)")){
+            Random nr = new Random();
+            preparedStatement.setInt(1,nr.nextInt(500));
+            preparedStatement.setInt(2,entity.getid());
+            preparedStatement.setInt(3,idConf);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 

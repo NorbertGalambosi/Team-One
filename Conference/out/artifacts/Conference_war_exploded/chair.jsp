@@ -112,15 +112,43 @@
     <form>
         <p>>>Select session chair for session.</p>
         <p><label>Session</label>
-            <select>
-                <option></option>
+            <select id="sessionOptions">
+
             </select>
 
             <label>Program Committee</label>
-            <select>
-                <option></option>
+            <select id="pcOptions">
+
             </select>
         </p>
+        <input type="button" id="addChairToSession" name="Assign Chair" value="Assign Chair">
+    </form>
+</div>
+<div>
+    <form>
+        <p>>>Select session listeners for session.</p>
+        <p><label>Session</label>
+            <select multiple id="sessionOptionsL"></select>
+            <label>Program Committee</label>
+            <select multiple id="pcOptionsL"></select>
+        </p>
+        <input type="button" id="addListenersToSession" name="Assign Listeners" value="Assign Listeners">
+    </form>
+</div>
+<div>
+    <form>
+        <p>>>Select session speakers for session.</p>
+        <p><label>Session</label>
+            <select multiple id="sessionOptionsSp">
+
+            </select>
+
+            <label>Program Committee</label>
+            <select multiple id="pcOptionsSp">
+
+            </select>
+        </p>
+        <input type="button" id="addSpeakersSession" name="Assign Speakers" value="Assign Speakers">
     </form>
 </div>
 

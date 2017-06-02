@@ -47,4 +47,14 @@
         <servlet-name>UploadServlet</servlet-name>
         <url-pattern>/UploadServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PopulateSessionLists_Servlet</servlet-name>
+        <servlet-class>Servlets.PopulateSessionLists_Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PopulateSessionLists_Servlet</servlet-name>
+        <url-pattern>/PopulateSessionLists_Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>
