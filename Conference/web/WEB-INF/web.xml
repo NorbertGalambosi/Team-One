@@ -58,15 +58,23 @@
         <url-pattern>/PopulateSessionLists_Servlet</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
-        <servlet-name>Author_Servlet</servlet-name>
-        <servlet-class>Servlets.Author_Servlet</servlet-class>
+        <servlet-name>ChairAssigns_Servlet</servlet-name>
+        <servlet-class>Servlets.ChairAssigns_Servlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Author_Servlet</servlet-name>
-        <url-pattern>/Author_Servlet</url-pattern>
+        <servlet-name>ChairAssigns_Servlet</servlet-name>
+        <url-pattern>/ChairAssigns_Servlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ChairPRs_Servlet</servlet-name>
+        <servlet-class>Servlets.ChairPRs_Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChairPRs_Servlet</servlet-name>
+        <url-pattern>/ChairPRs_Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>

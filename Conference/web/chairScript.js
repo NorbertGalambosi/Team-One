@@ -5,6 +5,7 @@
 
 $(document).ready(function(){
     populateSesionLists();
+    pupulatePcMbsList()
 });
 function populateSesionLists(){
     $.ajax({
@@ -41,7 +42,6 @@ function populateSesionLists(){
             }
         }
     });
-    pupulatePcMbsList()
 }
 function pupulatePcMbsList(){
     $.ajax({
@@ -78,6 +78,20 @@ function pupulatePcMbsList(){
         }
     });
 }
+function getPapers(){
+    $.ajax({
+       type : "GET",
+        url : "ChairPRs_Servlet",
+        data : {
+           action : "papers"
+        },
+        success : function (result) {
+            var papers = result.split('|');
+            console.log(papers);
+        }
+    });
+}
+
 
 
 $(document).ready(function(){
@@ -161,26 +175,46 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#addListenersToSession').click(function(){
         var session= $('#sessionOptionsL :selected').attr('label');
-        var listeners = "";
-        $("#pcOptionsL :selected").each(function(){
-            listeners = listeners+($(this).attr('label'))+"|";
-        });
+        var listener = $('#pcOptionsL :selected').attr('label');
 
         console.log(session);
-        console.log(listeners);
+        console.log(listener);
         $.ajax({
             type : "GET",
             url : "ChairAssigns_Servlet",
             data : {
                 action : "listeners",
-                listeners : listeners,
+                listeners : listener,
                 session : session
             },
             success : function (result) {
                 if (result === "done")
-                    alert("Successfuly assigned listeners!");
+                    alert("Successfuly assigned listener!");
                 else
-                    alert("Can't assign listeners to session!");
+                    alert("Can't assign listener to session!");
+            }
+        });
+    });
+});
+$(document).ready(function(){
+    $('#addSpeakersSession').click(function(){
+        var session= $('#sessionOptionsSp :selected').attr('label');
+        var speaker = $('#pcOptionsSp :selected').attr('label');
+
+        console.log(speaker);
+        $.ajax({
+            type : "GET",
+            url : "ChairAssigns_Servlet",
+            data : {
+                action : "speakers",
+                speaker : speaker,
+                session : session
+            },
+            success : function (result) {
+                if (result === "done")
+                    alert("Successfuly assigned speaker!");
+                else
+                    alert("Can't assign speaker to session!");
             }
         });
     });
