@@ -34,6 +34,19 @@
             </form>
         </div>
 
+
+        <div>
+            <form>
+                <h3>Assigned Proposals</h3>
+                <label>Paper name </label><input type="text" name="pname">
+                <label>Review </label><input type="text" name="review">
+                <label>Recommendations </label><textarea rows="4" cols="50"></textarea>
+            </form>
+        </div>
+
+
+
+
         <div>
             <form>
                 <h3>Papers</h3>
