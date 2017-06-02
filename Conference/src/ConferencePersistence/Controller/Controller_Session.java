@@ -47,4 +47,7 @@ public class Controller_Session {
     public Iterable<Session> findByConference(Integer integer) {
         return this.repositorySession.findByConference(integer);
     }
+    public Session findByName(String name){
+        return repositorySession.findOne(name);
+    }
 }
