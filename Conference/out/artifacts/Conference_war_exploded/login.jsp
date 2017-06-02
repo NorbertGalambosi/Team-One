@@ -14,13 +14,13 @@
       <script src="loginScript.js" type="text/javascript"></script>
       <style>
           #align{
-              text-align: center;
+              child-align: bottom;
           }
       </style>
   </head>
   <body>
-    <div id="login">
-        <form action="register.jsp" method="post" id="align">
+    <div id="align">
+        <form action="register.jsp" method="post" >
             <p>
                 <label>Username:</label>
                 <input type="text" name="username" id="username">
@@ -41,7 +41,7 @@
                 <input type="button" value="Login" id="btnsubmit" name="btnsubmit">
             </p>
         </form>
-        <form action="register.jsp" id="align">
+        <form action="register.jsp" >
             <input type="submit" value="Register" id="btnregister">
         </form>
     </div>
