@@ -2,6 +2,7 @@ package Servlets;
 
 import ConferencePersistence.Controller.Controller_Proposal;
 import ConferencePersistence.Repository.Repository_Proposal;
+import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
 import Validator.Validator_Proposal;
@@ -29,6 +30,8 @@ public class Author_Servlet extends HttpServlet {
             String keywords = request.getParameter("keywords");
             String topics = request.getParameter("topics");
             String autor = request.getParameter("autor");
+            String full = request.getParameter("full");
+            String abs = request.getParameter("abstract");
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
             Proposal pr = new Proposal();
             pr.setName(name);
@@ -37,6 +40,12 @@ public class Author_Servlet extends HttpServlet {
             PcMember p = new PcMember();
             p.setName(autor);
             pr.setAutor(p);
+            Paper ppf = new Paper();
+            ppf.setName(full);
+            Paper ppa = new Paper();
+            ppa.setName(abs);
+            pr.setAbstractPaper(ppa);
+            pr.setFullPaper(ppf);
             if(cp.save(pr))
                 responseWriter.print("succes");
             else
