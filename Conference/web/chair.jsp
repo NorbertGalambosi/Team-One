@@ -24,32 +24,18 @@
             background-color: #F0FFFF;
             font-size: 17px;
             font-family: Arial;
-
         }
 
-        #legend{
+        #legend {
             font-size: 24px;
-            font-style: Courier;
+            font-family: Courier;
             text-align: center;
-        }
-
-        #meta{
-            font-size: 20px;
-            font-style: Courier;
-
         }
 
         p{
             font-size: 15px;
         }
 
-        #left{
-            float: left;
-        }
-
-        #createConference{
-
-        }
 
     </style>
 
@@ -85,6 +71,7 @@
 
 <div>
     <form>
+        <img src="abc.png" alt="norbica">
         <p>>>Select reviewers for proposals. Please select 2, 3 or 4 reviewers for each proposal.</p>
         <p><label>Proposals</label>
             <select multiple id="paperList">
