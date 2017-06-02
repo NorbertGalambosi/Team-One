@@ -2,6 +2,7 @@ package ConferencePersistence.Repository;
 
 import DBUtils.DBConnection;
 import DomainClasses.Conference;
+import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
 
@@ -82,7 +83,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     public Proposal findOne(Integer integer) {
         Connection conn = connection.getConnection();
         Proposal proposal= new Proposal();
-        int fullPaper = -1, abstractPaper = -1, autor = -1;
+        String fullPaper = "", abstractPaper = "";
         List<PcMember> revieweri = new ArrayList<PcMember>();
         try (PreparedStatement prstmt = conn.prepareStatement("select * from Proposal where idProposal=?")) {
             prstmt.setInt(1, integer);
@@ -90,24 +91,35 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
                 if (result.next()) {
                     proposal.setid(result.getInt(1));
                     proposal.setName(result.getString(2));
-                    fullPaper = result.getInt(3);
-                    abstractPaper = result.getInt(4);
+                    fullPaper = result.getString(3);
+                    abstractPaper = result.getString(4);
                     proposal.setKeywords(result.getString(5));
                     proposal.setTopics(result.getString(6));
                     proposal.setAccepted(result.getBoolean(7));
-                    autor = result.getInt(8);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        proposal.setFullPaper(repoPaper.findOne(fullPaper));
-        proposal.setAbstractPaper(repoPaper.findOne(abstractPaper));
-        proposal.setAutor(repoPCMember.findOne(autor));
-        proposal.setReviewers(this.findReviewers(integer));
-        proposal.setBidders(this.findBidders(integer));
+        for(Paper p:repoPaper.findAll()){
+            if (p.getName().equals(fullPaper))
+                proposal.setFullPaper(p);
+            if (p.getName().equals(abstractPaper))
+                proposal.setAbstractPaper(p);
+        }
+        for(Integer i:this.findAuthorsIDByPaperID(proposal.getid()))
+            proposal.setAutor(repoPCMember.findOne(i));
+
+        for(Integer i:this.findReviewerIds(proposal.getid())) {
+            PcMember pcm = repoPCMember.findOne(i);
+            proposal.addReviewer(pcm);
+        }
+        for(Integer i:this.findBidderIds(proposal.getid())) {
+            proposal.addBidder(repoPCMember.findOne(i));
+        }
         return proposal;
     }
+
 
     public void update(Proposal entity, int id){
         Connection conn =  connection.getConnection();
@@ -217,7 +229,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     protected Iterable<Integer> findBidderIds(Integer integer){
         List<Integer> bidders = new ArrayList<Integer>();
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("select idPcMember from Bidder_Proposal where idProposal=?")) {
+        try (PreparedStatement preStmt = conn.prepareStatement("select idBidder from Bidder_Proposal where idProposal=?")) {
             preStmt.setInt(1,integer);
             try(ResultSet result = preStmt.executeQuery()){
                 while(result.next()){
@@ -244,9 +256,9 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     protected Iterable<Integer> findReviewerIds(Integer integer){
         List<Integer> reviewers = new ArrayList<Integer>();
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("select idReviewer from Reviewer_Proposal where idProposal=?")) {
-            preStmt.setInt(1,integer);
-            try(ResultSet result = preStmt.executeQuery()){
+        try(PreparedStatement prstmt = conn.prepareStatement("select idReviewer from Reviews where idPaper=?")) {
+            prstmt.setInt(1,integer);
+            try(ResultSet result = prstmt.executeQuery()){
                 while(result.next()){
                     reviewers.add(result.getInt(1));
                 }
@@ -265,6 +277,20 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
             reviewers.add(repoPCMember.findOne(id));
         }
         return reviewers;
+    }
+    protected List<Integer> findAuthorsIDByPaperID(Integer id){
+        Connection conn = connection.getConnection();
+        List<Integer> idList = new ArrayList<>();
+        try(PreparedStatement prstmt = conn.prepareStatement("select idPcMember from PcMember_Proposal where idProposal=?")){
+            prstmt.setInt(1,id);
+            try(ResultSet resultSet = prstmt.executeQuery()){
+                while (resultSet.next())
+                    idList.add(resultSet.getInt(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return idList;
     }
 
 }

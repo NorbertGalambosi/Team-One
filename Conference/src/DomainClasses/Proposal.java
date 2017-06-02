@@ -1,12 +1,13 @@
 package DomainClasses;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Waiting on 20-May-17.
  */
-public class Proposal implements Serializable,Identifiable<Integer> {
+public class Proposal implements Identifiable<Integer> {
     protected Integer id;
     protected String name;
     protected Paper fullPaper;
@@ -15,10 +16,10 @@ public class Proposal implements Serializable,Identifiable<Integer> {
     protected String topics;
     protected boolean accepted;
     protected PcMember autor;
-    protected Iterable<PcMember> reviewers;
-    protected Iterable<PcMember> bidders;
+    protected List<PcMember> reviewers = new ArrayList<>();
+    protected List<PcMember> bidders = new ArrayList<>();
 
-    public Proposal(Integer id, String name, Paper fullPaper, Paper abstractPaper, String keywords, String topics, boolean accepted, PcMember autor, Iterable<PcMember> reviewers, Iterable<PcMember> bidders) {
+    public Proposal(Integer id, String name, Paper fullPaper, Paper abstractPaper, String keywords, String topics, boolean accepted, PcMember autor, List<PcMember> reviewers, List<PcMember> bidders) {
         this.id = id;
         this.name = name;
         this.fullPaper = fullPaper;
@@ -83,11 +84,11 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         this.accepted = accepted;
     }
 
-    public Iterable<PcMember> getBidders() {
+    public List<PcMember> getBidders() {
         return bidders;
     }
 
-    public void setBidders(Iterable<PcMember> bidders) {
+    public void setBidders(List<PcMember> bidders) {
         this.bidders = bidders;
     }
 
@@ -99,24 +100,21 @@ public class Proposal implements Serializable,Identifiable<Integer> {
         this.autor = autor;
     }
 
-    public Iterable<PcMember> getReviewers() {
+    public List<PcMember> getReviewers() {
         return reviewers;
     }
 
-    public void setReviewers(Iterable<PcMember> reviewers) {
+    public void setReviewers(List<PcMember> reviewers) {
         this.reviewers = reviewers;
     }
 
     public void addBidder(PcMember bidder){
-        List<PcMember> temp = (List<PcMember>) this.bidders;
-        temp.add(bidder);
-        this.bidders = temp;
+        bidders.add(bidder);
     }
 
     public void addReviewer(PcMember reviewer){
-        List<PcMember> temp = (List<PcMember>) this.bidders;
-        temp.add(reviewer);
-        this.bidders = temp;
+        if (reviewer != null)
+            reviewers.add(reviewer);
     }
 
     @Override
