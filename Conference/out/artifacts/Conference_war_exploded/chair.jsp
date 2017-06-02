@@ -82,26 +82,17 @@
     </form>
 </div>
 
-<div>
-    <form>
-        <h1>Papers</h1>
-        <label>Authors </label><input type="text" name="authors">
-        <label>Paper name </label><input type="text" name="pname">
-        <label>Keywords </label><input type="text" name="keywords">
-        <label>Topics </label><input type="text" name="topics">
-    </form>
-</div>
 
 <div>
     <form>
-        <p>>>Select reviewers for papers. Please select 2, 3 or 4 reviewers for each paper.</p>
-        <p><label>Papers</label>
-            <select multiple>
+        <p>>>Select reviewers for proposals. Please select 2, 3 or 4 reviewers for each proposal.</p>
+        <p><label>Proposals</label>
+            <select multiple id="paperList">
                 <option></option>
             </select>
 
             <label>Reviewers</label>
-            <select multiple>
+            <select multiple id="revsList">
                 <option></option>
             </select>
         </p>
@@ -130,7 +121,7 @@
         <p><label>Session</label>
             <select id="sessionOptionsL"></select>
             <label>Program Committee</label>
-            <select multiple id="pcOptionsL"></select>
+            <select id="pcOptionsL"></select>
         </p>
         <input type="button" id="addListenersToSession" name="Assign Listeners" value="Assign Listeners">
     </form>
@@ -144,7 +135,7 @@
             </select>
 
             <label>Program Committee</label>
-            <select multiple id="pcOptionsSp">
+            <select id="pcOptionsSp">
 
             </select>
         </p>

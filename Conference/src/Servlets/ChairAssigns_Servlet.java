@@ -68,7 +68,18 @@ public class ChairAssigns_Servlet extends HttpServlet {
                         Random nr = new Random();
                         ctrlSession.addListenerToSession(nr.nextInt(500), session.getid(), p.getid());
                     }
-        }
             responseWriter.print("done");
+        }
+        if (action.equals("speakers")){
+            String sessions = request.getParameter("session");
+            String speaker = request.getParameter("speaker");
+            Session session = ctrlSession.findByName(sessions);
+            for (PcMember p:ctrlPcM.getAllPcMembers())
+                if (p.getName().equals(speaker)) {
+                    Random nr = new Random();
+                    ctrlSession.addSpeakerToSession(nr.nextInt(500), session.getid(), p.getid());
+                }
+            responseWriter.print("done");
+        }
     }
 }
