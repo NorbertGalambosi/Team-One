@@ -88,5 +88,9 @@
             </form>
         </div>
 
+        <form method="GET" action="login.jsp">
+            <p><input type="button" name="logout" id="logout" value="Logout"></p>
+        </form>
+
     </body>
 </html>
