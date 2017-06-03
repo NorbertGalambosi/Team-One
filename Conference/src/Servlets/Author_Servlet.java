@@ -99,10 +99,16 @@ public class Author_Servlet extends HttpServlet {
             Controller_Review cp = new Controller_Review(new Repository_Review(),new Validator_Review());
             String reviews="";
             for (Review rev:cp.findByProposalName(proposal, author)) {
-                reviews=reviews+rev.getQualifier()+"|";
+                reviews=reviews+rev.getQualifier()+"*"+rev.getid()+"|";
             }
             responseWriter.print(reviews);
             //System.out.println(pr);
+        }
+        if(action.equals("reviewChange")){
+            Integer id = Integer.parseInt(request.getParameter("review"));
+            Controller_Review cp = new Controller_Review(new Repository_Review(), new Validator_Review());
+            Review rev = cp.getReviewByID(id);
+            responseWriter.print(rev.getQualifier()+"|"+rev.getRecommendation()+"|");
         }
     }
 

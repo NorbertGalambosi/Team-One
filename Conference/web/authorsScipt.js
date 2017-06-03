@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     fillMyProposals();
     fillEnemyProposals();
+    var idReview = [];
 
     $('#submitPaper').click(function () {
         $.ajax({
@@ -60,11 +61,37 @@ $(document).ready(function () {
             },
             success : function(result){
                 var res = result;
+                //alert(res);
                 values = res.split("|");
                 $("#mineReviews").empty();
-                for (var i = 0; i < values.length - 1; i++) {
-                    $('#mineReviews').append($('<option>').append(values[i]));
+                $("#mineReviews").append($('<option>').append("(Default)"));
+                for (var i = 0; i < values.length-1; i++) {
+                    //alert(values[i]);
+                    values2 = values[i].split("*");
+                    $('#mineReviews').append($('<option>').append(values2[0]));
+                    idReview[i+1] = values2[1];
+                    //alert(idReview[i]);
                 }
+            }
+        });
+    });
+
+
+    $( "#mineReviews" ).change(function() {
+        //alert(idReview[$("#mineReviews").prop('selectedIndex')]);
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "reviewChange",
+                review : idReview[$("#mineReviews").prop('selectedIndex')],
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#mineReviewResult").val(values[0]);
+                $("#mineReviewRecommendations").val(values[1]);
             }
         });
     });

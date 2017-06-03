@@ -115,44 +115,44 @@
     <form>
         <fieldset>
             <legend id="meta">Proposals</legend>
-        <p>
-            <table id="proposalTable">
-                <thead>
+            <p>
+                <table id="proposalTable">
+                    <thead>
                     <td id="prop">My Proposals</td>
                     <td id="prop">Enemy Proposals</td>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td class="mine"><select id="myProposals"><option>(Default)</option></select></td>
                         <td class="theirs"><select id="enemyProposals"><option>(Default)</option></select></td>
                     </tr>
                     <tr>
                         <td class="mine">
-                            <p><label>Name </label><input type="text" id="mineProposalName"></p>
-                            <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
-                            <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
-                            <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
-                            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
-                            <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
-                            <p><input type="button" value="Edit" id="mineProposalEdit"></p>
-                            <p>Reviews
-                            <select id="mineReviews"><option>NIMIC</option></select></p>
-                            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
-                            <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
-                            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
-                        </td>
+            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
+            <p><label>Name </label><input type="text" id="mineProposalName"></p>
+            <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
+            <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+            <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
+            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
+            <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
+            <p><input type="button" value="Edit" id="mineProposalEdit"></p>
+            <p>Reviews
+                <select id="mineReviews"><option>Default</option></select></p>
+            <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
+            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
+            </td>
 
-                        <td class="theirs">
-                            <p><label>Name </label><input type="text" id="theirsProposalName"></p>
-                            <p><label>Keywords </label><input type="text" id="theirsProposalKeywords"></p>
-                            <p><label>Topics </label><input type="text" id="theirsProposalTopics"></p>
-                            <p><label>Authors </label><input type="text" id="theirsProposalAuthors"></p>
-                            <p><input type="button" value="Bid" id="theirsProposalBid"></p>
-                        </td>
-                    </tr>
-                </tbody>
+            <td class="theirs">
+                <p><label>Name </label><input type="text" id="theirsProposalName"></p>
+                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords"></p>
+                <p><label>Topics </label><input type="text" id="theirsProposalTopics"></p>
+                <p><label>Authors </label><input type="text" id="theirsProposalAuthors"></p>
+                <p><input type="button" value="Bid" id="theirsProposalBid"></p>
+            </td>
+            </tr>
+            </tbody>
             </table>
-        </p>
+            </p>
         </fieldset>
     </form>
 </div>

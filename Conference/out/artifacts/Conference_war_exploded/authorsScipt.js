@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     fillMyProposals();
     fillEnemyProposals();
+    var idReview = [];
 
     $('#submitPaper').click(function () {
         $.ajax({
@@ -31,41 +32,68 @@ $(document).ready(function () {
     });
 
     $( "#myProposals" ).change(function() {
-            $.ajax({
-                type : "POST",
-                url : 'Author_Servlet',
-                data : {
-                    action : "proposalChange",
-                    proposal : $('#myProposals option:selected').val(),
-                    user : sessionStorage.getItem("user")
-                },
-                success : function(result){
-                    var res = result;
-                    values = res.split("|");
-                    $("#mineProposalName").val(values[0]);
-                    $("#mineProposalKeywords").val(values[1]);
-                    $("#mineProposalTopics").val(values[2]);
-                    $("#mineFullFileName").val(values[3]);
-                    $("#mineAbstractFileName").val(values[4]);
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "proposalChange",
+                proposal : $('#myProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#mineProposalName").val(values[0]);
+                $("#mineProposalKeywords").val(values[1]);
+                $("#mineProposalTopics").val(values[2]);
+                $("#mineFullFileName").val(values[3]);
+                $("#mineAbstractFileName").val(values[4]);
+                $("#mineReviewStatus").val(values[5]);
+            }
+        });
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "proposalChange2",
+                proposal : $('#myProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                //alert(res);
+                values = res.split("|");
+                $("#mineReviews").empty();
+                $("#mineReviews").append($('<option>').append("(Default)"));
+                for (var i = 0; i < values.length-1; i++) {
+                    //alert(values[i]);
+                    values2 = values[i].split("*");
+                    $('#mineReviews').append($('<option>').append(values2[0]));
+                    idReview[i+1] = values2[1];
+                    //alert(idReview[i]);
                 }
-            });
-            $.ajax({
-                type : "POST",
-                url : 'Author_Servlet',
-                data : {
-                    action : "proposalChange2",
-                    proposal : $('#myProposals option:selected').val(),
-                    user : sessionStorage.getItem("user")
-                },
-                success : function(result){
-                    var res = result;
-                    values = res.split("|");
-                    $("#mineReviews").empty();
-                    for (var i = 0; i < values.length - 1; i++) {
-                        $('#mineReviews').append($('<option>').append(values[i]));
-                    }
-                }
-            });
+            }
+        });
+    });
+
+
+    $( "#mineReviews" ).change(function() {
+        //alert(idReview[$("#mineReviews").prop('selectedIndex')]);
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "reviewChange",
+                review : idReview[$("#mineReviews").prop('selectedIndex')],
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#mineReviewResult").val(values[0]);
+                $("#mineReviewRecommendations").val(values[1]);
+            }
+        });
     });
 
     function fillMyProposals() {
@@ -122,10 +150,10 @@ $(document).ready(function () {
             console.log(filename);
         }
         $.ajax({
-           type : "GET",
+            type : "GET",
             url : "Author_Servlet",
             data : {
-               action : "uploadF",
+                action : "uploadF",
                 filename : filename,
                 fullName : $('#fullPaperName').val()
             },
