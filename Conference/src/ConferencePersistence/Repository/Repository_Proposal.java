@@ -536,4 +536,16 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return false;
         //am mai adagat aici un coment
     }
+
+    public void update(String proposal, String keywords, String topics) throws SQLException {
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("update Proposal set topics=?, keywords=? where nameProposal=?")){
+            prstmt.setString(1,topics);
+            prstmt.setString(2,keywords);
+            prstmt.setString(3,proposal);
+            prstmt.executeUpdate();
+        } catch (SQLException e) {
+            throw e;
+        }
+    }
 }

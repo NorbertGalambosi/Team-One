@@ -126,6 +126,17 @@ public class Author_Servlet extends HttpServlet {
             }else
                 responseWriter.print("eroare");
         }
+        if(action.equals("editProposal")){
+            String proposal = request.getParameter("name");
+            String keywords = request.getParameter("keywords");
+            String topics = request.getParameter("topics");
+            System.out.println(proposal+" "+keywords+" "+topics);
+            Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
+            if(cp.update(proposal, keywords, topics)){
+                responseWriter.print("succes");
+            }else
+                responseWriter.print("eroare");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

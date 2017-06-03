@@ -29,6 +29,8 @@ $(document).ready(function () {
                     alert("Eroare");
             }
         });
+        //location.reload(); //asta merge da ii urat ca nu apare alertu
+        //fillMyProposals(); //asta din ceva motiv nu merge
     });
 
     $( "#myProposals" ).change(function() {
@@ -131,9 +133,32 @@ $(document).ready(function () {
                     alert("Bid cu succes");
                 else
                     alert("Eroare");
-                //System.out.println("Hello world!");
+
             }
         });
+    });
+
+    $('#mineEditProposal').click(function () {
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "editProposal",
+                name : $("#mineProposalName").val(),
+                keywords : $("#mineProposalKeywords").val(),
+                topics : $("#mineProposalTopics").val(),
+                autor : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                if(res=="succes")
+                    alert("Editat cu succes");
+                else
+                    alert("Eroare");
+            }
+        });
+        //location.reload(); //asta merge da ii urat ca nu apare alertu
+        //fillMyProposals(); //asta din ceva motiv nu merge
     });
 
     function fillMyProposals() {
@@ -148,7 +173,8 @@ $(document).ready(function () {
                 //alert("succes");
                 var res = result;
                 values = res.split("|");
-                //$("#myProposals").empty();
+                $("#myProposals").empty();
+                $("#myProposals").append($('<option>').append("(Default)"));
                 for (var i = 0; i < values.length - 1; i++) {
                     $('#myProposals').append($('<option>').append(values[i]));
                 }

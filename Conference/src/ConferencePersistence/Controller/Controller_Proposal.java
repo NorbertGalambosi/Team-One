@@ -109,4 +109,13 @@ public class Controller_Proposal {
             return false;
         }
     }
+
+    public boolean update(String proposal, String keywords, String topics) {
+        try{
+            this.repositoryProposal.update(proposal, keywords, topics);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
 }
