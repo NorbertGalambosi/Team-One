@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authors.jsp" afterPath="$PROJECT_DIR$/web/authors.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authorsScipt.js" afterPath="$PROJECT_DIR$/web/authorsScipt.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -83,6 +80,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="Proposal" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="PcMember_Proposal" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -112,28 +127,123 @@
       <file leaf-file-name="authors.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/authors.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="157" column="86" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="86" />
+            <state relative-caret-position="509">
+              <caret line="158" column="80" lean-forward="false" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="103" column="46" lean-forward="false" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+            <state relative-caret-position="572">
+              <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Author_Servlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Author_Servlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
+            <state relative-caret-position="210">
+              <caret line="120" column="60" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller_Proposal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="32" />
+              <folding>
+                <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repository_Proposal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="346" column="24" lean-forward="false" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
+              <folding>
+                <marker date="1496521793037" expanded="true" signature="306:348" ph="/**...*/" />
+                <marker date="1496521793037" expanded="true" signature="587:746" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="820:3229" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="1030:1062" ph="insert into Paper... " />
+                <marker date="1496521793037" expanded="true" signature="1388:1420" ph="insert into Paper... " />
+                <marker date="1496521793037" expanded="true" signature="1750:1796" ph="insert into Proposal... " />
+                <marker date="1496521793037" expanded="true" signature="2310:2346" ph="SELECT MAX(I... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="2612:2662" ph="SELECT idPcM... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="2990:3032" ph="INSERT INTO PcMember_Proposal... " />
+                <marker date="1496521793037" expanded="true" signature="3290:4958" ph="{...}" />
+                <marker date="1496521793037" expanded="false" signature="3488:3498" ph="&lt;~&gt;" />
+                <marker date="1496521793037" expanded="true" signature="3565:3606" ph="select * fro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="5008:5812" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="5128:5250" ph="update Propo... " />
+                <marker date="1496521793037" expanded="true" signature="5868:6529" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="6098:6129" ph="select idPro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="6565:6879" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="6683:6722" ph="delete from " />
+                <marker date="1496521793037" expanded="true" signature="6941:7656" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="7171:7218" ph="select idPro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="7722:8444" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="7952:8044" ph="select idPro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="8505:9225" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="8735:8825" ph="select idPro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="9286:9852" ph="{...}" />
+                <marker date="1496521793037" expanded="false" signature="9333:9342" ph="&lt;~&gt;" />
+                <marker date="1496521793037" expanded="true" signature="9464:9519" ph="select idBid... Bidder_Proposal" />
+                <marker date="1496521793037" expanded="true" signature="9912:10235" ph="{...}" />
+                <marker date="1496521793037" expanded="false" signature="9960:9970" ph="&lt;~&gt;" />
+                <marker date="1496521793037" expanded="true" signature="10299:10858" ph="{...}" />
+                <marker date="1496521793037" expanded="false" signature="10348:10357" ph="&lt;~&gt;" />
+                <marker date="1496521793037" expanded="true" signature="10477:10523" ph="select idRev... Reviews" />
+                <marker date="1496521793037" expanded="true" signature="10920:11255" ph="{...}" />
+                <marker date="1496521793037" expanded="false" signature="10970:10980" ph="&lt;~&gt;" />
+                <marker date="1496521793037" expanded="true" signature="11315:11856" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="11483:11542" ph="select idPcM... PcMember_Proposal" />
+                <marker date="1496521793037" expanded="true" signature="11926:12456" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="12084:12122" ph="insert into Reviews... " />
+                <marker date="1496521793037" expanded="true" signature="12544:13041" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="12755:12797" ph="insert into Bidder_Proposal... " />
+                <marker date="1496521793037" expanded="true" signature="13109:13589" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="13265:13313" ph="SELECT idPcM... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="13653:14124" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="13805:13857" ph="SELECT idPro... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="14187:16235" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="14451:14501" ph="Select idPcM... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="14844:14905" ph="Select idPro... PcMember_Proposal" />
+                <marker date="1496521793037" expanded="true" signature="15258:15301" ph="Select * fro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="16304:18443" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="16588:16639" ph="Select idPcM... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="16986:17047" ph="Select idPro... PcMember_Proposal" />
+                <marker date="1496521793037" expanded="true" signature="17466:17509" ph="Select * fro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="18508:21379" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="18667:18710" ph="select * fro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="19557:19602" ph="select fileN... Paper" />
+                <marker date="1496521793037" expanded="true" signature="20026:20071" ph="select fileN... Paper" />
+                <marker date="1496521793037" expanded="true" signature="20534:20595" ph="select idPcM... PcMember_Proposal" />
+                <marker date="1496521793037" expanded="true" signature="20937:20950" ph="select nameP... " />
+                <marker date="1496521793037" expanded="true" signature="20937:20989" ph="select nameP... PcMember" />
+                <marker date="1496521793037" expanded="true" signature="21424:22446" ph="{...}" />
+                <marker date="1496521793037" expanded="true" signature="21567:21619" ph="select idPro... Proposal" />
+                <marker date="1496521793037" expanded="true" signature="21979:22035" ph="select count... Bidder_Proposal" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -162,6 +272,8 @@
       <find>session</find>
       <find>empty</find>
       <find>#mineReviews</find>
+      <find>bid</find>
+      <find>addBidd</find>
     </findStrings>
     <replaceStrings>
       <replace>id</replace>
@@ -221,17 +333,17 @@
         <option value="$PROJECT_DIR$/src/Servlets/Register_Servlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/Servlets/UploadServlet.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
         <option value="$PROJECT_DIR$/src/DomainClasses/Review.java" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
         <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
         <option value="$PROJECT_DIR$/web/authors.jsp" />
+        <option value="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
         <option value="$PROJECT_DIR$/web/authorsScipt.js" />
-        <option value="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
       </list>
     </option>
   </component>
@@ -374,6 +486,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DBUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConferencePersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConferencePersistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1125,7 +1277,7 @@
       <workItem from="1496483288220" duration="6490000" />
       <workItem from="1496491098622" duration="4119000" />
       <workItem from="1496513392749" duration="394000" />
-      <workItem from="1496515611811" duration="4602000" />
+      <workItem from="1496515611811" duration="6290000" />
     </task>
     <task id="LOCAL-00001" summary="started Proposal submission">
       <created>1496422848864</created>
@@ -1225,11 +1377,25 @@
       <option name="project" value="LOCAL" />
       <updated>1496518314460</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="enemyProposals now populate">
+      <created>1496520230057</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496520230057</updated>
+    </task>
+    <task id="LOCAL-00016" summary="author can now bid(very very bad bidd function, thanks Norby)">
+      <created>1496521783911</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1496521783911</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87012000" />
+    <option name="totallyTimeSpent" value="88700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1263,10 +1429,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19562955" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27471384" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.494705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.48355263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28802082" sideWeight="0.51644737" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1277,7 +1444,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.023630505" sideWeight="0.5047059" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21180555" sideWeight="0.49529412" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1297,7 +1463,9 @@
     <MESSAGE value="fixed my proposals &amp; enemy proposal population" />
     <MESSAGE value="status now populates" />
     <MESSAGE value="reviews now populate" />
-    <option name="LAST_COMMIT_MESSAGE" value="reviews now populate" />
+    <MESSAGE value="enemyProposals now populate" />
+    <MESSAGE value="author can now bid(very very bad bidd function, thanks Norby)" />
+    <option name="LAST_COMMIT_MESSAGE" value="author can now bid(very very bad bidd function, thanks Norby)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1310,13 +1478,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/reviewer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Conference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1351,6 +1512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,13 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1562,76 +1717,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/authors.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="157" column="86" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="86" />
+        <state relative-caret-position="509">
+          <caret line="158" column="80" lean-forward="false" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Bidder_Proposal">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="480" column="32" lean-forward="true" selection-start-line="480" selection-start-column="32" selection-end-line="480" selection-end-column="32" />
+        <state relative-caret-position="648">
+          <caret line="346" column="24" lean-forward="false" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
           <folding>
-            <marker date="1496519914431" expanded="true" signature="1056:1088" ph="insert into Paper... " />
-            <marker date="1496519914431" expanded="true" signature="1414:1446" ph="insert into Paper... " />
-            <marker date="1496519914431" expanded="true" signature="1776:1822" ph="insert into Proposal... " />
-            <marker date="1496519914431" expanded="true" signature="2336:2372" ph="SELECT MAX(I... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="2638:2688" ph="SELECT idPcM... PcMember" />
-            <marker date="1496519914431" expanded="true" signature="3016:3058" ph="INSERT INTO PcMember_Proposal... " />
-            <marker date="1496519914431" expanded="true" signature="3591:3632" ph="select * fro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="5154:5276" ph="update Propo... " />
-            <marker date="1496519914431" expanded="true" signature="6124:6155" ph="select idPro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="6709:6748" ph="delete from " />
-            <marker date="1496519914431" expanded="true" signature="7197:7244" ph="select idPro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="7978:8070" ph="select idPro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="8761:8851" ph="select idPro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="9490:9545" ph="select idBid... Bidder_Proposal" />
-            <marker date="1496519914431" expanded="true" signature="10503:10549" ph="select idRev... Reviews" />
-            <marker date="1496519914431" expanded="true" signature="11509:11568" ph="select idPcM... PcMember_Proposal" />
-            <marker date="1496519914431" expanded="true" signature="12110:12148" ph="insert into Reviews... " />
-            <marker date="1496519914431" expanded="true" signature="12707:12749" ph="insert into Bidder_Proposal... " />
-            <marker date="1496519914431" expanded="true" signature="13332:13382" ph="Select idPcM... PcMember" />
-            <marker date="1496519914431" expanded="true" signature="13725:13786" ph="Select idPro... PcMember_Proposal" />
-            <marker date="1496519914431" expanded="true" signature="14139:14182" ph="Select * fro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="15469:15520" ph="Select idPcM... PcMember" />
-            <marker date="1496519914431" expanded="true" signature="15867:15928" ph="Select idPro... PcMember_Proposal" />
-            <marker date="1496519914431" expanded="true" signature="16347:16390" ph="Select * fro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="17548:17591" ph="select * fro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="18438:18483" ph="select fileN... Paper" />
-            <marker date="1496519914431" expanded="true" signature="18907:18952" ph="select fileN... Paper" />
-            <marker date="1496519914431" expanded="true" signature="19415:19476" ph="select idPcM... PcMember_Proposal" />
-            <marker date="1496519914431" expanded="true" signature="19818:19831" ph="select nameP... " />
-            <marker date="1496519914431" expanded="true" signature="19818:19870" ph="select nameP... PcMember" />
-            <marker date="1496519914431" expanded="true" signature="20448:20500" ph="select idPro... Proposal" />
-            <marker date="1496519914431" expanded="true" signature="20860:20916" ph="select count... Bidder_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="306:348" ph="/**...*/" />
+            <marker date="1496521793037" expanded="true" signature="587:746" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="820:3229" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="1030:1062" ph="insert into Paper... " />
+            <marker date="1496521793037" expanded="true" signature="1388:1420" ph="insert into Paper... " />
+            <marker date="1496521793037" expanded="true" signature="1750:1796" ph="insert into Proposal... " />
+            <marker date="1496521793037" expanded="true" signature="2310:2346" ph="SELECT MAX(I... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="2612:2662" ph="SELECT idPcM... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="2990:3032" ph="INSERT INTO PcMember_Proposal... " />
+            <marker date="1496521793037" expanded="true" signature="3290:4958" ph="{...}" />
+            <marker date="1496521793037" expanded="false" signature="3488:3498" ph="&lt;~&gt;" />
+            <marker date="1496521793037" expanded="true" signature="3565:3606" ph="select * fro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="5008:5812" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="5128:5250" ph="update Propo... " />
+            <marker date="1496521793037" expanded="true" signature="5868:6529" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="6098:6129" ph="select idPro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="6565:6879" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="6683:6722" ph="delete from " />
+            <marker date="1496521793037" expanded="true" signature="6941:7656" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="7171:7218" ph="select idPro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="7722:8444" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="7952:8044" ph="select idPro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="8505:9225" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="8735:8825" ph="select idPro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="9286:9852" ph="{...}" />
+            <marker date="1496521793037" expanded="false" signature="9333:9342" ph="&lt;~&gt;" />
+            <marker date="1496521793037" expanded="true" signature="9464:9519" ph="select idBid... Bidder_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="9912:10235" ph="{...}" />
+            <marker date="1496521793037" expanded="false" signature="9960:9970" ph="&lt;~&gt;" />
+            <marker date="1496521793037" expanded="true" signature="10299:10858" ph="{...}" />
+            <marker date="1496521793037" expanded="false" signature="10348:10357" ph="&lt;~&gt;" />
+            <marker date="1496521793037" expanded="true" signature="10477:10523" ph="select idRev... Reviews" />
+            <marker date="1496521793037" expanded="true" signature="10920:11255" ph="{...}" />
+            <marker date="1496521793037" expanded="false" signature="10970:10980" ph="&lt;~&gt;" />
+            <marker date="1496521793037" expanded="true" signature="11315:11856" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="11483:11542" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="11926:12456" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="12084:12122" ph="insert into Reviews... " />
+            <marker date="1496521793037" expanded="true" signature="12544:13041" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="12755:12797" ph="insert into Bidder_Proposal... " />
+            <marker date="1496521793037" expanded="true" signature="13109:13589" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="13265:13313" ph="SELECT idPcM... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="13653:14124" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="13805:13857" ph="SELECT idPro... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="14187:16235" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="14451:14501" ph="Select idPcM... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="14844:14905" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="15258:15301" ph="Select * fro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="16304:18443" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="16588:16639" ph="Select idPcM... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="16986:17047" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="17466:17509" ph="Select * fro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="18508:21379" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="18667:18710" ph="select * fro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="19557:19602" ph="select fileN... Paper" />
+            <marker date="1496521793037" expanded="true" signature="20026:20071" ph="select fileN... Paper" />
+            <marker date="1496521793037" expanded="true" signature="20534:20595" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496521793037" expanded="true" signature="20937:20950" ph="select nameP... " />
+            <marker date="1496521793037" expanded="true" signature="20937:20989" ph="select nameP... PcMember" />
+            <marker date="1496521793037" expanded="true" signature="21424:22446" ph="{...}" />
+            <marker date="1496521793037" expanded="true" signature="21567:21619" ph="select idPro... Proposal" />
+            <marker date="1496521793037" expanded="true" signature="21979:22035" ph="select count... Bidder_Proposal" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+        <state relative-caret-position="67">
+          <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="32" />
           <folding>
             <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
-            <element signature="method#assignBidder#0;class#Controller_Proposal#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="103" column="46" lean-forward="false" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
+        <state relative-caret-position="210">
+          <caret line="120" column="60" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
           <folding />
         </state>
       </provider>
