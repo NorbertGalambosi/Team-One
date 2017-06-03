@@ -64,8 +64,8 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         }
         try(PreparedStatement preStmt = conn.prepareStatement("SELECT MAX(IdProposal) FROM Proposal")){
             ResultSet result = preStmt.executeQuery();
-                if(result.next())
-                    idProposal = result.getInt(1);
+            if(result.next())
+                idProposal = result.getInt(1);
         } catch (SQLException e) {
             throw e;
         }
@@ -459,5 +459,34 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
             e.printStackTrace();
         }
         return propo;
+    }
+
+    public boolean status(String proposal) {
+        Connection conn = connection.getConnection();
+        Integer id = 0;
+        try (PreparedStatement prstmt = conn.prepareStatement("select idProposal from Proposal where nameProposal=?")) {
+            prstmt.setString(1, proposal);
+            try (ResultSet result = prstmt.executeQuery()) {
+                if (result.next()) {
+                    id=result.getInt(1);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement prstmt = conn.prepareStatement("select count(id) from Bidder_Proposal where idProposal=?")){
+            prstmt.setInt(1,id);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                if(resultSet.getInt(1)>0){
+                    return true;
+                }
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+        //am mai adagat aici un coment
     }
 }

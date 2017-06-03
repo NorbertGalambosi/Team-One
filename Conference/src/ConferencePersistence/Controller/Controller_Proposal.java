@@ -93,4 +93,7 @@ public class Controller_Proposal {
         return this.repositoryProposal.findByName(proposal, author);
     }
 
+    public boolean status(String proposal) {
+        return this.repositoryProposal.status(proposal);
+    }
 }

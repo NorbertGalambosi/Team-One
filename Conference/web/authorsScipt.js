@@ -31,41 +31,42 @@ $(document).ready(function () {
     });
 
     $( "#myProposals" ).change(function() {
-            $.ajax({
-                type : "POST",
-                url : 'Author_Servlet',
-                data : {
-                    action : "proposalChange",
-                    proposal : $('#myProposals option:selected').val(),
-                    user : sessionStorage.getItem("user")
-                },
-                success : function(result){
-                    var res = result;
-                    values = res.split("|");
-                    $("#mineProposalName").val(values[0]);
-                    $("#mineProposalKeywords").val(values[1]);
-                    $("#mineProposalTopics").val(values[2]);
-                    $("#mineFullFileName").val(values[3]);
-                    $("#mineAbstractFileName").val(values[4]);
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "proposalChange",
+                proposal : $('#myProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#mineProposalName").val(values[0]);
+                $("#mineProposalKeywords").val(values[1]);
+                $("#mineProposalTopics").val(values[2]);
+                $("#mineFullFileName").val(values[3]);
+                $("#mineAbstractFileName").val(values[4]);
+                $("#mineReviewStatus").val(values[5]);
+            }
+        });
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "proposalChange2",
+                proposal : $('#myProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#mineReviews").empty();
+                for (var i = 0; i < values.length - 1; i++) {
+                    $('#mineReviews').append($('<option>').append(values[i]));
                 }
-            });
-            $.ajax({
-                type : "POST",
-                url : 'Author_Servlet',
-                data : {
-                    action : "proposalChange2",
-                    proposal : $('#myProposals option:selected').val(),
-                    user : sessionStorage.getItem("user")
-                },
-                success : function(result){
-                    var res = result;
-                    values = res.split("|");
-                    $("#mineReviews").empty();
-                    for (var i = 0; i < values.length - 1; i++) {
-                        $('#mineReviews').append($('<option>').append(values[i]));
-                    }
-                }
-            });
+            }
+        });
     });
 
     function fillMyProposals() {
@@ -122,10 +123,10 @@ $(document).ready(function () {
             console.log(filename);
         }
         $.ajax({
-           type : "GET",
+            type : "GET",
             url : "Author_Servlet",
             data : {
-               action : "uploadF",
+                action : "uploadF",
                 filename : filename,
                 fullName : $('#fullPaperName').val()
             },
