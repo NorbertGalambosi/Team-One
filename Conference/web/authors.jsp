@@ -32,11 +32,15 @@
         font-size: 24px;
         font-family: Courier;
         text-align: center;
+        font-style: italic;
+        font-weight: bold;
+
     }
 
     #meta{
         font-size: 20px;
         font-family: Courier;
+        font-weight: bold;
 
     }
 
@@ -48,13 +52,13 @@
     {
         pointer-events: none;
     }
-
-    .mine{
-        background-color: lightgreen;
+    
+    #prop{
+        font-family: Georgia;
+        font-size: 18px;
     }
-
-    .theirs{
-        background-color: lightcoral;
+    table,td{
+        border: solid 1px;
     }
 </style>
 <body>
@@ -96,11 +100,11 @@
         <p><input type="button" id="submitPaper" value="submitPaper"></p>
         <form method="post" action="UploadServlet"
               enctype="multipart/form-data">
-            Select file to upload the FULL Paper: <input type="file" name="file" size="60" id="fileUp"/><br/>
+            Select file to upload the Full Paper: <input type="file" name="file" size="60" id="fileUp"/><br/>
             <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnFull" />
         </form>
         <form method="post" action="UploadServlet"
-              enctype="multipart/form-data">
+              enctype="multipart/form-data"><br>
             Select file to upload the Abstract Paper: <input type="file" name="file" size="60" id="fileUpl"/><br/>
             <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnAbs" />
         </form>
@@ -109,11 +113,13 @@
 
 <div>
     <form>
+        <fieldset>
+            <legend id="meta">Proposals</legend>
         <p>
             <table id="proposalTable">
                 <thead>
-                    <td>My Proposals</td>
-                    <td>Enemy Proposals</td>
+                    <td id="prop">My Proposals</td>
+                    <td id="prop">Enemy Proposals</td>
                 </thead>
                 <tbody>
                     <tr>
@@ -126,9 +132,9 @@
                             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
                             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
                             <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
-                            <p><input type="button" value="EDIT" id="mineProposalEdit"></p>
-                            <p>Reviews</p>
-                            <select id="mineReviews"><option>NIMIC</option></select>
+                            <p><input type="button" value="Edit" id="mineProposalEdit"></p>
+                            <p>Reviews
+                            <select id="mineReviews"><option>NIMIC</option></select></p>
                             <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
                             <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
                             <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
@@ -145,6 +151,7 @@
                 </tbody>
             </table>
         </p>
+        </fieldset>
     </form>
 </div>
 
