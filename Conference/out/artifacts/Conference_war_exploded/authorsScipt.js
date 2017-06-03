@@ -3,10 +3,7 @@
  */
 
 $(document).ready(function () {
-    update();
-
     $('#submitPaper').click(function () {
-        alert("submitPaper");
         $.ajax({
             type : "POST",
             url : 'Author_Servlet',
@@ -15,23 +12,18 @@ $(document).ready(function () {
                 name : $("#nameP").val(),
                 keywords : $("#keywords").val(),
                 topics : $("#topics").val(),
-                autor : sessionStorage.getItem("user")
+                autor : sessionStorage.getItem("user"),
+                full : $("#fullPaperName").val(),
+                abstract : $("#abstractPaperName").val()
             },
             success : function(result){
                 var res = result;
-                if(res=="succes"){
+                if(res=="succes")
                     alert("Adaugat cu succes");
-                    update();
-                }
-                else{
+                else
                     alert("Eroare");
-                }
             }
         });
     });
-
-    function update() {
-        alert("update");
-    }
 });
 

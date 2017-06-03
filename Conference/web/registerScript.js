@@ -23,9 +23,9 @@ $(document).ready(function () {
                     var res = result;
                     alert(res);
                     if (res === 'SuccessAuthor')
-                        window.location.href = "authors.jsp";
+                        window.location.href = "login.jsp";
                     if (res === 'SuccessListener')
-                        window.location.href = "listeners.jsp";
+                        window.location.href = "login.jsp";
                     if (res === 'Invalid')
                         alert("Invalid login, try again!");
                 }

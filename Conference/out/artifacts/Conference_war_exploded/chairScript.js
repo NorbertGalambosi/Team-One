@@ -6,6 +6,8 @@
 $(document).ready(function(){
     populateSesionLists();
     pupulatePcMbsList()
+    getPapers();
+    getReviewers();
 });
 function populateSesionLists(){
     $.ajax({
@@ -86,12 +88,45 @@ function getPapers(){
            action : "papers"
         },
         success : function (result) {
-            var papers = result.split('|');
-            console.log(papers);
+            var papersList = result.split('|');
+            var select = document.getElementById('paperList');
+            for(var i=0;i<papersList.length-1;i++){
+                var papers = papersList[i].split(';');
+                var id = papers[0];
+                var propname = papers[1];
+                var keys = papers[2];
+                var topics = papers[3];
+                var autor = papers[5];
+                var opt = document.createElement('option');
+                opt.label = id+":Name :"+propname+" Autor : "+autor+" Keywords : "+keys+" Topics : "+topics;
+                opt.innerHTML = id+":Name :"+propname+" Autor : "+autor+" Keywords : "+keys+" Topics : "+topics;
+                select.appendChild(opt);
+            }
         }
     });
 }
-
+function getReviewers() {
+    $.ajax({
+        type : "GET",
+        url : "ChairPRs_Servlet",
+        data : {
+            action : "reviewers"
+        },
+        success : function (result) {
+            var reviewersList = result.split('|');
+            var select = document.getElementById('revsList');
+            for(var i=0;i<reviewersList.length-1;i++){
+                var reviewer = reviewersList[i].split(';');
+                var id = reviewer[0];
+                var name = reviewer[1];
+                var opt = document.createElement('option');
+                opt.label = id+":Name : "+name;
+                opt.innerHTML = id+":Name : "+name;
+                select.appendChild(opt);
+            }
+        }
+    });
+}
 
 
 $(document).ready(function(){
@@ -215,6 +250,27 @@ $(document).ready(function(){
                     alert("Successfuly assigned speaker!");
                 else
                     alert("Can't assign speaker to session!");
+            }
+        });
+    });
+});
+$(document).ready(function() {
+    $('#btnPr2Rev').click(function () {
+        var proposal= $('#paperList :selected').attr('label');
+        var reviewer = $('#revsList :selected').attr('label');
+        $.ajax({
+            type : "GET",
+            url : "ChairPRs_Servlet",
+            data : {
+                action : "assign",
+                proposal : proposal,
+                reviewer : reviewer
+            },
+            success : function (result) {
+                if (result === "done")
+                    alert("Successfuly assigned reviewer!");
+                else
+                    alert("Can't assign reviewer to proposal!");
             }
         });
     });

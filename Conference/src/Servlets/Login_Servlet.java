@@ -26,15 +26,23 @@ public class Login_Servlet extends HttpServlet {
             String user = request.getParameter("user");
             String passwd = request.getParameter("pass");
             String type = request.getParameter("type");
+            System.out.println(user+" "+passwd+" "+type);
             if(type.equals("Author")){
+                System.out.println("here"+" "+user+" "+passwd+" "+type);
                 Controller_PcMember controllerPcMember = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
                 PcMember member = controllerPcMember.findByUserPass(user,passwd);
-                if (member == null)
+                if (member == null) {
                     responseWriter.print("Invalid");
-                else
-                    for(String s:member.getType())
-                        if(s.equals(type))
+                    System.out.println("here invalid");
+                }
+                else {
+                    System.out.println("here valid 1/2");
+                    for (String s : member.getType())
+                        if (s.equals(type)) {
                             responseWriter.print("SuccessAuthor");
+                            System.out.println("here valid 2/2");
+                        }
+                }
             }
             if(type.equals("Chair")){
                 Controller_PcMember controllerPcMember = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());

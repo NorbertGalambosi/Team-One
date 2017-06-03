@@ -34,12 +34,9 @@ public class Register_Servlet extends HttpServlet {
             String password = request.getParameter("password");
             String type = request.getParameter("type");
             System.out.println(type);
-            //List<String> type = new ArrayList<String>();
-            //type.set(0, request.getParameter("type"));
-            if(type.equals("author")){
+            if(type.equals("Author")){
                 Controller_PcMember controllerPcMember = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
                 PcMember member = new PcMember(id, nume, affiliation, email, webpage, username, password, true);
-                member.setType(type);
                 System.out.println(member);
                 if(controllerPcMember.addPcMember(member)) {
                     controllerPcMember.addTypeToPcMember(member.getid(),type);
@@ -48,7 +45,7 @@ public class Register_Servlet extends HttpServlet {
                 else
                     responseWriter.print("Invalid");
             }
-            if(type.equals("listener")){
+            if(type.equals("Listener")){
                 Controller_PcMember controllerPcMember = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
                 PcMember member = new PcMember(id, nume, affiliation, email, webpage, username, password, true);
                 member.setType(type);
