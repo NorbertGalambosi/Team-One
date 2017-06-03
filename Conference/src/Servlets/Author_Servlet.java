@@ -109,6 +109,7 @@ public class Author_Servlet extends HttpServlet {
             Controller_Review cp = new Controller_Review(new Repository_Review(), new Validator_Review());
             Review rev = cp.getReviewByID(id);
             responseWriter.print(rev.getQualifier()+"|"+rev.getRecommendation()+"|");
+            //System.out.println(rev);
         }
     }
 
