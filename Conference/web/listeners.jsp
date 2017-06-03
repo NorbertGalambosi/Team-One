@@ -56,6 +56,9 @@
             <label>Active </label><input type="checkbox" id="active" value="active">
         </fieldset>
     </form>
+    <form method="GET" action="login.jsp">
+        <p><input type="button" name="logout" id="logout" value="Logout"></p>
+    </form>
 </div>
 </body>
 </html>

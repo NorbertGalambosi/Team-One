@@ -16,6 +16,10 @@
 
 <style>
 
+    body{
+        background-color: #ede3ff;
+    }
+
     h1{
         text-align: center;
         color: #63775B  ;
@@ -156,6 +160,10 @@
         </fieldset>
     </form>
 </div>
+
+<form method="GET" action="login.jsp">
+    <p><input type="button" name="logout" id="logout" value="Logout"></p>
+</form>
 
 </body>
 </html>
