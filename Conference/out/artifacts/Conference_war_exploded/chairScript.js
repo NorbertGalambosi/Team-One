@@ -62,20 +62,29 @@ function pupulatePcMbsList(){
                 select.appendChild(opt);
             }
 
-            var select1 = document.getElementById('pcOptionsL');
-            for(var i=0;i<res.length-1;i++){
-                var opt = document.createElement('option');
-                opt.label = res[i];
-                opt.innerHTML = res[i];
-                select1.appendChild(opt);
-            }
-
             var select2 = document.getElementById('pcOptionsSp');
             for(var i=0;i<res.length-1;i++){
                 var opt = document.createElement('option');
                 opt.label = res[i];
                 opt.innerHTML = res[i];
                 select2.appendChild(opt);
+            }
+        }
+    });
+    $.ajax({
+        type : "GET",
+        url : "PopulateSessionLists_Servlet",
+        data : {
+            action : "pcmbsL"
+        },
+        success : function(result){
+            var res = result.split('|');
+            var select1 = document.getElementById('pcOptionsL');
+            for(var i=0;i<res.length-1;i++){
+                var opt = document.createElement('option');
+                opt.label = res[i];
+                opt.innerHTML = res[i];
+                select1.appendChild(opt);
             }
         }
     });

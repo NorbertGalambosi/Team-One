@@ -60,9 +60,25 @@ public class PopulateSessionLists_Servlet extends HttpServlet {
          Controller_PcMember ctrl = new Controller_PcMember(repository_pcMember, validator);
          List<PcMember> pcMembers = new ArrayList<>();
          String names = "";
-         for (PcMember p : ctrl.getAllPcMembers())
-             names = names + p.getName() + "|";
+         for (PcMember p : ctrl.getAllPcMembers()) {
+             int type = 0;
+             for (String ty:p.getType())
+                 if (ty.equals("Listener"))
+                     type=1;
+             if (type == 0)
+                names = names + p.getName() + "|";
+         }
          printWriter.print(names);
      }
+        if(action.equals("pcmbsL")) {
+            Repository_PcMember repository_pcMember = new Repository_PcMember();
+            Validator_PcMember validator = new Validator_PcMember();
+            Controller_PcMember ctrl = new Controller_PcMember(repository_pcMember, validator);
+            List<PcMember> pcMembers = new ArrayList<>();
+            String names = "";
+            for (PcMember p : ctrl.getAllPcMembers())
+                    names = names + p.getName() + "|";
+            printWriter.print(names);
+        }
     }
 }

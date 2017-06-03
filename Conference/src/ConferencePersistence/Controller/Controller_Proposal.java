@@ -2,6 +2,7 @@ package ConferencePersistence.Controller;
 
 import ConferencePersistence.Repository.Repository_Proposal;
 import DomainClasses.Proposal;
+import DomainClasses.Review;
 import Validator.Validator_Exception;
 import Validator.Validator_Proposal;
 
@@ -70,7 +71,11 @@ public class Controller_Proposal {
         this.repositoryProposal.assignReviewer(idProp,idRev);
     }
     public void assignBidder(Integer idBidder,Integer idprop){
-        this.repositoryProposal.assignBidder(idBidder, idprop);
+        try {
+            this.repositoryProposal.assignBidder(idBidder, idprop);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public Iterable<Integer> findBidderIDs(Integer idProposal){
@@ -79,6 +84,29 @@ public class Controller_Proposal {
     public Iterable<Integer> findReviewerIDs(Integer idProposal){
         return repositoryProposal.findReviewerIds(idProposal);
     }
+    public Iterable<Proposal> findByAuthor(String AuthorName){
+        return this.repositoryProposal.findByAuthor(AuthorName);
+    }
 
 
+    public Iterable<Proposal> findEnemyProposals(String user) {
+        return this.repositoryProposal.findEnemyProposals(user);
+    }
+
+    public Proposal findByName(String proposal, String author) {
+        return this.repositoryProposal.findByName(proposal, author);
+    }
+
+    public boolean status(String proposal) {
+        return this.repositoryProposal.status(proposal);
+    }
+
+    public boolean bid(String proposal, String user) {
+        try{
+            this.repositoryProposal.assignBidder(this.repositoryProposal.findPcMemberId(user), this.repositoryProposal.findProposalId(proposal));
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
 }

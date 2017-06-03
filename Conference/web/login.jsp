@@ -20,7 +20,7 @@
   </head>
   <body id="align">
     <div >
-        <form action="register.jsp" method="post" >
+        <form method="post" action="">
             <p>
                 <label>Username:</label>
                 <input type="text" name="username" id="username">
@@ -39,8 +39,10 @@
             </p>
             <p>
                 <input type="button" value="Login" id="btnsubmit" name="btnsubmit">
-                <input type="submit" value="Register" id="btnregister">
             </p>
+        </form>
+        <form action="register.jsp" method="get">
+            <input type="submit" value="Register" id="btnregister">
         </form>
     </div>
 

@@ -16,6 +16,10 @@
 
 <style>
 
+    body{
+        background-color: #ede3ff;
+    }
+
     h1{
         text-align: center;
         color: #63775B  ;
@@ -32,12 +36,15 @@
         font-size: 24px;
         font-family: Courier;
         text-align: center;
+        font-style: italic;
+        font-weight: bold;
+
     }
 
     #meta{
         font-size: 20px;
         font-family: Courier;
-
+        font-weight: bold;
     }
 
     p{
@@ -47,6 +54,19 @@
     .disable
     {
         pointer-events: none;
+    }
+
+    #prop{
+        font-family: Georgia;
+        font-size: 18px;
+    }
+
+    table,td{
+        border: solid 1px;
+    }
+
+    #log{
+        text-align: center;
     }
 </style>
 <body>
@@ -86,39 +106,72 @@
             <input type="text" id="abstractPaperName"></p>
         *paper names should be different
         <p><input type="button" id="submitPaper" value="submitPaper"></p>
-        Select file to upload:
         <form method="post" action="UploadServlet"
               enctype="multipart/form-data">
-            Select file to upload: <input type="file" name="file" size="60" /><br/>
-            <br /> <input type="submit" value="Upload" />
+            Select file to upload the Full Paper: <input type="file" name="file" size="60" id="fileUp"/><br/>
+            <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnFull" />
+        </form>
+        <form method="post" action="UploadServlet"
+              enctype="multipart/form-data"><br>
+            Select file to upload the Abstract Paper: <input type="file" name="file" size="60" id="fileUpl"/><br/>
+            <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnAbs" />
         </form>
     </fieldset>
 </form>
 
 <div>
     <form>
-        <h1>My Papers</h1>
-        <p><label>Name </label><input type="text" name="nameP">
-            <label>Keywords </label><input type="text" name="keywords">
-            <label>Topics </label><input type="text" name="topics">
-            <label>Authors </label><input type="text" name="authors">
-            <label>Edit </label><input type="file" name="edit">
-            <input type="button" name="details" value="Details" onclick="getElementById('details').slideDown('slow')">
-        </p>
+        <fieldset>
+            <legend id="meta">Proposals</legend>
+            <p>
+                <table id="proposalTable">
+                    <thead>
+                    <td id="prop">My Proposals</td>
+                    <td id="prop">Enemy Proposals</td>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="mine"><select id="myProposals"><option>(Default)</option></select></td>
+                        <td class="theirs"><select id="enemyProposals"><option>(Default)</option></select></td>
+                    </tr>
+                    <tr>
+                        <td class="mine">
+            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
+            <p><label>Name </label><input type="text" id="mineProposalName"></p>
+            <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
+            <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+
+            <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
+            <p><label>New full paper </label><input type="file" id="mineProposalNewFile"></p>
+            <p><input type="button" value="Edit" id="mineProposalEdit"></p>
+
+            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
+            <p><label>New abstract paper </label><input type="file" id="abstractNewFile"></p>
+            <p><input type="button" value="Edit" id="abstractEdit"></p>
+
+            <p>Reviews
+                <select id="mineReviews"><option>Default</option></select></p>
+            <p><label>Review result </label><input type="text" id="mineReviewResult" class="disable"></p>
+            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations" class="disable"></textarea></p>
+            </td>
+
+            <td class="theirs">
+                <p><label>Name </label><input type="text" id="theirsProposalName" class="disable"></p>
+                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords" class="disable"></p>
+                <p><label>Topics </label><input type="text" id="theirsProposalTopics" class="disable"></p>
+                <p><label>Authors </label><input type="text" id="theirsProposalAuthors" class="disable"></p>
+                <p><input type="button" value="Bid" id="theirsProposalBid"></p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </p>
+        </fieldset>
     </form>
 </div>
 
-<div>
-    <form id="details">
-        <label>Status </label><input type="text" name="status">
-        <label>Review result </label><input type="text" name="reviewresult">
-        <label>Recommendations </label><textarea rows="4" cols="50"></textarea>
-    </form>
-</div>
-
-<p><input type="button" name="bid" value="Bid"></p>
-<form method="GET" action="login.jsp">
-    <p><input type="button" name="logout" id="logout" value="Logout"></p>
+<form method="GET" action="login.jsp" id="log">
+    <p><input type="submit" name="logout" id="logout" value="Logout"></p>
 </form>
 
 </body>

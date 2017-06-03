@@ -24,6 +24,7 @@ public class UploadServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("Trying to upload");
         // gets absolute path of the web application
         String appPath = request.getServletContext().getRealPath("");
         // constructs path of the directory to save uploaded file
