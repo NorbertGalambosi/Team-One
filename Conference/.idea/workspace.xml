@@ -3,20 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Review.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Author_Servlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authors.jsp" afterPath="$PROJECT_DIR$/web/authors.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authorsScipt.js" afterPath="$PROJECT_DIR$/web/authorsScipt.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,8 +70,8 @@
       <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="160" column="59" lean-forward="false" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
+            <state relative-caret-position="320">
+              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -357,39 +351,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Servlets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1415,11 +1377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496525512264</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Proposal Edit">
+      <created>1496529109792</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496529109792</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96166000" />
+    <option name="totallyTimeSpent" value="96880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1432,7 +1401,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1442,7 +1410,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14114584" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14114584" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1510,7 +1478,8 @@
     <MESSAGE value="updated db" />
     <MESSAGE value="ievriting dan" />
     <MESSAGE value="fixed Cristian's push" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Cristian's push" />
+    <MESSAGE value="added Proposal Edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Proposal Edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1960,8 +1929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="160" column="59" lean-forward="false" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
+        <state relative-caret-position="320">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>

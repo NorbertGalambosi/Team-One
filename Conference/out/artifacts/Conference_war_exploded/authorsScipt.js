@@ -31,6 +31,7 @@ $(document).ready(function () {
         });
         //location.reload(); //asta merge da ii urat ca nu apare alertu
         //fillMyProposals(); //asta din ceva motiv nu merge
+        setTimeout(fillMyProposals, 1000);
     });
 
     $( "#myProposals" ).change(function() {
