@@ -49,4 +49,8 @@ public class Controller_Review {
             e.printStackTrace();
         }
     }
+
+    public Iterable<Review> findByProposalName(String proposal, String author) {
+        return this.repositoryReview.findByProposalName(proposal);
+    }
 }

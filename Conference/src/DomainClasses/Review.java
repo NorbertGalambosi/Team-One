@@ -30,9 +30,6 @@ public class Review implements Serializable,Identifiable<Integer> {
         this.qualifier = qualifier;
     }
 
-    public Review() {
-
-    }
 
     @Override
     public void setid(Integer integer) {
