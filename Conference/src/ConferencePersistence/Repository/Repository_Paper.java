@@ -39,7 +39,7 @@ public class Repository_Paper implements IRepository<Integer, Paper> {
 
     public void update(Paper entity, int id){
         Connection conn =  connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("update Paper set namePaper=?,fileName=?, WHERE idPaper=?")){
+        try(PreparedStatement preStmt = conn.prepareStatement("update Paper set namePaper=?,fileName=? WHERE idPaper=?")){
             preStmt.setString(1, entity.getName());
             preStmt.setString(2,entity.getFileName());
             preStmt.setInt(3, id);

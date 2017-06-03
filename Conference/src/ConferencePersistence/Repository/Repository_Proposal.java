@@ -440,5 +440,6 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return propo;
     }
 }

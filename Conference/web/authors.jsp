@@ -94,11 +94,15 @@
             <input type="text" id="abstractPaperName"></p>
         *paper names should be different
         <p><input type="button" id="submitPaper" value="submitPaper"></p>
-        Select file to upload:
         <form method="post" action="UploadServlet"
               enctype="multipart/form-data">
-            Select file to upload: <input type="file" name="file" size="60" /><br/>
-            <br /> <input type="button" value="Upload" name="Upload" id="uploadBtn" />
+            Select file to upload the FULL Paper: <input type="file" name="file" size="60" id="fileUp"/><br/>
+            <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnFull" />
+        </form>
+        <form method="post" action="UploadServlet"
+              enctype="multipart/form-data">
+            Select file to upload the Abstract Paper: <input type="file" name="file" size="60" id="fileUpl"/><br/>
+            <br /> <input type="button" value="Upload" name="Upload" id="uploadBtnAbs" />
         </form>
     </fieldset>
 </form>
