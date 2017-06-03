@@ -84,7 +84,7 @@ public class Author_Servlet extends HttpServlet {
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
             Proposal pr = cp.findByName(proposal, author);
             //System.out.println(pr);
-            responseWriter.print(pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics());
+            responseWriter.print(pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getFullPaper().getFileName()+"|"+pr.getAbstractPaper().getFileName());
         }
         if(action.equals("proposalChange2")){
             String proposal = request.getParameter("proposal");

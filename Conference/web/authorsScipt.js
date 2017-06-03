@@ -45,6 +45,8 @@ $(document).ready(function () {
                     $("#mineProposalName").val(values[0]);
                     $("#mineProposalKeywords").val(values[1]);
                     $("#mineProposalTopics").val(values[2]);
+                    $("#mineFullFileName").val(values[3]);
+                    $("#mineAbstractFileName").val(values[4]);
                 }
             });
             $.ajax({
@@ -78,7 +80,7 @@ $(document).ready(function () {
                 //alert("succes");
                 var res = result;
                 values = res.split("|");
-                $("#myProposals").empty();
+                //$("#myProposals").empty();
                 for (var i = 0; i < values.length - 1; i++) {
                     $('#myProposals').append($('<option>').append(values[i]));
                 }
@@ -98,7 +100,7 @@ $(document).ready(function () {
                 //alert("succes");
                 var res = result;
                 values = res.split("|");
-                $("#enemyProposals").empty();
+                //$("#enemyProposals").empty();
                 for (var i = 0; i < values.length - 1; i++) {
                     $('#enemyProposals').append($('<option>').append(values[i]));
                 }

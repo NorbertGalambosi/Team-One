@@ -440,6 +440,24 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        try(PreparedStatement prstmt = conn.prepareStatement("select fileName from Paper where namePaper =?")){
+            prstmt.setString(1, propo.getFullPaper().getName());
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                propo.setFullPaper(new Paper(null, propo.getFullPaper().getName(), resultSet.getString(1)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement prstmt = conn.prepareStatement("select fileName from Paper where namePaper =?")){
+            prstmt.setString(1, propo.getAbstractPaper().getName());
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                propo.setAbstractPaper(new Paper(null, propo.getAbstractPaper().getName(), resultSet.getString(1)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return propo;
     }
 }
