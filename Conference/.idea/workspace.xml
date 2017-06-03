@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/Servlets/Author_Servlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authors.jsp" afterPath="$PROJECT_DIR$/web/authors.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authorsScipt.js" afterPath="$PROJECT_DIR$/web/authorsScipt.js" />
@@ -75,6 +69,42 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PcMember_Proposal" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PcMember" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -82,8 +112,8 @@
       <file leaf-file-name="authors.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/authors.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="141" column="104" lean-forward="false" selection-start-line="141" selection-start-column="79" selection-end-line="141" selection-end-column="104" />
+            <state relative-caret-position="491">
+              <caret line="157" column="86" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -92,8 +122,8 @@
       <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="22" />
+            <state relative-caret-position="205">
+              <caret line="103" column="46" lean-forward="false" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -102,8 +132,8 @@
       <file leaf-file-name="Author_Servlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="110" column="85" lean-forward="false" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
+            <state relative-caret-position="399">
+              <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -197,9 +227,9 @@
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
         <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
         <option value="$PROJECT_DIR$/web/authors.jsp" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
         <option value="$PROJECT_DIR$/web/authorsScipt.js" />
         <option value="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
       </list>
@@ -1095,7 +1125,7 @@
       <workItem from="1496483288220" duration="6490000" />
       <workItem from="1496491098622" duration="4119000" />
       <workItem from="1496513392749" duration="394000" />
-      <workItem from="1496515611811" duration="2610000" />
+      <workItem from="1496515611811" duration="4602000" />
     </task>
     <task id="LOCAL-00001" summary="started Proposal submission">
       <created>1496422848864</created>
@@ -1181,11 +1211,25 @@
       <option name="project" value="LOCAL" />
       <updated>1496515874809</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="reviews now populate">
+      <created>1496518236193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496518236193</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reviews now populate">
+      <created>1496518314460</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496518314460</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85020000" />
+    <option name="totallyTimeSpent" value="87012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1208,7 +1252,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1328125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1219,11 +1263,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32154006" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.494705" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19562955" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.494705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31510416" sideWeight="0.48355263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.48355263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28802082" sideWeight="0.51644737" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1252,7 +1296,8 @@
     <MESSAGE value="working on Author" />
     <MESSAGE value="fixed my proposals &amp; enemy proposal population" />
     <MESSAGE value="status now populates" />
-    <option name="LAST_COMMIT_MESSAGE" value="status now populates" />
+    <MESSAGE value="reviews now populate" />
+    <option name="LAST_COMMIT_MESSAGE" value="reviews now populate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1313,6 +1358,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,6 +1381,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2497">
           <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1423,6 +1470,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,52 +1538,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="492" column="0" lean-forward="true" selection-start-line="492" selection-start-column="0" selection-end-line="492" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
-            <element signature="method#assignBidder#0;class#Controller_Proposal#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper" />
-    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="17" column="118" lean-forward="false" selection-start-line="17" selection-start-column="118" selection-end-line="17" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authors.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="141" column="104" lean-forward="false" selection-start-line="141" selection-start-column="79" selection-end-line="141" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Reviews">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1549,10 +1552,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authors.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="157" column="86" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="480" column="32" lean-forward="true" selection-start-line="480" selection-start-column="32" selection-end-line="480" selection-end-column="32" />
+          <folding>
+            <marker date="1496519914431" expanded="true" signature="1056:1088" ph="insert into Paper... " />
+            <marker date="1496519914431" expanded="true" signature="1414:1446" ph="insert into Paper... " />
+            <marker date="1496519914431" expanded="true" signature="1776:1822" ph="insert into Proposal... " />
+            <marker date="1496519914431" expanded="true" signature="2336:2372" ph="SELECT MAX(I... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="2638:2688" ph="SELECT idPcM... PcMember" />
+            <marker date="1496519914431" expanded="true" signature="3016:3058" ph="INSERT INTO PcMember_Proposal... " />
+            <marker date="1496519914431" expanded="true" signature="3591:3632" ph="select * fro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="5154:5276" ph="update Propo... " />
+            <marker date="1496519914431" expanded="true" signature="6124:6155" ph="select idPro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="6709:6748" ph="delete from " />
+            <marker date="1496519914431" expanded="true" signature="7197:7244" ph="select idPro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="7978:8070" ph="select idPro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="8761:8851" ph="select idPro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="9490:9545" ph="select idBid... Bidder_Proposal" />
+            <marker date="1496519914431" expanded="true" signature="10503:10549" ph="select idRev... Reviews" />
+            <marker date="1496519914431" expanded="true" signature="11509:11568" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496519914431" expanded="true" signature="12110:12148" ph="insert into Reviews... " />
+            <marker date="1496519914431" expanded="true" signature="12707:12749" ph="insert into Bidder_Proposal... " />
+            <marker date="1496519914431" expanded="true" signature="13332:13382" ph="Select idPcM... PcMember" />
+            <marker date="1496519914431" expanded="true" signature="13725:13786" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496519914431" expanded="true" signature="14139:14182" ph="Select * fro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="15469:15520" ph="Select idPcM... PcMember" />
+            <marker date="1496519914431" expanded="true" signature="15867:15928" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496519914431" expanded="true" signature="16347:16390" ph="Select * fro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="17548:17591" ph="select * fro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="18438:18483" ph="select fileN... Paper" />
+            <marker date="1496519914431" expanded="true" signature="18907:18952" ph="select fileN... Paper" />
+            <marker date="1496519914431" expanded="true" signature="19415:19476" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496519914431" expanded="true" signature="19818:19831" ph="select nameP... " />
+            <marker date="1496519914431" expanded="true" signature="19818:19870" ph="select nameP... PcMember" />
+            <marker date="1496519914431" expanded="true" signature="20448:20500" ph="select idPro... Proposal" />
+            <marker date="1496519914431" expanded="true" signature="20860:20916" ph="select count... Bidder_Proposal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+          <folding>
+            <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
+            <element signature="method#assignBidder#0;class#Controller_Proposal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="103" column="46" lean-forward="false" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="110" column="85" lean-forward="false" selection-start-line="110" selection-start-column="85" selection-end-line="110" selection-end-column="85" />
+        <state relative-caret-position="399">
+          <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
           <folding />
         </state>
       </provider>

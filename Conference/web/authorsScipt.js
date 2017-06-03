@@ -95,6 +95,26 @@ $(document).ready(function () {
             }
         });
     });
+    
+    $("#enemyProposals").change(function () {
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "enemyProposalsChange",
+                proposal : $('#enemyProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#theirsProposalName").val(values[0]);
+                $("#theirsProposalKeywords").val(values[1]);
+                $("#theirsProposalTopics").val(values[2]);
+                $("#theirsProposalAuthors").val(values[3]);
+            }
+        });
+    })
 
     function fillMyProposals() {
         $.ajax({

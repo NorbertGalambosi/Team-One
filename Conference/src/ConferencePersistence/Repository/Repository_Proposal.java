@@ -458,6 +458,28 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        int idPcMember=0;
+        try(PreparedStatement prstmt = conn.prepareStatement("select idPcMember from PcMember_Proposal where idProposal = ?")){
+            prstmt.setInt(1,propo.getid());
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                idPcMember=resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement prstmt = conn.prepareStatement("select namePcMember from PcMember where idPcMember=?")){
+            prstmt.setInt(1,idPcMember);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                PcMember pc = new PcMember();
+                pc.setName(resultSet.getString(1));
+                propo.setAutor(pc);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return propo;
     }
 
