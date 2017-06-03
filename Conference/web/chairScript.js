@@ -6,6 +6,8 @@
 $(document).ready(function(){
     populateSesionLists();
     pupulatePcMbsList()
+    getPapers();
+    getReviewers();
 });
 function populateSesionLists(){
     $.ajax({
@@ -86,12 +88,43 @@ function getPapers(){
            action : "papers"
         },
         success : function (result) {
-            var papers = result.split('|');
-            console.log(papers);
+            var papersList = result.split('|');
+            var select = document.getElementById('paperList');
+            for(var i=0;i<papersList.length-1;i++){
+                var papers = papersList[i].split(';');
+                var id = papers[0];
+                var propname = papers[1];
+                var keys = papers[2];
+                var topics = papers[3];
+                var autor = papers[5];
+                var opt = document.createElement('option');
+                opt.label = id+".Name :"+propname+" Autor : "+autor+" Key words : "+keys+" Topics : "+topics;
+                opt.innerHTML = id+".Name :"+propname+" Autor : "+autor+" Key words : "+keys+" Topics : "+topics;
+                select.appendChild(opt);
+            }
         }
     });
 }
-
+function getReviewers() {
+    $.ajax({
+        type : "GET",
+        url : "ChairPRs_Servlet",
+        data : {
+            action : "reviewers"
+        },
+        success : function (result) {
+            var reviewersList = result.split('|');
+            var select = document.getElementById('revsList');
+            for(var i=0;i<reviewersList.length-1;i++){
+                var name = reviewersList[0];
+                var opt = document.createElement('option');
+                opt.label = "Name : "+name;
+                opt.innerHTML = "Name : "+name;
+                select.appendChild(opt);
+            }
+        }
+    });
+}
 
 
 $(document).ready(function(){

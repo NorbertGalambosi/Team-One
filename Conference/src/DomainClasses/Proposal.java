@@ -142,4 +142,7 @@ public class Proposal implements Identifiable<Integer> {
                 ", bidders=" + bidders +
                 '}';
     }
+    public String toStringJS(){
+        return id+";"+name+";"+keywords+";"+topics+";"+accepted+";"+autor.getName();
+    }
 }
