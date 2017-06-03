@@ -151,15 +151,15 @@
 
             <p>Reviews
                 <select id="mineReviews"><option>Default</option></select></p>
-            <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
-            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
+            <p><label>Review result </label><input type="text" id="mineReviewResult" class="disable"></p>
+            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations" class="disable"></textarea></p>
             </td>
 
             <td class="theirs">
-                <p><label>Name </label><input type="text" id="theirsProposalName"></p>
-                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords"></p>
-                <p><label>Topics </label><input type="text" id="theirsProposalTopics"></p>
-                <p><label>Authors </label><input type="text" id="theirsProposalAuthors"></p>
+                <p><label>Name </label><input type="text" id="theirsProposalName" class="disable"></p>
+                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords" class="disable"></p>
+                <p><label>Topics </label><input type="text" id="theirsProposalTopics" class="disable"></p>
+                <p><label>Authors </label><input type="text" id="theirsProposalAuthors" class="disable"></p>
                 <p><input type="button" value="Bid" id="theirsProposalBid"></p>
             </td>
             </tr>
