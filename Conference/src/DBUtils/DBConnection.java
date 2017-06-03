@@ -1,6 +1,9 @@
 package DBUtils;
 
+import DomainClasses.Review;
+
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Created by Waiting on 22-May-17.
@@ -14,7 +17,7 @@ public class DBConnection {
         Connection con=null;
         try {
             Class.forName("org.sqlite.JDBC");
-            con= DriverManager.getConnection("jdbc:sqlite:C:\\Users\\gnorb\\Documents\\GitHub\\Team-One\\Conference\\db.db");
+            con= DriverManager.getConnection("jdbc:sqlite:D:\\ISS Project\\3-v2\\Team-One\\Conference\\db.db");
         } catch (SQLException e) {
             System.out.println("Error getting connection "+e);
         } catch (ClassNotFoundException e) {
@@ -33,4 +36,6 @@ public class DBConnection {
         }
         return connection;
     }
+
+
 }

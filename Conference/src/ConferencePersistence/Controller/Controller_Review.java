@@ -5,6 +5,8 @@ import DomainClasses.Review;
 import Validator.Validator_Exception;
 import Validator.Validator_Review;
 
+import java.util.ArrayList;
+
 /**
  * Created by Waiting on 24-May-17.
  */
@@ -31,7 +33,20 @@ public class Controller_Review {
     public Review getReviewByID(Integer id){
         return  this.repositoryReview.findOne(id);
     }
-    public Iterable<Review> getAllReviews(){
+    public ArrayList<Review> getAllReviews(){
         return this.repositoryReview.findAll();
+    }
+
+
+    ///////////////
+    public void updateReview (Review entity, Integer id, Integer id2){
+        try{
+            this.repositoryReview.update(entity,id,id2);
+            this.validatorReview.validate(entity);
+        }
+        catch (Validator_Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

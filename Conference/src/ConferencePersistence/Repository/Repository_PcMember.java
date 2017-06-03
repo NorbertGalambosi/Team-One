@@ -246,4 +246,22 @@ public class Repository_PcMember implements IRepository<Integer, PcMember> {
         }
     }
 
+
+    public Integer findPCbyName(String type) {
+        Connection conn = connection.getConnection();
+
+        Integer id = 0;
+        try (PreparedStatement preStmt = conn.prepareStatement("SELECT idPcMember from PcMember where username =?"))
+        {
+            preStmt.setString(1,type);
+            try (ResultSet result = preStmt.executeQuery()) {
+                if (result.next()) {
+                    id = result.getInt("idPcMember");
+                }
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error " + ex);
+    }
+    return id;
+}
 }

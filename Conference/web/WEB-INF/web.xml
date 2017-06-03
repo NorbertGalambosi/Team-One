@@ -13,6 +13,25 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>ServletAddReview</servlet-name>
+        <servlet-class>Servlets.ServletAddReview</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddReview</servlet-name>
+        <url-pattern>/ServletAddReview</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletFindPCMemberId</servlet-name>
+        <servlet-class>Servlets.ServletFindPCMemberId</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletFindPCMemberId</servlet-name>
+        <url-pattern>/ServletFindPCMemberId</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Register_Servlet</servlet-name>
         <servlet-class>Servlets.Register_Servlet</servlet-class>
     </servlet>

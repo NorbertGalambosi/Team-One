@@ -50,4 +50,7 @@ public class Controller_PcMember {
     public PcMember findByUserPass(String user,String pass){
         return repositoryPcMember.findByUserPass(user, pass);
     }
+    public Integer findByUser(String user){
+        return repositoryPcMember.findPCbyName(user);
+    }
 }

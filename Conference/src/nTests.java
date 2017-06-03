@@ -44,5 +44,7 @@ public class nTests {
 //        System.out.println(ctrl.findByUserPass("jingasul","kristi"));
         Controller_Proposal ctrl = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
         System.out.println(ctrl.findById(1));
+        Controller_PcMember controller_pcMember = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
+        System.out.print(controller_pcMember.findByUser("jingasul"));
     }
 }

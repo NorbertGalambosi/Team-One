@@ -20,6 +20,15 @@ public class Review implements Serializable,Identifiable<Integer> {
         this.recommendation = recommendation;
         this.qualifier = qualifier;
     }
+    public Review()
+    {}
+
+    public Review( Integer idReviewer, Integer idPaper, String recommendation, String qualifier) {
+        this.idReviewer = idReviewer;
+        this.idPaper = idPaper;
+        this.recommendation = recommendation;
+        this.qualifier = qualifier;
+    }
 
     @Override
     public void setid(Integer integer) {

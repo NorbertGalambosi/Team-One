@@ -3,10 +3,7 @@ package ConferencePersistence.Repository;
 import DBUtils.DBConnection;
 import DomainClasses.Review;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,9 +34,9 @@ public class Repository_Review implements IRepository<Integer, Review> {
     }
 
     @Override
-    public Iterable<Review> findAll() {
+    public ArrayList<Review> findAll() {
         Connection conn = connection.getConnection();
-        List<Review> reviewList = new ArrayList<>();
+        ArrayList<Review> reviewList = new ArrayList<>();
         try(PreparedStatement prstmt = conn.prepareStatement("select * from Reviews")){
             try(ResultSet res = prstmt.executeQuery()){
                 while(res.next()){
@@ -88,5 +85,41 @@ public class Repository_Review implements IRepository<Integer, Review> {
             e.printStackTrace();
         }
     }
+
+
+    public void update(Review entity, Integer id, Integer id2){
+        Connection conn =  connection.getConnection();
+        try(PreparedStatement preStmt = conn.prepareStatement("update Reviews set recomandation=?,qualifier=? WHERE idPaper=? AND idReviewer=? ")){
+            preStmt.setString(1, entity.getRecommendation());
+            preStmt.setString(2, entity.getQualifier());
+            preStmt.setInt(3, id);
+            preStmt.setInt(4, id2);
+            preStmt.executeUpdate();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+//    public  ArrayList<Review> getAllReviews() {
+//        Connection conn = connection.getConnection();
+//        ArrayList<Review> countryList = new ArrayList<Review>();
+//        try {
+//          //  Statement statement = connection.createStatement();
+//         //   ResultSet rs = statement.executeQuery("select * from Reviews limit 10");
+//
+//            while(rs.next()) {
+//                Review country=new Review();
+//                country.setid(rs.getInt("idReview"));
+//                country.setIdPaper(rs.getInt("idPaper"));
+//                country.setIdReviewer(rs.getInt("idReviewer"));
+//                country.setRecommendation(rs.getString("recomandation"));
+//                country.setQualifier(rs.getString("qualifier"));
+//                countryList.add(country);
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return countryList;
+//    }
 
 }
