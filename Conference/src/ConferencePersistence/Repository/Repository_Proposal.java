@@ -1,11 +1,9 @@
 package ConferencePersistence.Repository;
 
 import DBUtils.DBConnection;
-import DomainClasses.Conference;
 import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
-import sun.security.util.AuthResources;
 
 import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.sql.*;

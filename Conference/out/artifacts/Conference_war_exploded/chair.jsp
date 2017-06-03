@@ -47,6 +47,12 @@
             text-align: center;
         }
 
+        #sel{
+            font-size:17px;
+            font-family: "Comic Sans MS";
+            list-style-type: square;
+        }
+
     </style>
 
 </head>
@@ -78,10 +84,10 @@
     </form>
 </div>
 
-
 <div>
+<fieldset>
     <form>
-        <p>>>Select reviewers for proposals. Please select 2, 3 or 4 reviewers for each proposal.</p>
+        <p id="sel">>>Select reviewers for proposals. Please select 2, 3 or 4 reviewers for each proposal.</p>
         <p><label>Proposals</label>
             <select id="paperList">
                 <option></option>
@@ -94,11 +100,9 @@
             <input type="button" name="Assign Proposals to Reviewers" value="Assign Proposals to Reviewers" id="btnPr2Rev">
         </p>
     </form>
-</div>
 
-<div>
     <form>
-        <p>>>Select session chair for session.</p>
+        <p id="sel">>>Select session chair for session.</p>
         <p><label>Session</label>
             <select id="sessionOptions">
 
@@ -111,10 +115,9 @@
         </p>
         <input type="button" id="addChairToSession" name="Assign Chair" value="Assign Chair">
     </form>
-</div>
-<div>
+
     <form>
-        <p>>>Select session listeners for session.</p>
+        <p id="sel">>>Select session listeners for session.</p>
         <p><label>Session</label>
             <select id="sessionOptionsL"></select>
             <label>Program Committee</label>
@@ -122,10 +125,9 @@
         </p>
         <input type="button" id="addListenersToSession" name="Assign Listeners" value="Assign Listeners">
     </form>
-</div>
-<div>
+
     <form>
-        <p>>>Select session speakers for session.</p>
+        <p id="sel">>>Select session speakers for session.</p>
         <p><label>Session</label>
             <select id="sessionOptionsSp">
 
@@ -138,6 +140,7 @@
         </p>
         <input type="button" id="addSpeakersSession" name="Assign Speakers" value="Assign Speakers">
     </form>
+</fieldset>
 </div>
 
 <form method="GET" action="login.jsp" id="log">
