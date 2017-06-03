@@ -14,6 +14,15 @@
 
     <style>
 
+        body{
+            background-color: #ede3ff;
+        }
+
+        h1{
+            text-align: center;
+            color: #63775B  ;
+        }
+
         #conf{
             background-color: #F0FFFF;
             font-size: 17px;
@@ -25,6 +34,8 @@
             font-size: 24px;
             font-family: Courier;
             text-align: center;
+            font-style: italic;
+            font-weight: bold;
         }
 
         .disable
@@ -32,7 +43,9 @@
             pointer-events: none;
         }
 
-
+        p{
+            text-align: center;
+        }
 
     </style>
 

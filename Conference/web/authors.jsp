@@ -45,7 +45,6 @@
         font-size: 20px;
         font-family: Courier;
         font-weight: bold;
-
     }
 
     p{
@@ -61,8 +60,13 @@
         font-family: Georgia;
         font-size: 18px;
     }
+
     table,td{
         border: solid 1px;
+    }
+
+    #log{
+        text-align: center;
     }
 </style>
 <body>
@@ -166,7 +170,7 @@
     </form>
 </div>
 
-<form method="GET" action="login.jsp">
+<form method="GET" action="login.jsp" id="log">
     <p><input type="submit" name="logout" id="logout" value="Logout"></p>
 </form>
 
