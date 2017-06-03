@@ -32,8 +32,8 @@
                     <input type="text" id="password" name="password"></p>
 
                 <p><select id="registerType">
-                        <option value="author">Author</option>
-                        <option value="listener">Listener</option>
+                        <option value="Author">Author</option>
+                        <option value="Listener">Listener</option>
                     </select></p>
                 <p><input type="checkbox" name="pay" value="pay" id="check1">Pay for register</p>
                 <p>
