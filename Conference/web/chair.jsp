@@ -131,7 +131,7 @@
 </div>
 
 <form method="GET" action="login.jsp">
-    <p><input type="button" name="logout" id="logout" value="Logout"></p>
+    <p><input type="submit" name="logout" id="logout" value="Logout"></p>
 </form>
 
 
