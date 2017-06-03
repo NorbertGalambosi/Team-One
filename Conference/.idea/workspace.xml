@@ -1,106 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="ievriting dan">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Servlets/ServletAddReview.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Servlets/ServletFindPCMemberId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Servlets/Servlet_Reviews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/DefaultDateTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/ExclusionStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/FieldAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/FieldNamingStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/Gson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/GsonBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/InstanceCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonDeserializationContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonDeserializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonIOException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonNull.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonParseException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonPrimitive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonSerializationContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonStreamParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/JsonSyntaxException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/LongSerializationPolicy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/TypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/TypeAdapterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/Expose.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/JsonAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/SerializedName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/Since.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/Until.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/annotations/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Preconditions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Types.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/Excluder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/JsonReaderInternalAccess.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/LazilyParsedNumber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/ObjectConstructor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/Primitives.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/Streams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ArrayTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/CollectionTypeAdapterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/DateTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/MapTypeAdapterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ObjectTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/SqlDateTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TimeTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TreeTypeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/bind/util/ISO8601Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/internal/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/reflect/TypeToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/reflect/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/stream/JsonReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/stream/JsonScope.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/stream/JsonToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/stream/JsonWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/google/gson/stream/MalformedJsonException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/addReview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/findIdByUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_PcMember.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_PcMember.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_PcMember.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_PcMember.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DomainClasses/Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/nTests.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/nTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_PcMember.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_PcMember.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_PcMember.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_PcMember.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Review.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DomainClasses/Review.class" afterPath="$PROJECT_DIR$/out/production/Conference/DomainClasses/Review.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/nTests.class" afterPath="$PROJECT_DIR$/out/production/Conference/nTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c.xml" />
+    <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Review.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Review.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Review.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Review.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/reviewer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/reviewer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_PcMember.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_PcMember.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_PcMember.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_PcMember.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DomainClasses/Review.java" afterPath="$PROJECT_DIR$/src/DomainClasses/Review.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nTests.java" afterPath="$PROJECT_DIR$/src/nTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/reviewer.jsp" afterPath="$PROJECT_DIR$/web/reviewer.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -233,7 +137,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="403">
               <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="63" />
-              <folding />
+              <folding>
+                <marker date="1496524937201" expanded="true" signature="2856:2864" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,8 +147,8 @@
       <file leaf-file-name="findIdByUser.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/findIdByUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="231">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -279,6 +185,7 @@
               <folding>
                 <element signature="e#1041#1042#0" expanded="true" />
                 <element signature="e#1095#1096#0" expanded="true" />
+                <marker date="1496524960659" expanded="true" signature="1411:1417" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -290,12 +197,10 @@
             <state relative-caret-position="128">
               <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding>
-                <marker date="1496523252393" expanded="true" signature="593:630" ph="insert into Reviews... " />
-                <marker date="1496523252393" expanded="true" signature="1249:1270" ph="select * fro... Reviews" />
-                <marker date="1496523252393" expanded="true" signature="2045:2083" ph="select * fro... Reviews" />
-                <marker date="1496523252393" expanded="true" signature="2854:2890" ph="delete from " />
-                <marker date="1496523252393" expanded="true" signature="3232:3311" ph="update Revie... " />
-                <marker date="1496523252393" expanded="true" signature="3940:3970" ph="select * fro... Reviews" />
+                <marker date="1496524967180" expanded="true" signature="593:630" ph="insert into Reviews... " />
+                <marker date="1496524967180" expanded="true" signature="1249:1270" ph="select * fro... Reviews" />
+                <marker date="1496524967180" expanded="true" signature="2045:2083" ph="select * fro... Reviews" />
+                <marker date="1496524967180" expanded="true" signature="2854:2890" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -1355,7 +1260,7 @@
       <workItem from="1496433987773" duration="406000" />
       <workItem from="1496483288220" duration="6490000" />
       <workItem from="1496491098622" duration="1271000" />
-      <workItem from="1496496734852" duration="26762000" />
+      <workItem from="1496496734852" duration="26985000" />
     </task>
     <task id="LOCAL-00001" summary="started Proposal submission">
       <created>1496422848864</created>
@@ -1399,11 +1304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496431289988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ievriting dan">
+      <created>1496524924434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496524924434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92061000" />
+    <option name="totallyTimeSpent" value="92284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1438,7 +1350,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2588889" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.494705" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.494705" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32444444" sideWeight="0.49394855" order="12" side_tool="false" content_ui="tabs" />
@@ -1645,30 +1557,24 @@
         <state relative-caret-position="699">
           <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
           <folding>
-            <element signature="method#save#0;class#Repository_Proposal#0" expanded="false" />
-            <element signature="e#3282#3292#0" expanded="true" />
-            <element signature="e#9125#9134#0" expanded="true" />
-            <element signature="e#9752#9762#0" expanded="true" />
-            <element signature="e#10140#10149#0" expanded="true" />
-            <element signature="e#10762#10772#0" expanded="true" />
-            <marker date="1496496720205" expanded="true" signature="982:1015" ph="insert into Paper... " />
-            <marker date="1496496720205" expanded="true" signature="1255:1288" ph="insert into Paper... " />
-            <marker date="1496496720205" expanded="true" signature="1532:1578" ph="insert into Proposal... " />
-            <marker date="1496496720205" expanded="true" signature="2092:2128" ph="SELECT MAX(I... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="2402:2456" ph="SELECT idPcM... PcMember" />
-            <marker date="1496496720205" expanded="true" signature="2784:2826" ph="INSERT INTO PcMember_Proposal... " />
-            <marker date="1496496720205" expanded="true" signature="3359:3400" ph="select * fro... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="4922:5044" ph="update Propo... " />
-            <marker date="1496496720205" expanded="true" signature="5892:5923" ph="select idPro... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="6477:6516" ph="delete from " />
-            <marker date="1496496720205" expanded="true" signature="6965:7012" ph="select idPro... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="7744:7836" ph="select idPro... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="8527:8617" ph="select idPro... Proposal" />
-            <marker date="1496496720205" expanded="true" signature="9256:9311" ph="select idBid... Bidder_Proposal" />
-            <marker date="1496496720205" expanded="true" signature="10269:10315" ph="select idRev... Reviews" />
-            <marker date="1496496720205" expanded="true" signature="11275:11334" ph="select idPcM... PcMember_Proposal" />
-            <marker date="1496496720205" expanded="true" signature="11876:11914" ph="insert into Reviews... " />
-            <marker date="1496496720205" expanded="true" signature="12473:12515" ph="insert into Bidder_Proposal... " />
+            <marker date="1496524937200" expanded="true" signature="982:1015" ph="insert into Paper... " />
+            <marker date="1496524937200" expanded="true" signature="1255:1288" ph="insert into Paper... " />
+            <marker date="1496524937200" expanded="true" signature="1532:1578" ph="insert into Proposal... " />
+            <marker date="1496524937200" expanded="true" signature="2092:2128" ph="SELECT MAX(I... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="2402:2456" ph="SELECT idPcM... PcMember" />
+            <marker date="1496524937200" expanded="true" signature="2784:2826" ph="INSERT INTO PcMember_Proposal... " />
+            <marker date="1496524937200" expanded="true" signature="3359:3400" ph="select * fro... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="4922:5044" ph="update Propo... " />
+            <marker date="1496524937200" expanded="true" signature="5892:5923" ph="select idPro... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="6477:6516" ph="delete from " />
+            <marker date="1496524937200" expanded="true" signature="6965:7012" ph="select idPro... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="7744:7836" ph="select idPro... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="8527:8617" ph="select idPro... Proposal" />
+            <marker date="1496524937200" expanded="true" signature="9256:9311" ph="select idBid... Bidder_Proposal" />
+            <marker date="1496524937200" expanded="true" signature="10269:10315" ph="select idRev... Reviews" />
+            <marker date="1496524937200" expanded="true" signature="11275:11334" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496524937200" expanded="true" signature="11876:11914" ph="insert into Reviews... " />
+            <marker date="1496524937200" expanded="true" signature="12473:12515" ph="insert into Bidder_Proposal... " />
           </folding>
         </state>
       </provider>
@@ -1866,12 +1772,10 @@
         <state relative-caret-position="128">
           <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding>
-            <marker date="1496523252393" expanded="true" signature="593:630" ph="insert into Reviews... " />
-            <marker date="1496523252393" expanded="true" signature="1249:1270" ph="select * fro... Reviews" />
-            <marker date="1496523252393" expanded="true" signature="2045:2083" ph="select * fro... Reviews" />
-            <marker date="1496523252393" expanded="true" signature="2854:2890" ph="delete from " />
-            <marker date="1496523252393" expanded="true" signature="3232:3311" ph="update Revie... " />
-            <marker date="1496523252393" expanded="true" signature="3940:3970" ph="select * fro... Reviews" />
+            <marker date="1496524967180" expanded="true" signature="593:630" ph="insert into Reviews... " />
+            <marker date="1496524967180" expanded="true" signature="1249:1270" ph="select * fro... Reviews" />
+            <marker date="1496524967180" expanded="true" signature="2045:2083" ph="select * fro... Reviews" />
+            <marker date="1496524967180" expanded="true" signature="2854:2890" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1883,6 +1787,7 @@
           <folding>
             <element signature="e#1041#1042#0" expanded="true" />
             <element signature="e#1095#1096#0" expanded="true" />
+            <marker date="1496524960659" expanded="true" signature="1411:1417" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1912,7 +1817,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="63" />
-          <folding />
+          <folding>
+            <marker date="1496524937201" expanded="true" signature="2856:2864" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1955,17 +1862,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/findIdByUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="231">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
