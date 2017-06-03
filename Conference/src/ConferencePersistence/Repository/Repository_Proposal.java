@@ -9,6 +9,7 @@ import DomainClasses.Proposal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by crys_ on 25.05.2017.
@@ -226,7 +227,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return proposalList;
     }
 
-    protected Iterable<Integer> findBidderIds(Integer integer){
+    public Iterable<Integer> findBidderIds(Integer integer){
         List<Integer> bidders = new ArrayList<Integer>();
         Connection conn = connection.getConnection();
         try (PreparedStatement preStmt = conn.prepareStatement("select idBidder from Bidder_Proposal where idProposal=?")) {
@@ -242,7 +243,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return bidders;
     }
 
-    protected Iterable<PcMember> findBidders(Integer integer){
+    public Iterable<PcMember> findBidders(Integer integer){
         List<PcMember> bidders = new ArrayList<PcMember>();
         List<Integer> bidderIds = (List<Integer>) this.findBidderIds(integer);
         Connection conn = connection.getConnection();
@@ -253,7 +254,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     }
 
 
-    protected Iterable<Integer> findReviewerIds(Integer integer){
+    public Iterable<Integer> findReviewerIds(Integer integer){
         List<Integer> reviewers = new ArrayList<Integer>();
         Connection conn = connection.getConnection();
         try(PreparedStatement prstmt = conn.prepareStatement("select idReviewer from Reviews where idPaper=?")) {
@@ -269,7 +270,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return reviewers;
     }
 
-    protected Iterable<PcMember> findReviewers(Integer integer){
+    public Iterable<PcMember> findReviewers(Integer integer){
         List<PcMember> reviewers = new ArrayList<PcMember>();
         List<Integer> reviewerIds = (List<Integer>) this.findReviewerIds(integer);
         Connection conn = connection.getConnection();
@@ -278,7 +279,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         }
         return reviewers;
     }
-    protected List<Integer> findAuthorsIDByPaperID(Integer id){
+    public List<Integer> findAuthorsIDByPaperID(Integer id){
         Connection conn = connection.getConnection();
         List<Integer> idList = new ArrayList<>();
         try(PreparedStatement prstmt = conn.prepareStatement("select idPcMember from PcMember_Proposal where idProposal=?")){
@@ -292,5 +293,30 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         }
         return idList;
     }
-
+    public void assignReviewer(Integer idProposal,Integer idReviewer){
+        Connection conn = connection.getConnection();
+        Random idRandom = new Random();
+        try(PreparedStatement prstmt = conn.prepareStatement("insert into Reviews VALUES (?,?,?,?,?)")){
+            prstmt.setInt(1,idRandom.nextInt(500));
+            prstmt.setInt(2,idProposal);
+            prstmt.setInt(3,idReviewer);
+            prstmt.setString(4,null);
+            prstmt.setString(5,null);
+            prstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void assignBidder(Integer idBidder ,Integer idProposal){
+        Connection conn = connection.getConnection();
+        Random idRandom = new Random();
+        try(PreparedStatement prstmt = conn.prepareStatement("insert into Bidder_Proposal VALUES (?,?,?)")){
+            prstmt.setInt(1,idRandom.nextInt(500));
+            prstmt.setInt(2,idBidder);
+            prstmt.setInt(3,idProposal);
+            prstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

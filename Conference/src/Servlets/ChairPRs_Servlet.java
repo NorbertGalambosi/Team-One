@@ -44,8 +44,29 @@ public class ChairPRs_Servlet extends HttpServlet {
             for (PcMember p:ctrl.getAllPcMembers())
                 for (String type:p.getType())
                     if (type.equals("Reviewer"))
-                        reviewers = reviewers+p.getName()+"|";
+                        reviewers = reviewers+p.getid()+";"+p.getName()+"|";
             responseWriter.print(reviewers);
+        }
+        if (action.equals("assign")){
+            Controller_Proposal ctrlP = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
+            Controller_PcMember ctrlPCM = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
+            String proposal = request.getParameter("proposal");
+            String reviewer = request.getParameter("reviewer");
+            String[] propArgs = proposal.split(":");
+            String[] revArgs = reviewer.split(":");
+            int idProposal = Integer.parseInt(propArgs[0]);
+            int idReviewer = Integer.parseInt(revArgs[0]);
+            int ok = 0;
+            System.out.println("IDP :"+idProposal+" IDR :"+idReviewer);
+            for(Integer i:ctrlP.findReviewerIDs(idProposal))
+                if (i==idReviewer) {
+                    responseWriter.print("error");
+                    ok = 1;
+                }
+            if (ok ==0) {
+                ctrlP.assignReviewer(idProposal, idReviewer);
+                responseWriter.print("done");
+            }
         }
     }
 }

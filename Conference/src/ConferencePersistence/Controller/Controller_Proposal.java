@@ -6,6 +6,7 @@ import Validator.Validator_Exception;
 import Validator.Validator_Proposal;
 
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Created by Viman Adrian on 25.05.2017.
@@ -24,8 +25,6 @@ public class Controller_Proposal {
         try{
             validatorProposal.validate(entity);
             repositoryProposal.save(entity);
-            //System.out.println(entity);
-//Proposal{id=null, name='testName', fullPaper=Paper{id=null, name='testFullPaperNamea', fileName='null'}, abstractPaper=Paper{id=null, name='testAbstractPaperName', fileName='null'}, keywords='testKeywords', topics='testTopics', accepted=false, autor=PcMember{id=null, name='Viorelius', affiliation='null', email='null', webpage='null', username='null', password='null', pay=false, type='[]'}, reviewers=null, bidders=null}
             return true;
         }catch(Validator_Exception e){
             e.printStackTrace();
@@ -67,5 +66,19 @@ public class Controller_Proposal {
     public Iterable<Proposal> findByBidder(Integer integer){
         return this.repositoryProposal.findByBidder(integer);
     }
+    public void assignReviewer(Integer idProp,Integer idRev){
+        this.repositoryProposal.assignReviewer(idProp,idRev);
+    }
+    public void assignBidder(Integer idBidder,Integer idprop){
+        this.repositoryProposal.assignBidder(idBidder, idprop);
+    }
+
+    public Iterable<Integer> findBidderIDs(Integer idProposal){
+        return repositoryProposal.findBidderIds(idProposal);
+    }
+    public Iterable<Integer> findReviewerIDs(Integer idProposal){
+        return repositoryProposal.findReviewerIds(idProposal);
+    }
+
 
 }
