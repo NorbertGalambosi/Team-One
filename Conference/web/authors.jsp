@@ -117,8 +117,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="mine"><select id="myProposals"><option>NIMIC</option></select></td>
-                        <td class="theirs"><select id="enemyProposals"><option>NIMIC</option></select></td>
+                        <td class="mine"><select id="myProposals"><option>(Default)</option></select></td>
+                        <td class="theirs"><select id="enemyProposals"><option>(Default)</option></select></td>
                     </tr>
                     <tr>
                         <td class="mine">
@@ -126,6 +126,8 @@
                             <p><label>Name </label><input type="text" id="mineProposalName"></p>
                             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
                             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+                            <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
+                            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
                             <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
                             <p><input type="button" value="EDIT" id="mineProposalEdit"></p>
                             <p>Reviews</p>

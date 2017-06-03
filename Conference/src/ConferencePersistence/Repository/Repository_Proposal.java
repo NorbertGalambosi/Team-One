@@ -334,7 +334,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         List<Proposal> proposalList = new ArrayList<>();
         List<Integer> proposalIdList = new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember = ? ")){
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where username = ? ")){
             preStmt.setString(1,numeAutor);
             ResultSet resultSet = preStmt.executeQuery();
             if(resultSet.next()){
@@ -379,7 +379,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         List<Proposal> proposalList = new ArrayList<>();
         List<Integer> proposalIdList = new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember <> ? ")){
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where username <> ? ")){
             preStmt.setString(1,numeAutor);
             ResultSet resultSet = preStmt.executeQuery();
             while(resultSet.next()){
@@ -436,6 +436,24 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
                     propo.setTopics(result.getString(6));
                     propo.setAccepted(result.getBoolean(7));
                 }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement prstmt = conn.prepareStatement("select fileName from Paper where namePaper =?")){
+            prstmt.setString(1, propo.getFullPaper().getName());
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                propo.setFullPaper(new Paper(null, propo.getFullPaper().getName(), resultSet.getString(1)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement prstmt = conn.prepareStatement("select fileName from Paper where namePaper =?")){
+            prstmt.setString(1, propo.getAbstractPaper().getName());
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                propo.setAbstractPaper(new Paper(null, propo.getAbstractPaper().getName(), resultSet.getString(1)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
