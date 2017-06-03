@@ -16,6 +16,10 @@
 
 <style>
 
+    body{
+        background-color: #ede3ff;
+    }
+
     h1{
         text-align: center;
         color: #63775B  ;
@@ -132,10 +136,15 @@
             <p><label>Name </label><input type="text" id="mineProposalName"></p>
             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+
             <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
-            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
-            <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
+            <p><label>New full paper </label><input type="file" id="mineProposalNewFile"></p>
             <p><input type="button" value="Edit" id="mineProposalEdit"></p>
+
+            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
+            <p><label>New abstract paper </label><input type="file" id="abstractNewFile"></p>
+            <p><input type="button" value="Edit" id="abstractEdit"></p>
+
             <p>Reviews
                 <select id="mineReviews"><option>Default</option></select></p>
             <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
@@ -156,6 +165,10 @@
         </fieldset>
     </form>
 </div>
+
+<form method="GET" action="login.jsp">
+    <p><input type="submit" name="logout" id="logout" value="Logout"></p>
+</form>
 
 </body>
 </html>

@@ -40,6 +40,9 @@
                     <input type="button" value="register" id="btnregister" name="btnregister">
                 </p>
             </form>
+            <form method="GET" action="login.jsp">
+                <p><input type="submit" name="Back" id="back" value="Back"></p>
+            </form>
         </div>
     </body>
 </html>

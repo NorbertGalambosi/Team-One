@@ -39,12 +39,10 @@
             </p>
             <p>
                 <input type="button" value="Login" id="btnsubmit" name="btnsubmit">
-                <div>
-                <form action="register.jsp" method="get">
-                <input type="submit" value="Register" id="btnregister">
-                </form>
-                </div>
             </p>
+        </form>
+        <form action="register.jsp" method="get">
+            <input type="submit" value="Register" id="btnregister">
         </form>
     </div>
 

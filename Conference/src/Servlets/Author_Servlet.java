@@ -142,6 +142,32 @@ public class Author_Servlet extends HttpServlet {
             }
             responseWriter.print("success");
         }
+        if (action.equals("editAbs")) {
+            String fileName = request.getParameter("file");
+            String abstr = request.getParameter("edit");
+            System.out.println(fileName+" "+abstr+" ");
+            Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
+            for (Paper p:ctrlPaper.getAllPaper()){
+                if (p.getFileName().equals(abstr)) {
+                    p.setFileName(fileName);
+                    ctrlPaper.updatePaper(p,p.getid());
+                }
+            }
+            responseWriter.print("success");
+        }
+        if (action.equals("editFull")) {
+            String fileName = request.getParameter("file");
+            String full = request.getParameter("edit");
+            System.out.println(fileName+" "+full+" ");
+            Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
+            for (Paper p:ctrlPaper.getAllPaper()){
+                if (p.getFileName().equals(full)) {
+                    p.setFileName(fileName);
+                    ctrlPaper.updatePaper(p,p.getid());
+                }
+            }
+            responseWriter.print("success");
+        }
 
     }
 }
