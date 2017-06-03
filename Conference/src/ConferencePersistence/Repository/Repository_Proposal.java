@@ -5,6 +5,7 @@ import DomainClasses.Conference;
 import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
+import sun.security.util.AuthResources;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -194,6 +195,8 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return proposalList;
     }
 
+
+
     public Iterable<Proposal> findByReviewer(Integer integer) {
         List<Integer> proposalIds = new ArrayList<>();
         List<Proposal> proposalList = new ArrayList<>();
@@ -320,6 +323,120 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
             prstmt.setInt(2,idBidder);
             prstmt.setInt(3,idProposal);
             prstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public Iterable<Proposal> findByAuthor(String numeAutor){
+        Integer AuthorId = 0;
+        List<Proposal> proposalList = new ArrayList<>();
+        List<Integer> proposalIdList = new ArrayList<>();
+        Connection conn = connection.getConnection();
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember = ? ")){
+            preStmt.setString(1,numeAutor);
+            ResultSet resultSet = preStmt.executeQuery();
+            if(resultSet.next()){
+                AuthorId = resultSet.getInt(1);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idProposal from PcMember_Proposal where idPcMember = ?")){
+            preStmt.setInt(1, AuthorId);
+            ResultSet resultSet = preStmt.executeQuery();
+            while(resultSet.next()){
+                proposalIdList.add(resultSet.getInt(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("Select * from Proposal where idProposal = ?")){
+            for (Integer id:proposalIdList) {
+                preStmt.setInt(1,id);
+                ResultSet resultSet = preStmt.executeQuery();
+                if(resultSet.next()){
+                    Proposal proposal = new Proposal();
+                    proposal.setid(resultSet.getInt(1));
+                    proposal.setName(resultSet.getString(2));
+                    proposal.setFullPaper(new Paper(null,resultSet.getString(3),null));
+                    proposal.setAbstractPaper(new Paper(null, resultSet.getString(4),null));
+                    proposal.setKeywords(resultSet.getString(5));
+                    proposal.setTopics(resultSet.getString(6));
+                    proposal.setAccepted(resultSet.getBoolean(7));
+                    proposalList.add(proposal);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return proposalList;
+    }
+
+    public Iterable<Proposal> findEnemyProposals(String numeAutor) {
+        List<Integer> idList = new ArrayList<>();
+        List<Proposal> proposalList = new ArrayList<>();
+        List<Integer> proposalIdList = new ArrayList<>();
+        Connection conn = connection.getConnection();
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember <> ? ")){
+            preStmt.setString(1,numeAutor);
+            ResultSet resultSet = preStmt.executeQuery();
+            while(resultSet.next()){
+                idList.add(resultSet.getInt(1));
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idProposal from PcMember_Proposal where idPcMember = ?")){
+            for (Integer id:idList) {
+                preStmt.setInt(1, id);
+                ResultSet resultSet = preStmt.executeQuery();
+                while(resultSet.next()){
+                    proposalIdList.add(resultSet.getInt(1));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("Select * from Proposal where idProposal = ?")){
+            for (Integer id:proposalIdList) {
+                preStmt.setInt(1,id);
+                ResultSet resultSet = preStmt.executeQuery();
+                if(resultSet.next()){
+                    Proposal proposal = new Proposal();
+                    proposal.setid(resultSet.getInt(1));
+                    proposal.setName(resultSet.getString(2));
+                    proposal.setFullPaper(new Paper(null,resultSet.getString(3),null));
+                    proposal.setAbstractPaper(new Paper(null, resultSet.getString(4),null));
+                    proposal.setKeywords(resultSet.getString(5));
+                    proposal.setTopics(resultSet.getString(6));
+                    proposal.setAccepted(resultSet.getBoolean(7));
+                    proposalList.add(proposal);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return proposalList;
+    }
+
+    public Proposal findByName(String proposal, String author) {
+        Connection conn = connection.getConnection();
+        Proposal propo= new Proposal();
+        try (PreparedStatement prstmt = conn.prepareStatement("select * from Proposal where nameProposal=?")) {
+            prstmt.setString(1, proposal);
+            try (ResultSet result = prstmt.executeQuery()) {
+                if (result.next()) {
+                    propo.setid(result.getInt(1));
+                    propo.setName(result.getString(2));
+                    //fullPaper = result.getString(3);
+                    //abstractPaper = result.getString(4);
+                    propo.setKeywords(result.getString(5));
+                    propo.setTopics(result.getString(6));
+                    propo.setAccepted(result.getBoolean(7));
+                }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -48,6 +48,14 @@
     {
         pointer-events: none;
     }
+
+    .mine{
+        background-color: lightgreen;
+    }
+
+    .theirs{
+        background-color: lightcoral;
+    }
 </style>
 <body>
 
@@ -97,29 +105,44 @@
 
 <div>
     <form>
-        <h1>My Papers</h1>
-        <p><label>Name </label><input type="text" name="nameP">
-            <label>Keywords </label><input type="text" name="keywords">
-            <label>Topics </label><input type="text" name="topics">
-            <label>Authors </label><input type="text" name="authors">
-            <label>Edit </label><input type="file" name="edit">
-            <input type="button" name="details" value="Details" onclick="getElementById('details').slideDown('slow')">
+        <p>
+            <table id="proposalTable">
+                <thead>
+                    <td>My Proposals</td>
+                    <td>Enemy Proposals</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mine"><select id="myProposals"><option>NIMIC</option></select></td>
+                        <td class="theirs"><select id="enemyProposals"><option>NIMIC</option></select></td>
+                    </tr>
+                    <tr>
+                        <td class="mine">
+                            <p><label>Name </label><input type="text" id="mineProposalName"></p>
+                            <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
+                            <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+                            <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
+                            <p><input type="button" value="EDIT" id="mineProposalEdit"></p>
+                            <p>Reviews</p>
+                            <select id="mineReviews"><option>NIMIC</option></select>
+                            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
+                            <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
+                            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
+                        </td>
+
+                        <td class="theirs">
+                            <p><label>Name </label><input type="text" id="theirsProposalName"></p>
+                            <p><label>Keywords </label><input type="text" id="theirsProposalKeywords"></p>
+                            <p><label>Topics </label><input type="text" id="theirsProposalTopics"></p>
+                            <p><label>Authors </label><input type="text" id="theirsProposalAuthors"></p>
+                            <p><input type="button" value="Bid" id="theirsProposalBid"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </p>
     </form>
 </div>
-
-<div>
-    <form id="details">
-        <label>Status </label><input type="text" name="status">
-        <label>Review result </label><input type="text" name="reviewresult">
-        <label>Recommendations </label><textarea rows="4" cols="50"></textarea>
-    </form>
-</div>
-
-<p><input type="button" name="bid" value="Bid"></p>
-<form method="GET" action="login.jsp">
-    <p><input type="button" name="logout" id="logout" value="Logout"></p>
-</form>
 
 </body>
 </html>

@@ -31,7 +31,7 @@ public class Author_Servlet extends HttpServlet {
             String autor = request.getParameter("autor");
             String full = request.getParameter("full");
             String abs = request.getParameter("abstract");
-            System.out.println(name+" "+keywords+" "+topics+" "+autor+" "+full+" "+abs);
+            //System.out.println(name+" "+keywords+" "+topics+" "+autor+" "+full+" "+abs);
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
             Proposal pr = new Proposal();
             pr.setName(name);
@@ -50,6 +50,32 @@ public class Author_Servlet extends HttpServlet {
                 responseWriter.print("succes");
             else
                 responseWriter.print("eroare");
+        }
+
+        if (action.equals("myProposals")) {
+            String user = request.getParameter("user");
+            Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
+            String proposals = "";
+            for (Proposal p:cp.findByAuthor(user)) {
+                proposals = proposals + p.getName() + "|";
+            }
+            responseWriter.print(proposals);
+        }
+        if(action.equals("enemyProposals")){
+            String user = request.getParameter("user");
+            Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
+            String proposals = "";
+            for (Proposal p:cp.findEnemyProposals(user)) {
+                proposals = proposals + p.getName() + "|";
+            }
+            responseWriter.print(proposals);
+        }
+        if(action.equals("myProposals")){
+            String proposal = request.getParameter("proposal");
+            String author = request.getParameter("user");
+            Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
+            String prop = "";
+            cp.findByName(proposal, author);
         }
 
     }

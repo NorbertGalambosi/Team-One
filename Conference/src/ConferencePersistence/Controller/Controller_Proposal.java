@@ -79,6 +79,16 @@ public class Controller_Proposal {
     public Iterable<Integer> findReviewerIDs(Integer idProposal){
         return repositoryProposal.findReviewerIds(idProposal);
     }
+    public Iterable<Proposal> findByAuthor(String AuthorName){
+        return this.repositoryProposal.findByAuthor(AuthorName);
+    }
 
 
+    public Iterable<Proposal> findEnemyProposals(String user) {
+        return this.repositoryProposal.findEnemyProposals(user);
+    }
+
+    public Proposal findByName(String proposal, String author) {
+        return this.repositoryProposal.findByName(proposal, author);
+    }
 }
