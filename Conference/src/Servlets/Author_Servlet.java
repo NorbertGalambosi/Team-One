@@ -1,11 +1,15 @@
 package Servlets;
 
 import ConferencePersistence.Controller.Controller_Proposal;
+import ConferencePersistence.Controller.Controller_Review;
 import ConferencePersistence.Repository.Repository_Proposal;
+import ConferencePersistence.Repository.Repository_Review;
 import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
+import DomainClasses.Review;
 import Validator.Validator_Proposal;
+import Validator.Validator_Review;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -70,14 +74,27 @@ public class Author_Servlet extends HttpServlet {
             }
             responseWriter.print(proposals);
         }
-        if(action.equals("myProposals")){
+        if(action.equals("proposalChange")){
             String proposal = request.getParameter("proposal");
             String author = request.getParameter("user");
+            //System.out.println(proposal);
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
-            String prop = "";
-            cp.findByName(proposal, author);
+            Proposal pr = cp.findByName(proposal, author);
+            //System.out.println(pr);
+            responseWriter.print(pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics());
         }
-
+        if(action.equals("proposalChange2")){
+            String proposal = request.getParameter("proposal");
+            String author = request.getParameter("user");
+            //System.out.println(proposal);
+            Controller_Review cp = new Controller_Review(new Repository_Review(),new Validator_Review());
+            String reviews="";
+            for (Review rev:cp.findByProposalName(proposal, author)) {
+                reviews=reviews+rev.getQualifier()+"|";
+            }
+            responseWriter.print(reviews);
+            //System.out.println(pr);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

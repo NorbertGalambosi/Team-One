@@ -2,6 +2,7 @@ package ConferencePersistence.Controller;
 
 import ConferencePersistence.Repository.Repository_Proposal;
 import DomainClasses.Proposal;
+import DomainClasses.Review;
 import Validator.Validator_Exception;
 import Validator.Validator_Proposal;
 
@@ -91,4 +92,5 @@ public class Controller_Proposal {
     public Proposal findByName(String proposal, String author) {
         return this.repositoryProposal.findByName(proposal, author);
     }
+
 }

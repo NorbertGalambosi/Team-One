@@ -430,8 +430,8 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
                 if (result.next()) {
                     propo.setid(result.getInt(1));
                     propo.setName(result.getString(2));
-                    //fullPaper = result.getString(3);
-                    //abstractPaper = result.getString(4);
+                    propo.setFullPaper(new Paper(null, result.getString(3),null));//fullPaper = result.getString(3);
+                    propo.setAbstractPaper(new Paper(null, result.getString(4),null));//abstractPaper = result.getString(4);
                     propo.setKeywords(result.getString(5));
                     propo.setTopics(result.getString(6));
                     propo.setAccepted(result.getBoolean(7));
@@ -440,5 +440,6 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return propo;
     }
 }
