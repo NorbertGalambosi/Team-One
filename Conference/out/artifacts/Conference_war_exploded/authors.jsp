@@ -150,7 +150,7 @@
             <p><input type="button" value="Edit" id="abstractEdit"></p>
 
             <p>Reviews
-                <select id="mineReviews"><option>NIMIC</option></select></p>
+                <select id="mineReviews"><option>Default</option></select></p>
             <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
             <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
             </td>

@@ -197,3 +197,61 @@ $(document).ready(function () {
         });
     });
 });
+$(document).ready(function () {
+   $('#abstractEdit').click(function () {
+       var fullPath = document.getElementById('abstractNewFile').value;
+       if (fullPath) {
+           var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+           var filename = fullPath.substring(startIndex);
+           if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+               filename = filename.substring(1);
+           }
+           console.log(filename);
+       }
+       $.ajax({
+          type : "GET",
+           url : "Author_Servlet",
+           data :{
+              action : "editAbs",
+               edit : $('#mineAbstractFileName').val(),
+               file : filename
+           },
+           success : function (result) {
+               var res = result;
+               if (res === "success")
+                   alert("Uploaded successfuly!");
+               else
+                   alert("Can't upload!");
+           }
+       });
+   });
+});
+$(document).ready(function () {
+    $('#mineProposalEdit').click(function () {
+        var fullPath = document.getElementById('mineProposalNewFile').value;
+        if (fullPath) {
+            var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+            var filename = fullPath.substring(startIndex);
+            if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                filename = filename.substring(1);
+            }
+            console.log(filename);
+        }
+        $.ajax({
+            type : "GET",
+            url : "Author_Servlet",
+            data :{
+                action : "editFull",
+                edit : $('#mineFullFileName').val(),
+                file : filename
+            },
+            success : function (result) {
+                var res = result;
+                if (res === "success")
+                    alert("Uploaded successfuly!");
+                else
+                    alert("Can't upload!");
+            }
+        });
+    });
+});
