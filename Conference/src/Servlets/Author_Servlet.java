@@ -21,7 +21,6 @@ import java.io.PrintWriter;
 @WebServlet(name = "Author_Servlet")
 public class Author_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("doPost");
         PrintWriter responseWriter = response.getWriter();
         response.setContentType("text/plain");
         String action = request.getParameter("action");
@@ -32,6 +31,7 @@ public class Author_Servlet extends HttpServlet {
             String autor = request.getParameter("autor");
             String full = request.getParameter("full");
             String abs = request.getParameter("abstract");
+            System.out.println(name+" "+keywords+" "+topics+" "+autor+" "+full+" "+abs);
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
             Proposal pr = new Proposal();
             pr.setName(name);

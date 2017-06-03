@@ -32,15 +32,20 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
     public void save(Proposal entity) throws SQLException {
         int idProposal = 0;
         int idPcMember = 0;
+        Random id = new Random();
         Connection conn = connection.getConnection();
-        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (null,?)")) {
-            preStmt.setString(1, entity.getFullPaper().getName());
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (?,?,?)")) {
+            preStmt.setInt(1,id.nextInt(500));
+            preStmt.setString(2, entity.getFullPaper().getName());
+            preStmt.setString(3,null);
             preStmt.executeUpdate();
         } catch (SQLException e) {
             throw e;
         }
-        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (null,?)")) {
-            preStmt.setString(1, entity.getAbstractPaper().getName());
+        try (PreparedStatement preStmt = conn.prepareStatement("insert into Paper values (?,?,?)")) {
+            preStmt.setInt(1,id.nextInt(500));
+            preStmt.setString(2, entity.getAbstractPaper().getName());
+            preStmt.setString(3,null);
             preStmt.executeUpdate();
         } catch (SQLException e) {
             throw e;
@@ -63,7 +68,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             throw e;
         }
-        try(PreparedStatement preStmt = conn.prepareStatement("SELECT idPcMember FROM PcMember WHERE namePcMember = ?")){
+        try(PreparedStatement preStmt = conn.prepareStatement("SELECT idPcMember FROM PcMember WHERE username = ?")){
             preStmt.setString(1,entity.getAutor().getName());
             ResultSet result = preStmt.executeQuery();
             if(result.next())

@@ -3,10 +3,7 @@
  */
 
 $(document).ready(function () {
-    update();
-
     $('#submitPaper').click(function () {
-        alert("submitPaper");
         $.ajax({
             type : "POST",
             url : 'Author_Servlet',
@@ -21,19 +18,12 @@ $(document).ready(function () {
             },
             success : function(result){
                 var res = result;
-                if(res=="succes"){
+                if(res=="succes")
                     alert("Adaugat cu succes");
-                    update();
-                }
-                else{
+                else
                     alert("Eroare");
-                }
             }
         });
     });
-
-    function update() {
-        alert("update");
-    }
 });
 
