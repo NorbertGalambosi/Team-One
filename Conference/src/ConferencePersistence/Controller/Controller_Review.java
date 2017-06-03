@@ -34,4 +34,8 @@ public class Controller_Review {
     public Iterable<Review> getAllReviews(){
         return this.repositoryReview.findAll();
     }
+
+    public Iterable<Review> findByProposalName(String proposal, String author) {
+        return this.repositoryReview.findByProposalName(proposal);
+    }
 }

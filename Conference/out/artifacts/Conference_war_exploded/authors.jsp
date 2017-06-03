@@ -122,6 +122,7 @@
                     </tr>
                     <tr>
                         <td class="mine">
+                            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
                             <p><label>Name </label><input type="text" id="mineProposalName"></p>
                             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
                             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
@@ -129,7 +130,6 @@
                             <p><input type="button" value="EDIT" id="mineProposalEdit"></p>
                             <p>Reviews</p>
                             <select id="mineReviews"><option>NIMIC</option></select>
-                            <p><label>Status </label><input type="text" id="mineReviewStatus"></p>
                             <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
                             <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
                         </td>

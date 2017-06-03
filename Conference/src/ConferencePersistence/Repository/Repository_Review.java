@@ -89,4 +89,34 @@ public class Repository_Review implements IRepository<Integer, Review> {
         }
     }
 
+    public Iterable<Review> findByProposalName(String proposal) {
+        Connection conn = connection.getConnection();
+        List<Review> reviewList = new ArrayList<>();
+        Integer id = 0;
+        try(PreparedStatement preStmt = conn.prepareStatement("SELECT idProposal FROM Proposal where nameProposal=?")){
+            preStmt.setString(1, proposal);
+            ResultSet resultSet = preStmt.executeQuery();
+            if(resultSet.next()){
+                id = resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try(PreparedStatement preStmt = conn.prepareStatement("SELECT * FROM Reviews where idPaper=?")){
+            preStmt.setInt(1,id);
+            ResultSet resultSet = preStmt.executeQuery();
+            while(resultSet.next()){
+                Review rev = new Review();
+                rev.setid(resultSet.getInt(1));
+                rev.setIdPaper(resultSet.getInt(2));
+                rev.setIdReviewer(resultSet.getInt(3));
+                rev.setRecommendation(resultSet.getString(4));
+                rev.setQualifier(resultSet.getString(5));
+                reviewList.add(rev);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return reviewList;
+    }
 }
