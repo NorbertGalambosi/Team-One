@@ -131,6 +131,7 @@ $(document).ready(function () {
                     alert("Bid cu succes");
                 else
                     alert("Eroare");
+                //System.out.println("Hello world!");
             }
         });
     });

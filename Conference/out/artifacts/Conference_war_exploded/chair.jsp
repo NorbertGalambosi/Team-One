@@ -50,7 +50,7 @@
         #sel{
             font-size:17px;
             font-family: "Comic Sans MS";
-            list-style-type: square;
+
         }
 
     </style>

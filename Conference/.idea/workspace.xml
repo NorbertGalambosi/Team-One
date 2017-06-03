@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Controller/Controller_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Controller/Controller_Proposal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" afterPath="$PROJECT_DIR$/out/production/Conference/Servlets/Author_Servlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/ConferencePersistence/Repository/Repository_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" afterPath="$PROJECT_DIR$/out/production/Conference/ConferencePersistence/Repository/Repository_Proposal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authorsScipt.js" afterPath="$PROJECT_DIR$/web/authorsScipt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authorsScipt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/chair.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/chair.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Login_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Login_Servlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Register_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Register_Servlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,202 +54,45 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Reviews" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Proposal" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PcMember_Proposal" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db.db" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="main" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PcMember" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="authors.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/authors.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="158" column="80" lean-forward="false" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="80" />
+      <file leaf-file-name="main.PcMember_Type" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Type">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+      <file leaf-file-name="Login_Servlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Servlets/Login_Servlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Author_Servlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="120" column="60" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="60" />
-              <folding />
+      <file leaf-file-name="main.PC_Conference" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PC_Conference">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller_Proposal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="32" />
-              <folding>
-                <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Repository_Proposal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="346" column="24" lean-forward="false" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
-              <folding>
-                <marker date="1496521793037" expanded="true" signature="306:348" ph="/**...*/" />
-                <marker date="1496521793037" expanded="true" signature="587:746" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="820:3229" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="1030:1062" ph="insert into Paper... " />
-                <marker date="1496521793037" expanded="true" signature="1388:1420" ph="insert into Paper... " />
-                <marker date="1496521793037" expanded="true" signature="1750:1796" ph="insert into Proposal... " />
-                <marker date="1496521793037" expanded="true" signature="2310:2346" ph="SELECT MAX(I... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="2612:2662" ph="SELECT idPcM... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="2990:3032" ph="INSERT INTO PcMember_Proposal... " />
-                <marker date="1496521793037" expanded="true" signature="3290:4958" ph="{...}" />
-                <marker date="1496521793037" expanded="false" signature="3488:3498" ph="&lt;~&gt;" />
-                <marker date="1496521793037" expanded="true" signature="3565:3606" ph="select * fro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="5008:5812" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="5128:5250" ph="update Propo... " />
-                <marker date="1496521793037" expanded="true" signature="5868:6529" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="6098:6129" ph="select idPro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="6565:6879" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="6683:6722" ph="delete from " />
-                <marker date="1496521793037" expanded="true" signature="6941:7656" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="7171:7218" ph="select idPro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="7722:8444" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="7952:8044" ph="select idPro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="8505:9225" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="8735:8825" ph="select idPro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="9286:9852" ph="{...}" />
-                <marker date="1496521793037" expanded="false" signature="9333:9342" ph="&lt;~&gt;" />
-                <marker date="1496521793037" expanded="true" signature="9464:9519" ph="select idBid... Bidder_Proposal" />
-                <marker date="1496521793037" expanded="true" signature="9912:10235" ph="{...}" />
-                <marker date="1496521793037" expanded="false" signature="9960:9970" ph="&lt;~&gt;" />
-                <marker date="1496521793037" expanded="true" signature="10299:10858" ph="{...}" />
-                <marker date="1496521793037" expanded="false" signature="10348:10357" ph="&lt;~&gt;" />
-                <marker date="1496521793037" expanded="true" signature="10477:10523" ph="select idRev... Reviews" />
-                <marker date="1496521793037" expanded="true" signature="10920:11255" ph="{...}" />
-                <marker date="1496521793037" expanded="false" signature="10970:10980" ph="&lt;~&gt;" />
-                <marker date="1496521793037" expanded="true" signature="11315:11856" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="11483:11542" ph="select idPcM... PcMember_Proposal" />
-                <marker date="1496521793037" expanded="true" signature="11926:12456" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="12084:12122" ph="insert into Reviews... " />
-                <marker date="1496521793037" expanded="true" signature="12544:13041" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="12755:12797" ph="insert into Bidder_Proposal... " />
-                <marker date="1496521793037" expanded="true" signature="13109:13589" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="13265:13313" ph="SELECT idPcM... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="13653:14124" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="13805:13857" ph="SELECT idPro... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="14187:16235" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="14451:14501" ph="Select idPcM... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="14844:14905" ph="Select idPro... PcMember_Proposal" />
-                <marker date="1496521793037" expanded="true" signature="15258:15301" ph="Select * fro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="16304:18443" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="16588:16639" ph="Select idPcM... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="16986:17047" ph="Select idPro... PcMember_Proposal" />
-                <marker date="1496521793037" expanded="true" signature="17466:17509" ph="Select * fro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="18508:21379" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="18667:18710" ph="select * fro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="19557:19602" ph="select fileN... Paper" />
-                <marker date="1496521793037" expanded="true" signature="20026:20071" ph="select fileN... Paper" />
-                <marker date="1496521793037" expanded="true" signature="20534:20595" ph="select idPcM... PcMember_Proposal" />
-                <marker date="1496521793037" expanded="true" signature="20937:20950" ph="select nameP... " />
-                <marker date="1496521793037" expanded="true" signature="20937:20989" ph="select nameP... PcMember" />
-                <marker date="1496521793037" expanded="true" signature="21424:22446" ph="{...}" />
-                <marker date="1496521793037" expanded="true" signature="21567:21619" ph="select idPro... Proposal" />
-                <marker date="1496521793037" expanded="true" signature="21979:22035" ph="select count... Bidder_Proposal" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="62" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -327,23 +176,23 @@
         <option value="$PROJECT_DIR$/web/chairScript.js" />
         <option value="$PROJECT_DIR$/web/mystyle.css" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/src/Servlets/Login_Servlet.java" />
         <option value="$PROJECT_DIR$/web/loginScript.js" />
         <option value="$PROJECT_DIR$/web/registerScript.js" />
-        <option value="$PROJECT_DIR$/src/Servlets/Register_Servlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/Servlets/UploadServlet.java" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
         <option value="$PROJECT_DIR$/src/DomainClasses/Review.java" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
         <option value="$PROJECT_DIR$/web/authors.jsp" />
         <option value="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
         <option value="$PROJECT_DIR$/web/authorsScipt.js" />
+        <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/Servlets/Register_Servlet.java" />
+        <option value="$PROJECT_DIR$/src/Servlets/Login_Servlet.java" />
       </list>
     </option>
   </component>
@@ -365,10 +214,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -385,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -506,34 +356,11 @@
               <option name="myItemId" value="ConferencePersistence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConferencePersistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1278,6 +1105,7 @@
       <workItem from="1496491098622" duration="4119000" />
       <workItem from="1496513392749" duration="394000" />
       <workItem from="1496515611811" duration="6290000" />
+      <workItem from="1496522693449" duration="278000" />
     </task>
     <task id="LOCAL-00001" summary="started Proposal submission">
       <created>1496422848864</created>
@@ -1395,7 +1223,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88700000" />
+    <option name="totallyTimeSpent" value="88978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1407,7 +1235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1418,7 +1246,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1328125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17776097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1429,12 +1257,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27471384" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27332243" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.494705" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21614583" sideWeight="0.48355263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.48355263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28802082" sideWeight="0.51644737" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1444,6 +1271,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.023630505" sideWeight="0.5047059" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21180555" sideWeight="0.49529412" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1512,7 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1528,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1001">
           <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1587,13 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlets/Register_Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="38" column="112" lean-forward="false" selection-start-line="38" selection-start-column="112" selection-end-line="38" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/registerScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1623,9 +1442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PC_Conference" />
-    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember" />
-    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Type" />
     <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Proposal" />
     <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Proposal" />
     <entry file="file://$PROJECT_DIR$/src/Servlets/ChairPRs_Servlet.java">
@@ -1650,18 +1466,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlets/Login_Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,149 +1502,125 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper" />
-    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Reviews">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Reviews" />
     <entry file="file://$PROJECT_DIR$/web/authors.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="158" column="80" lean-forward="false" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Bidder_Proposal">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="346" column="24" lean-forward="false" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
+        <state relative-caret-position="2754">
+          <caret line="162" column="79" lean-forward="false" selection-start-line="162" selection-start-column="79" selection-end-line="162" selection-end-column="79" />
           <folding>
-            <marker date="1496521793037" expanded="true" signature="306:348" ph="/**...*/" />
-            <marker date="1496521793037" expanded="true" signature="587:746" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="820:3229" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="1030:1062" ph="insert into Paper... " />
-            <marker date="1496521793037" expanded="true" signature="1388:1420" ph="insert into Paper... " />
-            <marker date="1496521793037" expanded="true" signature="1750:1796" ph="insert into Proposal... " />
-            <marker date="1496521793037" expanded="true" signature="2310:2346" ph="SELECT MAX(I... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="2612:2662" ph="SELECT idPcM... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="2990:3032" ph="INSERT INTO PcMember_Proposal... " />
-            <marker date="1496521793037" expanded="true" signature="3290:4958" ph="{...}" />
-            <marker date="1496521793037" expanded="false" signature="3488:3498" ph="&lt;~&gt;" />
-            <marker date="1496521793037" expanded="true" signature="3565:3606" ph="select * fro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="5008:5812" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="5128:5250" ph="update Propo... " />
-            <marker date="1496521793037" expanded="true" signature="5868:6529" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="6098:6129" ph="select idPro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="6565:6879" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="6683:6722" ph="delete from " />
-            <marker date="1496521793037" expanded="true" signature="6941:7656" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="7171:7218" ph="select idPro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="7722:8444" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="7952:8044" ph="select idPro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="8505:9225" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="8735:8825" ph="select idPro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="9286:9852" ph="{...}" />
-            <marker date="1496521793037" expanded="false" signature="9333:9342" ph="&lt;~&gt;" />
-            <marker date="1496521793037" expanded="true" signature="9464:9519" ph="select idBid... Bidder_Proposal" />
-            <marker date="1496521793037" expanded="true" signature="9912:10235" ph="{...}" />
-            <marker date="1496521793037" expanded="false" signature="9960:9970" ph="&lt;~&gt;" />
-            <marker date="1496521793037" expanded="true" signature="10299:10858" ph="{...}" />
-            <marker date="1496521793037" expanded="false" signature="10348:10357" ph="&lt;~&gt;" />
-            <marker date="1496521793037" expanded="true" signature="10477:10523" ph="select idRev... Reviews" />
-            <marker date="1496521793037" expanded="true" signature="10920:11255" ph="{...}" />
-            <marker date="1496521793037" expanded="false" signature="10970:10980" ph="&lt;~&gt;" />
-            <marker date="1496521793037" expanded="true" signature="11315:11856" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="11483:11542" ph="select idPcM... PcMember_Proposal" />
-            <marker date="1496521793037" expanded="true" signature="11926:12456" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="12084:12122" ph="insert into Reviews... " />
-            <marker date="1496521793037" expanded="true" signature="12544:13041" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="12755:12797" ph="insert into Bidder_Proposal... " />
-            <marker date="1496521793037" expanded="true" signature="13109:13589" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="13265:13313" ph="SELECT idPcM... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="13653:14124" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="13805:13857" ph="SELECT idPro... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="14187:16235" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="14451:14501" ph="Select idPcM... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="14844:14905" ph="Select idPro... PcMember_Proposal" />
-            <marker date="1496521793037" expanded="true" signature="15258:15301" ph="Select * fro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="16304:18443" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="16588:16639" ph="Select idPcM... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="16986:17047" ph="Select idPro... PcMember_Proposal" />
-            <marker date="1496521793037" expanded="true" signature="17466:17509" ph="Select * fro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="18508:21379" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="18667:18710" ph="select * fro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="19557:19602" ph="select fileN... Paper" />
-            <marker date="1496521793037" expanded="true" signature="20026:20071" ph="select fileN... Paper" />
-            <marker date="1496521793037" expanded="true" signature="20534:20595" ph="select idPcM... PcMember_Proposal" />
-            <marker date="1496521793037" expanded="true" signature="20937:20950" ph="select nameP... " />
-            <marker date="1496521793037" expanded="true" signature="20937:20989" ph="select nameP... PcMember" />
-            <marker date="1496521793037" expanded="true" signature="21424:22446" ph="{...}" />
-            <marker date="1496521793037" expanded="true" signature="21567:21619" ph="select idPro... Proposal" />
-            <marker date="1496521793037" expanded="true" signature="21979:22035" ph="select count... Bidder_Proposal" />
+            <marker date="1496520422662" expanded="true" signature="6352:6406" ph="..." />
+            <marker date="1496520422662" expanded="true" signature="6352:6415" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Bidder_Proposal" />
+    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="200" column="18" lean-forward="false" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="142" column="55" lean-forward="false" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
-          <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="32" />
+          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
           <folding>
             <element signature="method#findByReviewer#0;class#Controller_Proposal#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="120" column="60" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="60" />
+        <state relative-caret-position="526">
+          <caret line="371" column="24" lean-forward="false" selection-start-line="371" selection-start-column="24" selection-end-line="371" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1496521939628" expanded="true" signature="21257:21379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+        <state relative-caret-position="197">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PC_Conference">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Register_Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="38" column="112" lean-forward="false" selection-start-line="38" selection-start-column="112" selection-end-line="38" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Login_Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
           <folding />
         </state>
       </provider>
