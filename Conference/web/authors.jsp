@@ -142,11 +142,11 @@
             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
             <p><input type="button" value="Edit" id="mineEditProposal"></p>
 
-            <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
+            <p><label>Full paper name </label><input type="text" id="mineFullFileName"></p>
             <p><label>New full paper </label><input type="file" id="mineProposalNewFile"></p>
             <p><input type="button" value="Upload" id="mineProposalEdit"></p>
 
-            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
+            <p><label>Abstract paper name </label><input type="text" id="mineAbstractFileName"></p>
             <p><label>New abstract paper </label><input type="file" id="abstractNewFile"></p>
             <p><input type="button" value="Upload" id="abstractEdit"></p>
 

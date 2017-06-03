@@ -84,7 +84,7 @@ public class Author_Servlet extends HttpServlet {
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
             Proposal pr = cp.findByName(proposal, author);
             //System.out.println(pr);
-            String s = pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getFullPaper().getFileName()+"|"+pr.getAbstractPaper().getFileName();
+            String s = pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getFullPaper().getName()+"|"+pr.getAbstractPaper().getName();
             if(cp.status(proposal)){
                 s = s+"|"+"accepted";
             }
@@ -175,7 +175,7 @@ public class Author_Servlet extends HttpServlet {
             System.out.println(fileName+" "+abstr+" ");
             Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
             for (Paper p:ctrlPaper.getAllPaper()){
-                if (p.getFileName().equals(abstr)) {
+                if (p.getName().equals(abstr)) {
                     p.setFileName(fileName);
                     ctrlPaper.updatePaper(p,p.getid());
                 }
@@ -185,10 +185,9 @@ public class Author_Servlet extends HttpServlet {
         if (action.equals("editFull")) {
             String fileName = request.getParameter("file");
             String full = request.getParameter("edit");
-            System.out.println(fileName+" "+full+" ");
             Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
             for (Paper p:ctrlPaper.getAllPaper()){
-                if (p.getFileName().equals(full)) {
+                if (p.getName().equals(full)) {
                     p.setFileName(fileName);
                     ctrlPaper.updatePaper(p,p.getid());
                 }
