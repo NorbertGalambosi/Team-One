@@ -7,6 +7,7 @@ import DomainClasses.PcMember;
 import DomainClasses.Proposal;
 import sun.security.util.AuthResources;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -315,7 +316,8 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
             e.printStackTrace();
         }
     }
-    public void assignBidder(Integer idBidder ,Integer idProposal){
+    public void assignBidder(Integer idBidder ,Integer idProposal) throws SQLException {
+        System.out.println(idBidder+" "+idProposal);
         Connection conn = connection.getConnection();
         Random idRandom = new Random();
         try(PreparedStatement prstmt = conn.prepareStatement("insert into Bidder_Proposal VALUES (?,?,?)")){
@@ -324,9 +326,34 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
             prstmt.setInt(3,idProposal);
             prstmt.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw e;
         }
     }
+    public int findPcMemberId(String usernume) throws SQLException {
+        System.out.println(usernume);
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("SELECT idPcMember from PcMember where username=?")){
+            prstmt.setString(1,usernume);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }return 0;
+    }
+    public int findProposalId(String name) throws SQLException {
+        System.out.println(name);
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("SELECT idProposal from Proposal where nameProposal=?")){
+            prstmt.setString(1,name);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }return 0;}
 
 
     public Iterable<Proposal> findByAuthor(String numeAutor){

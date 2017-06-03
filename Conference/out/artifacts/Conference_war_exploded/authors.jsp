@@ -16,6 +16,10 @@
 
 <style>
 
+    body{
+        background-color: #ede3ff;
+    }
+
     h1{
         text-align: center;
         color: #63775B  ;
@@ -41,7 +45,6 @@
         font-size: 20px;
         font-family: Courier;
         font-weight: bold;
-
     }
 
     p{
@@ -57,8 +60,13 @@
         font-family: Georgia;
         font-size: 18px;
     }
+
     table,td{
         border: solid 1px;
+    }
+
+    #log{
+        text-align: center;
     }
 </style>
 <body>
@@ -132,21 +140,26 @@
             <p><label>Name </label><input type="text" id="mineProposalName"></p>
             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
+
             <p><label>Full paper(file name)</label><input type="text" id="mineFullFileName"></p>
-            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
-            <p><label>New file </label><input type="file" id="mineProposalNewFile"></p>
+            <p><label>New full paper </label><input type="file" id="mineProposalNewFile"></p>
             <p><input type="button" value="Edit" id="mineProposalEdit"></p>
+
+            <p><label>Abstract paper(file name)</label><input type="text" id="mineAbstractFileName"></p>
+            <p><label>New abstract paper </label><input type="file" id="abstractNewFile"></p>
+            <p><input type="button" value="Edit" id="abstractEdit"></p>
+
             <p>Reviews
                 <select id="mineReviews"><option>Default</option></select></p>
-            <p><label>Review result </label><input type="text" id="mineReviewResult"></p>
-            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations"></textarea></p>
+            <p><label>Review result </label><input type="text" id="mineReviewResult" class="disable"></p>
+            <p><label>Recommendations </label><textarea rows="4" cols="50" id="mineReviewRecommendations" class="disable"></textarea></p>
             </td>
 
             <td class="theirs">
-                <p><label>Name </label><input type="text" id="theirsProposalName"></p>
-                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords"></p>
-                <p><label>Topics </label><input type="text" id="theirsProposalTopics"></p>
-                <p><label>Authors </label><input type="text" id="theirsProposalAuthors"></p>
+                <p><label>Name </label><input type="text" id="theirsProposalName" class="disable"></p>
+                <p><label>Keywords </label><input type="text" id="theirsProposalKeywords" class="disable"></p>
+                <p><label>Topics </label><input type="text" id="theirsProposalTopics" class="disable"></p>
+                <p><label>Authors </label><input type="text" id="theirsProposalAuthors" class="disable"></p>
                 <p><input type="button" value="Bid" id="theirsProposalBid"></p>
             </td>
             </tr>
@@ -156,6 +169,10 @@
         </fieldset>
     </form>
 </div>
+
+<form method="GET" action="login.jsp" id="log">
+    <p><input type="submit" name="logout" id="logout" value="Logout"></p>
+</form>
 
 </body>
 </html>

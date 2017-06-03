@@ -95,6 +95,45 @@ $(document).ready(function () {
             }
         });
     });
+    
+    $("#enemyProposals").change(function () {
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "enemyProposalsChange",
+                proposal : $('#enemyProposals option:selected').val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                values = res.split("|");
+                $("#theirsProposalName").val(values[0]);
+                $("#theirsProposalKeywords").val(values[1]);
+                $("#theirsProposalTopics").val(values[2]);
+                $("#theirsProposalAuthors").val(values[3]);
+            }
+        });
+    })
+
+    $("#theirsProposalBid").click(function () {
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "theirsProposalBid",
+                proposal : $("#theirsProposalName").val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                if(res=="succes")
+                    alert("Bid cu succes");
+                else
+                    alert("Eroare");
+            }
+        });
+    });
 
     function fillMyProposals() {
         $.ajax({
@@ -186,6 +225,64 @@ $(document).ready(function () {
                 action : "uploadA",
                 filename : filename,
                 abstrName : $('#abstractPaperName').val()
+            },
+            success : function (result) {
+                var res = result;
+                if (res === "success")
+                    alert("Uploaded successfuly!");
+                else
+                    alert("Can't upload!");
+            }
+        });
+    });
+});
+$(document).ready(function () {
+   $('#abstractEdit').click(function () {
+       var fullPath = document.getElementById('abstractNewFile').value;
+       if (fullPath) {
+           var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+           var filename = fullPath.substring(startIndex);
+           if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+               filename = filename.substring(1);
+           }
+           console.log(filename);
+       }
+       $.ajax({
+          type : "GET",
+           url : "Author_Servlet",
+           data :{
+              action : "editAbs",
+               edit : $('#mineAbstractFileName').val(),
+               file : filename
+           },
+           success : function (result) {
+               var res = result;
+               if (res === "success")
+                   alert("Uploaded successfuly!");
+               else
+                   alert("Can't upload!");
+           }
+       });
+   });
+});
+$(document).ready(function () {
+    $('#mineProposalEdit').click(function () {
+        var fullPath = document.getElementById('mineProposalNewFile').value;
+        if (fullPath) {
+            var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+            var filename = fullPath.substring(startIndex);
+            if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                filename = filename.substring(1);
+            }
+            console.log(filename);
+        }
+        $.ajax({
+            type : "GET",
+            url : "Author_Servlet",
+            data :{
+                action : "editFull",
+                edit : $('#mineFullFileName').val(),
+                file : filename
             },
             success : function (result) {
                 var res = result;

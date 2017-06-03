@@ -15,6 +15,10 @@
 
     <style>
 
+        body{
+            background-color: #ede3ff;
+        }
+
         h1{
             text-align: center;
             color: #63775B  ;
@@ -24,18 +28,24 @@
             background-color: #F0FFFF;
             font-size: 17px;
             font-family: Arial;
+
         }
 
-        #legend {
+        #legend{
             font-size: 24px;
             font-family: Courier;
             text-align: center;
+            font-style: italic;
+            font-weight: bold;
         }
 
         p{
             font-size: 15px;
         }
-
+        
+        #log{
+            text-align: center;
+        }
 
     </style>
 
@@ -130,8 +140,8 @@
     </form>
 </div>
 
-<form method="GET" action="login.jsp">
-    <p><input type="button" name="logout" id="logout" value="Logout"></p>
+<form method="GET" action="login.jsp" id="log">
+    <p><input type="submit" name="logout" id="logout" value="Logout"></p>
 </form>
 
 

@@ -116,6 +116,25 @@ $(document).ready(function () {
         });
     })
 
+    $("#theirsProposalBid").click(function () {
+        $.ajax({
+            type : "POST",
+            url : 'Author_Servlet',
+            data : {
+                action : "theirsProposalBid",
+                proposal : $("#theirsProposalName").val(),
+                user : sessionStorage.getItem("user")
+            },
+            success : function(result){
+                var res = result;
+                if(res=="succes")
+                    alert("Bid cu succes");
+                else
+                    alert("Eroare");
+            }
+        });
+    });
+
     function fillMyProposals() {
         $.ajax({
             type: "POST",

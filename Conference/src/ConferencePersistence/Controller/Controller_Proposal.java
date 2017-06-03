@@ -71,7 +71,11 @@ public class Controller_Proposal {
         this.repositoryProposal.assignReviewer(idProp,idRev);
     }
     public void assignBidder(Integer idBidder,Integer idprop){
-        this.repositoryProposal.assignBidder(idBidder, idprop);
+        try {
+            this.repositoryProposal.assignBidder(idBidder, idprop);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public Iterable<Integer> findBidderIDs(Integer idProposal){
@@ -95,5 +99,14 @@ public class Controller_Proposal {
 
     public boolean status(String proposal) {
         return this.repositoryProposal.status(proposal);
+    }
+
+    public boolean bid(String proposal, String user) {
+        try{
+            this.repositoryProposal.assignBidder(this.repositoryProposal.findPcMemberId(user), this.repositoryProposal.findProposalId(proposal));
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 }

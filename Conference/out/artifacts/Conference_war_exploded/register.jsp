@@ -41,7 +41,7 @@
                 </p>
             </form>
             <form method="GET" action="login.jsp">
-                <p><input type="button" name="Back" id="back" value="Back"></p>
+                <p><input type="submit" name="Back" id="back" value="Back"></p>
             </form>
         </div>
     </body>

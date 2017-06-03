@@ -117,6 +117,15 @@ public class Author_Servlet extends HttpServlet {
             Proposal pr = cp.findByName(proposal,null);
             responseWriter.print(pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getAutor().getName()+"|");
         }
+        if(action.equals("theirsProposalBid")){
+            String proposal = request.getParameter("proposal");
+            String user = request.getParameter("user");
+            Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
+            if(cp.bid(proposal,user)){
+                responseWriter.print("succes");
+            }else
+                responseWriter.print("eroare");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
