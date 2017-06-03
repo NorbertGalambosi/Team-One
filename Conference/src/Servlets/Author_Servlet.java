@@ -1,13 +1,16 @@
 package Servlets;
 
+import ConferencePersistence.Controller.Controller_Paper;
 import ConferencePersistence.Controller.Controller_Proposal;
 import ConferencePersistence.Controller.Controller_Review;
+import ConferencePersistence.Repository.Repository_Paper;
 import ConferencePersistence.Repository.Repository_Proposal;
 import ConferencePersistence.Repository.Repository_Review;
 import DomainClasses.Paper;
 import DomainClasses.PcMember;
 import DomainClasses.Proposal;
 import DomainClasses.Review;
+import Validator.Validator_Paper;
 import Validator.Validator_Proposal;
 import Validator.Validator_Review;
 
@@ -98,6 +101,35 @@ public class Author_Servlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("sorry norby");
+        PrintWriter responseWriter = response.getWriter();
+        response.setContentType("text/plain");
+        String action = request.getParameter("action");
+        if (action.equals("uploadA")) {
+            String fileName = request.getParameter("filename");
+            String abstrName = request.getParameter("abstrName");
+            System.out.println(fileName+" "+abstrName);
+            Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
+            for (Paper p:ctrlPaper.getAllPaper()){
+                if (p.getName().equals(abstrName)) {
+                    p.setFileName(fileName);
+                    ctrlPaper.updatePaper(p,p.getid());
+                }
+            }
+            responseWriter.print("success");
+        }
+        if (action.equals("uploadF")) {
+            String fileName = request.getParameter("filename");
+            String fullName = request.getParameter("fullName");
+            System.out.println(fileName+" "+fullName+" ");
+            Controller_Paper ctrlPaper = new Controller_Paper(new Repository_Paper(),new Validator_Paper());
+            for (Paper p:ctrlPaper.getAllPaper()){
+                if (p.getName().equals(fullName)) {
+                    p.setFileName(fileName);
+                    ctrlPaper.updatePaper(p,p.getid());
+                }
+            }
+            responseWriter.print("success");
+        }
+
     }
 }
