@@ -50,8 +50,10 @@ $(document).ready(function () {
                 $("#mineProposalKeywords").val(values[1]);
                 $("#mineProposalTopics").val(values[2]);
                 $("#mineFullFileName").val(values[3]);
-                $("#mineAbstractFileName").val(values[4]);
-                $("#mineReviewStatus").val(values[5]);
+                $("#mineFullFN").val(values[4]);
+                $("#mineAbstractFileName").val(values[5]);
+                $("#mineAbstractFN").val(values[6]);
+                $("#mineReviewStatus").val(values[7]);
             }
         });
         $.ajax({
@@ -284,9 +286,11 @@ $(document).ready(function () {
                file : filename
            },
            success : function (result) {
-               var res = result;
-               if (res === "success")
+               var res = result.split('|');
+               if (res[0] === "success"){
+                   $("#mineAbstractFN").val(res[1]);
                    alert("Uploaded successfuly!");
+               }
                else
                    alert("Can't upload!");
            }
@@ -313,9 +317,11 @@ $(document).ready(function () {
                 file : filename
             },
             success : function (result) {
-                var res = result;
-                if (res === "success")
+                var res = result.split('|');
+                if (res[0] === "success"){
+                    $("#mineFullFN").val(res[1]);
                     alert("Uploaded successfuly!");
+                }
                 else
                     alert("Can't upload!");
             }

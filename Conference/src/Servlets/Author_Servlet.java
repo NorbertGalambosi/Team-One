@@ -84,7 +84,7 @@ public class Author_Servlet extends HttpServlet {
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(),new Validator_Proposal());
             Proposal pr = cp.findByName(proposal, author);
             //System.out.println(pr);
-            String s = pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getFullPaper().getName()+"|"+pr.getAbstractPaper().getName();
+            String s = pr.getName()+"|"+pr.getKeywords()+"|"+pr.getTopics()+"|"+pr.getFullPaper().getName()+"|"+pr.getFullPaper().getFileName()+"|"+pr.getAbstractPaper().getName()+"|"+pr.getAbstractPaper().getFileName();
             if(cp.status(proposal)){
                 s = s+"|"+"accepted";
             }
@@ -180,7 +180,7 @@ public class Author_Servlet extends HttpServlet {
                     ctrlPaper.updatePaper(p,p.getid());
                 }
             }
-            responseWriter.print("success");
+            responseWriter.print("success|"+fileName);
         }
         if (action.equals("editFull")) {
             String fileName = request.getParameter("file");
@@ -192,7 +192,7 @@ public class Author_Servlet extends HttpServlet {
                     ctrlPaper.updatePaper(p,p.getid());
                 }
             }
-            responseWriter.print("success");
+            responseWriter.print("success|"+fileName);
         }
 
     }
