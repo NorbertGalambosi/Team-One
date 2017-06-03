@@ -82,17 +82,18 @@ public class Chair_Servlet extends HttpServlet {
                 ctrlC.updateConference(conference,conference.getid());
                 String[] sesArg = ses.split(" ");
                 int size = sesList.size();
-                for (String sname : sesArg) {
+                for(int i=1;i<sesArg.length;i=i+2){
+                    System.out.println(i+" "+sesArg[i]);
                     int count=0;
-                    for(Session s:sesList)
-                        if (s.getName().equals(sname))
+                    for(Session s:sesList) {
+                        if (s.getName().equals(sesArg[i]))
                             count++;
+                    }
                     if (count == 0) {
                         Random nr = new Random();
-                        System.out.println(sname);
                         String idr = String.valueOf(nr.nextInt(500));
                         String duration = String.valueOf(nr.nextInt(200));
-                        ctrlS.addSession(new Session(size+1, conference.getid(), sname, idr, duration));
+                        ctrlS.addSession(new Session(size+1, conference.getid(), sesArg[i], idr, duration));
                         size++;
                     }
                 }
