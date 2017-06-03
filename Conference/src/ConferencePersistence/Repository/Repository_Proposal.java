@@ -334,7 +334,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         List<Proposal> proposalList = new ArrayList<>();
         List<Integer> proposalIdList = new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember = ? ")){
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where username = ? ")){
             preStmt.setString(1,numeAutor);
             ResultSet resultSet = preStmt.executeQuery();
             if(resultSet.next()){
@@ -379,7 +379,7 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         List<Proposal> proposalList = new ArrayList<>();
         List<Integer> proposalIdList = new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where namePcMember <> ? ")){
+        try(PreparedStatement preStmt = conn.prepareStatement("Select idPcMember from PcMember where username <> ? ")){
             preStmt.setString(1,numeAutor);
             ResultSet resultSet = preStmt.executeQuery();
             while(resultSet.next()){
