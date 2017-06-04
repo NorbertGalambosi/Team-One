@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a95d577-424a-46ac-adfc-494195bd4538" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Servlets/Reviewer_Servlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/reviewer - old.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/reviewerScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.db" afterPath="$PROJECT_DIR$/db.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" afterPath="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/WEB-INF/classes/DBUtils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" afterPath="$PROJECT_DIR$/out/production/Conference/DBUtils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/authors.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/reviewer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Conference_war_exploded/reviewer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" afterPath="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" afterPath="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DomainClasses/Review.java" afterPath="$PROJECT_DIR$/src/DomainClasses/Review.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authors.jsp" afterPath="$PROJECT_DIR$/web/authors.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/authorsScipt.js" afterPath="$PROJECT_DIR$/web/authorsScipt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/reviewer.jsp" afterPath="$PROJECT_DIR$/web/reviewer.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,63 +62,53 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Reviews" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="db.db" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="main" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PcMember" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="authors.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/authors.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="149" column="94" lean-forward="false" selection-start-line="149" selection-start-column="80" selection-end-line="149" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authorsScipt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="290" column="37" lean-forward="false" selection-start-line="290" selection-start-column="37" selection-end-line="290" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.Paper" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Author_Servlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="182" column="52" lean-forward="false" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -135,6 +140,9 @@
       <find>popula</find>
       <find>editProposal</find>
       <find>mineProposalTopics</find>
+      <find>disabled</find>
+      <find>/tbody</find>
+      <find>logout</find>
     </findStrings>
     <replaceStrings>
       <replace>id</replace>
@@ -155,8 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Validator/ValidatorException.java" />
-        <option value="$PROJECT_DIR$/src/Validator/Validator_PcMember.java" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Session.java" />
         <option value="$PROJECT_DIR$/web/myscript.js" />
         <option value="$PROJECT_DIR$/src/ConferencePersistence/DBConnection.java" />
@@ -194,18 +200,20 @@
         <option value="$PROJECT_DIR$/src/Servlets/ServletAddReview.java" />
         <option value="$PROJECT_DIR$/web/addReview.js" />
         <option value="$PROJECT_DIR$/src/Servlets/Servlet_Reviews.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/reviewer.jsp" />
-        <option value="$PROJECT_DIR$/src/DomainClasses/Review.java" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql" />
-        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
-        <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
-        <option value="$PROJECT_DIR$/web/authors.jsp" />
         <option value="$PROJECT_DIR$/src/Servlets/Author_Servlet.java" />
         <option value="$PROJECT_DIR$/web/authorsScipt.js" />
+        <option value="$PROJECT_DIR$/src/DBUtils/DBConnection.java" />
+        <option value="$PROJECT_DIR$/web/authors.jsp" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java" />
+        <option value="$PROJECT_DIR$/web/reviewerScript.js" />
+        <option value="$PROJECT_DIR$/src/DomainClasses/Review.java" />
+        <option value="$PROJECT_DIR$/src/Servlets/Reviewer_Servlet.java" />
+        <option value="$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java" />
+        <option value="$PROJECT_DIR$/web/reviewer.jsp" />
       </list>
     </option>
   </component>
@@ -227,10 +235,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -247,9 +255,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,6 +304,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,6 +344,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConferencePersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConferencePersistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -328,7 +398,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ULTIMU BACKUP INAINTE DE CRISTI/Conference" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -350,118 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.login.jsp (3)">
-    <configuration default="false" name="login.jsp (2)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
-      <deployment>
-        <artifact name="Conference:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(2)_Conference_4" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56079" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Conference:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="false" name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
-      <deployment>
-        <artifact name="Conference:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_Conference_7" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Conference:war exploded" />
-        </option>
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.login.jsp">
     <configuration default="false" name="nTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="nTests" />
@@ -476,45 +435,6 @@
       <module name="Conference" />
       <envs />
       <method />
-    </configuration>
-    <configuration default="false" name="login.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
-      <deployment>
-        <artifact name="Conference:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_(1)_Conference_4" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Conference:war exploded" />
-        </option>
-      </method>
     </configuration>
     <configuration default="false" name="login.jsp (3)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
@@ -567,6 +487,121 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Conference:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="reviewer.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/reviewer.jsp" />
+      <deployment>
+        <artifact name="Conference:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="reviewer_jsp_Conference" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Conference:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="login.jsp (2)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
+      <deployment>
+        <artifact name="Conference:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Conference:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.jsp" />
+      <deployment>
+        <artifact name="Conference:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="login_jsp_Conference_9" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -925,13 +960,6 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1010,24 +1038,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.nTests" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (3)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.nTests" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (3)" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.reviewer.jsp" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.nTests" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
-        <item index="4" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.login.jsp" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.reviewer.jsp" />
+        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.login.jsp (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.nTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1080,6 +1111,9 @@
       <workItem from="1496491098622" duration="1271000" />
       <workItem from="1496496734852" duration="26985000" />
       <workItem from="1496530835423" duration="1611000" />
+      <workItem from="1496532586368" duration="814000" />
+      <workItem from="1496563009163" duration="2292000" />
+      <workItem from="1496565532790" duration="4806000" />
     </task>
     <task id="LOCAL-00001" summary="started Proposal submission">
       <created>1496422848864</created>
@@ -1148,7 +1182,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98491000" />
+    <option name="totallyTimeSpent" value="106403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1160,34 +1194,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.505295" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32555556" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16111708" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28477904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466182" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32368702" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.494705" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4890625" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18456884" sideWeight="0.5452899" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18152525" sideWeight="0.45471016" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18421052" sideWeight="0.5452899" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18689582" sideWeight="0.45471016" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1227,38 +1260,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/179bfb5c/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Type" />
-    <entry file="dbDummy://dbtable:/179bfb5c/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper" />
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/conferencePopulationScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="44" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/179bfb5c/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Proposal" />
     <entry file="dbDummy://dbtable:/179bfb5c/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember" />
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_PcMember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3151">
           <caret line="264" column="10" lean-forward="true" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
           <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1379,18 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1015#1023#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,14 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/reviewer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/findIdByUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1416,31 +1399,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DomainClasses/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember_Type" />
-    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember" />
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlets/PopulateSessionLists_Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -1459,44 +1418,152 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper" />
-    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Proposal" />
-    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9044">
-          <caret line="541" column="91" lean-forward="false" selection-start-line="541" selection-start-column="91" selection-end-line="541" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3488#3498#0" expanded="false" />
-            <element signature="e#9333#9342#0" expanded="false" />
-            <element signature="e#9960#9970#0" expanded="false" />
-            <element signature="e#10348#10357#0" expanded="false" />
-            <element signature="e#10970#10980#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PC_Conference" />
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Chair_Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper" />
+    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reviewer - old.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/conferencePopulationScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="117" column="38" lean-forward="false" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PcMember">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Proposal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="114" column="69" lean-forward="false" selection-start-line="114" selection-start-column="69" selection-end-line="114" selection-end-column="69" />
+        <state relative-caret-position="221">
+          <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="105" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.PC_Conference">
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Proposal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="352" column="19" lean-forward="false" selection-start-line="328" selection-start-column="4" selection-end-line="352" selection-end-column="19" />
+          <folding>
+            <marker date="1496567153385" expanded="true" signature="1030:1062" ph="insert into Paper... " />
+            <marker date="1496567153385" expanded="true" signature="1388:1420" ph="insert into Paper... " />
+            <marker date="1496567153385" expanded="true" signature="1750:1796" ph="insert into Proposal... " />
+            <marker date="1496567153385" expanded="true" signature="2310:2346" ph="SELECT MAX(I... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="2612:2662" ph="SELECT idPcM... PcMember" />
+            <marker date="1496567153385" expanded="true" signature="2990:3032" ph="INSERT INTO PcMember_Proposal... " />
+            <marker date="1496567153385" expanded="true" signature="3565:3606" ph="select * fro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="5128:5250" ph="update Propo... " />
+            <marker date="1496567153385" expanded="true" signature="6098:6129" ph="select idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="6683:6722" ph="delete from " />
+            <marker date="1496567153385" expanded="true" signature="7171:7218" ph="select idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="7950:7965" ph="select idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="7950:7996" ph="select idPap... Reviews" />
+            <marker date="1496567153385" expanded="true" signature="8725:8815" ph="select idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="9454:9509" ph="select idBid... Bidder_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="10467:10513" ph="select idRev... Reviews" />
+            <marker date="1496567153385" expanded="true" signature="11473:11532" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="12074:12112" ph="insert into Reviews... " />
+            <marker date="1496567153385" expanded="true" signature="12745:12787" ph="insert into Bidder_Proposal... " />
+            <marker date="1496567153385" expanded="true" signature="13255:13303" ph="SELECT idPcM... PcMember" />
+            <marker date="1496567153385" expanded="true" signature="13795:13847" ph="SELECT idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="14441:14491" ph="Select idPcM... PcMember" />
+            <marker date="1496567153385" expanded="true" signature="14834:14895" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="15248:15291" ph="Select * fro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="16578:16629" ph="Select idPcM... PcMember" />
+            <marker date="1496567153385" expanded="true" signature="16976:17037" ph="Select idPro... PcMember_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="17456:17499" ph="Select * fro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="18657:18700" ph="select * fro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="19547:19592" ph="select fileN... Paper" />
+            <marker date="1496567153385" expanded="true" signature="20016:20061" ph="select fileN... Paper" />
+            <marker date="1496567153385" expanded="true" signature="20524:20585" ph="select idPcM... PcMember_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="20927:20979" ph="select nameP... PcMember" />
+            <marker date="1496567153385" expanded="true" signature="21557:21609" ph="select idPro... Proposal" />
+            <marker date="1496567153385" expanded="true" signature="21969:22025" ph="select count... Bidder_Proposal" />
+            <marker date="1496567153385" expanded="true" signature="22648:22709" ph="update Propo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Proposal">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d5040fb/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Reviews">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1509,57 +1576,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlets/Chair_Servlet.java">
+    <entry file="file://$PROJECT_DIR$/src/DomainClasses/Review.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBUtils/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="122" lean-forward="false" selection-start-line="20" selection-start-column="122" selection-end-line="20" selection-end-column="122" />
+        <state relative-caret-position="528">
+          <caret line="87" column="37" lean-forward="false" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2299#2300#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlets/Author_Servlet.java">
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Controller/Controller_Review.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="182" column="52" lean-forward="false" selection-start-line="182" selection-start-column="52" selection-end-line="182" selection-end-column="52" />
+        <state relative-caret-position="211">
+          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConferencePersistence/Repository/Repository_Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="147" column="77" lean-forward="false" selection-start-line="147" selection-start-column="77" selection-end-line="147" selection-end-column="77" />
+          <folding>
+            <marker date="1496570243694" expanded="true" signature="593:630" ph="insert into Reviews... " />
+            <marker date="1496570243694" expanded="true" signature="1249:1270" ph="select * fro... Reviews" />
+            <marker date="1496570243694" expanded="true" signature="2045:2083" ph="select * fro... Reviews" />
+            <marker date="1496570243694" expanded="true" signature="2854:2890" ph="delete from " />
+            <marker date="1496570243694" expanded="true" signature="3232:3311" ph="update Revie... " />
+            <marker date="1496570243694" expanded="true" signature="4825:4877" ph="SELECT idPro... Proposal" />
+            <marker date="1496570243694" expanded="true" signature="5215:5252" ph="SELECT * FRO... Reviews" />
+            <marker date="1496570243694" expanded="true" signature="5775:5790" ph="SELECT numeP... " />
+            <marker date="1496570243694" expanded="true" signature="5775:5812" ph="SELECT numeP... PcMember" />
+            <marker date="1496570243694" expanded="true" signature="5775:5827" ph="SELECT nameP... PcMember" />
+            <marker date="1496570243694" expanded="true" signature="6467:6515" ph="SELECT idPcM... PcMember" />
+            <marker date="1496570243694" expanded="true" signature="7007:7059" ph="SELECT idPro... Proposal" />
+            <marker date="1496570243694" expanded="true" signature="7651:7669" ph="UPDATE Revie... " />
+            <marker date="1496570243694" expanded="true" signature="7651:7731" ph="UPDATE Revie... " />
+            <marker date="1496570243694" expanded="true" signature="8338:8392" ph="Select * fro... Reviews" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlets/Reviewer_Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reviewerScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="142" column="13" lean-forward="false" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reviewer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/authors.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="149" column="94" lean-forward="false" selection-start-line="149" selection-start-column="80" selection-end-line="149" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/authorsScipt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="290" column="37" lean-forward="false" selection-start-line="290" selection-start-column="37" selection-end-line="290" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fe905c4a/0a77f4e5-178f-4edc-89b7-7e5281cb3f2c/main.Paper">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="278">
+          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="177" selection-end-column="7" />
           <folding />
         </state>
       </provider>

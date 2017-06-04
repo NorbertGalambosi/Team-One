@@ -194,13 +194,12 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         return proposalList;
     }
 
-
-
     public Iterable<Proposal> findByReviewer(Integer integer) {
         List<Integer> proposalIds = new ArrayList<>();
         List<Proposal> proposalList = new ArrayList<>();
         Connection conn = connection.getConnection();
-        try(PreparedStatement prstmt = conn.prepareStatement("select idProposal from Proposal pr, Reviewer_Proposal rp where pr.idProposal = rp.idProposal")) {
+        try(PreparedStatement prstmt = conn.prepareStatement("select idPaper from Reviews where idReviewer=?")) {
+            prstmt.setInt(1,integer);
             try(ResultSet result = prstmt.executeQuery()){
                 while(result.next()){
                     proposalIds.add(result.getInt(1));
@@ -547,5 +546,15 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
         } catch (SQLException e) {
             throw e;
         }
+    }
+
+    public Iterable<Proposal> findByReviewer(String user) {
+        try {
+            //System.out.println(this.findByReviewer(this.findPcMemberId(user)));
+            return this.findByReviewer(this.findPcMemberId(user));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

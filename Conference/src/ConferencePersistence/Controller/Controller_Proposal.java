@@ -118,4 +118,8 @@ public class Controller_Proposal {
             return false;
         }
     }
+
+    public Iterable<Proposal> findByReviewer(String user) {
+        return this.repositoryProposal.findByReviewer(user);
+    }
 }

@@ -17,8 +17,8 @@ public class DBConnection {
         Connection con=null;
         try {
             Class.forName("org.sqlite.JDBC");
-//            con= DriverManager.getConnection("jdbc:sqlite:D:\\Facultate\\ISS\\LocVirgin\\Team-One\\Conference\\db.db");
-            con= DriverManager.getConnection("jdbc:sqlite:C:\\Users\\gnorb\\Documents\\GitHub\\Team-One\\Conference\\db.db");
+            con= DriverManager.getConnection("jdbc:sqlite:D:\\Facultate\\ISS\\LocVirgin\\Team-One\\Conference\\db.db");
+//            con= DriverManager.getConnection("jdbc:sqlite:C:\\Users\\gnorb\\Documents\\GitHub\\Team-One\\Conference\\db.db");
         } catch (SQLException e) {
             System.out.println("Error getting connection "+e);
         } catch (ClassNotFoundException e) {

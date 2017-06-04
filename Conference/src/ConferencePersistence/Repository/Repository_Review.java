@@ -145,6 +145,13 @@ public class Repository_Review implements IRepository<Integer, Review> {
                 rev.setIdReviewer(resultSet.getInt(3));
                 rev.setRecommendation(resultSet.getString(4));
                 rev.setQualifier(resultSet.getString(5));
+                try(PreparedStatement psts = conn.prepareStatement("SELECT namePcMember from PcMember where idPcMember=?")){
+                    psts.setInt(1,rev.getIdReviewer());
+                    ResultSet rs = psts.executeQuery();
+                    if(rs.next()){
+                        rev.setNumeReviewer(rs.getString(1));
+                    }
+                }
                 reviewList.add(rev);
             }
         } catch (SQLException e) {
@@ -153,4 +160,67 @@ public class Repository_Review implements IRepository<Integer, Review> {
         return reviewList;
     }
 
+    public int findPcMemberId(String usernume) throws SQLException {
+        System.out.println(usernume);
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("SELECT idPcMember from PcMember where username=?")){
+            prstmt.setString(1,usernume);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }return 0;
+    }
+    public int findProposalId(String name) throws SQLException {
+        System.out.println(name);
+        Connection conn = connection.getConnection();
+        try(PreparedStatement prstmt = conn.prepareStatement("SELECT idProposal from Proposal where nameProposal=?")){
+            prstmt.setString(1,name);
+            ResultSet resultSet = prstmt.executeQuery();
+            if(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw e;
+        }return 0;
+    }
+
+    public void add(String proposal, String user, String qualifier, String recom) throws SQLException {
+        Connection conn = connection.getConnection();
+        int idProp = this.findProposalId(proposal);
+        int idPc = this.findPcMemberId(user);
+        try(PreparedStatement prstmt = conn.prepareStatement("UPDATE Reviews set recomandation=?, qualifier=? WHERE idReviewer=? and idPaper=?")){
+            prstmt.setString(1, recom);
+            prstmt.setString(2,qualifier);
+            prstmt.setInt(3,idPc);
+            prstmt.setInt(4,idProp);
+            prstmt.executeUpdate();
+        }catch (SQLException e){
+            throw e;
+        }
+    }
+
+    public Review findReview(String proposal, String user) {
+        Connection conn = connection.getConnection();
+        try {
+            int idProp = this.findProposalId(proposal);
+            int idPc = this.findPcMemberId(user);
+            Review rev = new Review();
+            try(PreparedStatement prstmt = conn.prepareStatement("Select * from Reviews where idPaper=? and idReviewer=?")){
+                prstmt.setInt(1,idProp);
+                prstmt.setInt(2,idPc);
+                ResultSet resultSet = prstmt.executeQuery();
+                if(resultSet.next()){
+                    rev.setRecommendation(resultSet.getString(4));
+                    rev.setQualifier(resultSet.getString(5));
+                }
+                return rev;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

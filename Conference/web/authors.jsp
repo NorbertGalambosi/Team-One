@@ -137,18 +137,18 @@
                     <tr>
                         <td class="mine">
             <p><label>Status </label><input type="text" id="mineReviewStatus" class="disable"></p>
-            <p><label>Name </label><input type="text" id="mineProposalName" class="disable" disabled></p>
+            <p><label>Name </label><input type="text" id="mineProposalName" class="disable"></p>
             <p><label>Keywords </label><input type="text" id="mineProposalKeywords"></p>
             <p><label>Topics </label><input type="text" id="mineProposalTopics"></p>
             <p><input type="button" value="Edit" id="mineEditProposal"></p>
 
-            <p><label>Full paper (file name) </label><input type="text" id="mineFullFN" disabled></p>
-            <p><label>Full paper name </label><input type="text" id="mineFullFileName" disabled></p>
+            <p><label>Full paper (file name) </label><input type="text" id="mineFullFN" class="disable"></p>
+            <p><label>Full paper name </label><input type="text" id="mineFullFileName" class="disable"></p>
             <p><label>New full paper </label><input type="file" id="mineProposalNewFile"></p>
             <p><input type="button" value="Upload" id="mineProposalEdit"></p>
 
-            <p><label>Abstract paper (file name) </label><input type="text" id="mineAbstractFN" disabled></p>
-            <p><label>Abstract paper name </label><input type="text" id="mineAbstractFileName" disabled></p>
+            <p><label>Abstract paper (file name) </label><input type="text" id="mineAbstractFN" class="disable"></p>
+            <p><label>Abstract paper name </label><input type="text" id="mineAbstractFileName" class="disable"></p>
             <p><label>New abstract paper </label><input type="file" id="abstractNewFile"></p>
             <p><input type="button" value="Upload" id="abstractEdit"></p>
 

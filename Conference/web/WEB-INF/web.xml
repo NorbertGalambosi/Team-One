@@ -106,4 +106,15 @@
         <servlet-name>Author_Servlet</servlet-name>
         <url-pattern>/Author_Servlet</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Reviewer_Servlet</servlet-name>
+        <servlet-class>Servlets.Reviewer_Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Reviewer_Servlet</servlet-name>
+        <url-pattern>/Reviewer_Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>

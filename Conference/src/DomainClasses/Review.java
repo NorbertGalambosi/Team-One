@@ -12,6 +12,7 @@ public class Review implements Serializable,Identifiable<Integer> {
     protected Integer idPaper;
     protected String recommendation;
     protected String qualifier;
+    protected String numeReviewer;
 
     public Review(Integer id, Integer idReviewer, Integer idPaper, String recommendation, String qualifier) {
         this.id = id;
@@ -82,5 +83,13 @@ public class Review implements Serializable,Identifiable<Integer> {
                 ", recommendation='" + recommendation + '\'' +
                 ", qualifier='" + qualifier + '\'' +
                 '}';
+    }
+
+    public String getNumeReviewer() {
+        return numeReviewer;
+    }
+
+    public void setNumeReviewer(String numeReviewer) {
+        this.numeReviewer = numeReviewer;
     }
 }

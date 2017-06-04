@@ -53,4 +53,18 @@ public class Controller_Review {
     public Iterable<Review> findByProposalName(String proposal, String author) {
         return this.repositoryReview.findByProposalName(proposal);
     }
+
+    public boolean saveReview(String proposal, String user, String qualifier, String recom) {
+        try{
+            this.repositoryReview.add(proposal, user, qualifier, recom);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public Review findReview(String proposal, String user) {
+        return this.repositoryReview.findReview(proposal,user);
+    }
 }
