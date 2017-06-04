@@ -1,9 +1,11 @@
 package Servlets;
 
 import ConferencePersistence.Controller.Controller_Paper;
+import ConferencePersistence.Controller.Controller_PcMember;
 import ConferencePersistence.Controller.Controller_Proposal;
 import ConferencePersistence.Controller.Controller_Review;
 import ConferencePersistence.Repository.Repository_Paper;
+import ConferencePersistence.Repository.Repository_PcMember;
 import ConferencePersistence.Repository.Repository_Proposal;
 import ConferencePersistence.Repository.Repository_Review;
 import DomainClasses.Paper;
@@ -11,6 +13,7 @@ import DomainClasses.PcMember;
 import DomainClasses.Proposal;
 import DomainClasses.Review;
 import Validator.Validator_Paper;
+import Validator.Validator_PcMember;
 import Validator.Validator_Proposal;
 import Validator.Validator_Review;
 
@@ -121,6 +124,22 @@ public class Author_Servlet extends HttpServlet {
             String proposal = request.getParameter("proposal");
             String user = request.getParameter("user");
             Controller_Proposal cp = new Controller_Proposal(new Repository_Proposal(), new Validator_Proposal());
+            Controller_PcMember ctrlPCM = new Controller_PcMember(new Repository_PcMember(),new Validator_PcMember());
+            for (PcMember p:ctrlPCM.getAllPcMembers()) {
+                int count = 0;
+                if (p.getName().equals(user)) {
+                    for (String s : p.getType())
+                        if (s.equals("Reviewer"))
+                            count = 1;
+                    if (count == 0)
+                        ctrlPCM.addTypeToPcMember(p.getid(), "Reviewer");
+                }
+            }
+            for (Proposal pr:cp.findAll())
+                if (pr.getName().equals(proposal)) {
+                    pr.setAccepted(true);
+                    cp.update(pr,pr.getid());
+                }
             if(cp.bid(proposal,user)){
                 responseWriter.print("succes");
             }else

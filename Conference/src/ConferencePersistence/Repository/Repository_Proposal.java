@@ -128,16 +128,16 @@ public class Repository_Proposal implements IRepository<Integer, Proposal>{
 
 
     public void update(Proposal entity, int id){
+        System.out.println("Proposal is :"+entity.isAccepted());
         Connection conn =  connection.getConnection();
-        try(PreparedStatement preStmt = conn.prepareStatement("update Proposal set nameProposal=?,fullPaper=?,abstractPaper=?,keywords=?,topics=?,accepted=?,idAutor=? WHERE idProposal=?")){
+        try(PreparedStatement preStmt = conn.prepareStatement("update Proposal set nameProposal=?,fullPaper=?,abstract=?,keywords=?,topics=?,accepted=? WHERE idProposal=?")){
             preStmt.setString(1, entity.getName());
-            preStmt.setInt(2, entity.getFullPaper().getid());
-            preStmt.setInt(3, entity.getAbstractPaper().getid());
+            preStmt.setString(2, entity.getFullPaper().getName());
+            preStmt.setString(3, entity.getAbstractPaper().getName());
             preStmt.setString(4, entity.getKeywords());
             preStmt.setString(5, entity.getTopics());
-            preStmt.setBoolean(6, entity.isAccepted());
-            preStmt.setInt(7, id);
-            preStmt.setInt(8,entity.getAutor().getid());
+            preStmt.setBoolean(6,entity.isAccepted());
+            preStmt.setInt(7,id);
             preStmt.executeUpdate();
         } catch(SQLException e) {
             e.printStackTrace();
