@@ -15,7 +15,7 @@
     <style>
 
         body{
-            background-color: #ede3ff;
+            background-color: #F5F5F5;
         }
 
         h1{
@@ -45,6 +45,12 @@
 
         p{
             text-align: center;
+        }
+
+        #logout{
+            color: #fff;
+            background: #337ab7;
+            padding: 5px;
         }
 
     </style>

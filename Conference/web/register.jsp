@@ -12,6 +12,13 @@
         <title>Register</title>
         <link type="text/css" rel="stylesheet" href="mystyle.css">
         <script src="registerScript.js" type="text/javascript"></script>
+        <style>
+            #back{
+                color: #fff;
+                background: #337ab7;
+                padding: 5px;
+            }
+        </style>
     </head>
     <body>
         <div id="show">

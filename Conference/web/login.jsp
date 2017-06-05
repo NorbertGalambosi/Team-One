@@ -13,6 +13,22 @@
       <link type="text/css" rel="stylesheet" href="mystyle.css">
       <script src="loginScript.js" type="text/javascript"></script>
       <style>
+          body{
+              background: #eee;}
+
+          #btnsubmit{
+              color: #fff;
+              background: #337ab7;
+              padding: 5px;
+              /*float: right;*/
+          }
+
+          #btnregister{
+              color: #fff;
+              background: #337ab7;
+              padding:5px;
+          }
+
           #align{
               text-align: center;
           }
