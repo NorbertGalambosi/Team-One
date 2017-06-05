@@ -16,7 +16,7 @@
     <style>
 
         body{
-            background-color: #ede3ff;
+            background-color: #F5F5F5;
         }
 
         h1{
@@ -42,7 +42,7 @@
         p{
             font-size: 15px;
         }
-        
+
         #log{
             text-align: center;
         }
@@ -51,6 +51,12 @@
             font-size:17px;
             font-family: "Comic Sans MS";
 
+        }
+
+        #logout{
+            color: #fff;
+            background: #337ab7;
+            padding: 5px;
         }
 
     </style>
